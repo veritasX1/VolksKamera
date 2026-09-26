@@ -867,5 +867,15 @@
 "Dielen verwittert": "Weathered floorboards",
 "Parkett Eiche": "Oak parquet",
 "© seit %d Olaf Winkler": "© since %d Olaf Winkler",
-"Entwickelt in Schleswig-Holstein": "Developed in Schleswig-Holstein, Germany"
+"Entwickelt in Schleswig-Holstein": "Developed in Schleswig-Holstein, Germany",
+"Analog": "Analogue",
+"Verstärkung": "Boost",
+"Projektor und Objektiv": "Projector and lens",
+"Wackeln": "Weave",
+"Flackern": "Flicker",
+"Vignette": "Vignette",
+"Wackeln: der Film läuft nicht ganz ruhig durch die Kamera. Flackern: die Helligkeit schwankt von Bild zu Bild. Vignette: das Objektiv dunkelt die Ränder ab.": "Weave: the film does not run quite steadily through the camera. Flicker: the brightness varies from frame to frame. Vignette: the lens darkens the edges.",
+"Nimmt dem Handybild das digital Knackige: Die Nachschärfung der Kamera wird abgeschaltet, die Zeichnung wird weicher, helle Stellen bekommen einen sanften Schimmer und einen Lichthof. Die Verstärkung vervielfacht die Stärke – für sehr weiche, verträumte Bilder. Gilt für jeden Film. Die Weichheit siehst du schon im Sucher, Schimmer und Lichthof erst im fertigen Film.": "Takes the digital crispness out of the phone image: the camera’s built-in sharpening is switched off, the rendering becomes softer, bright areas get a gentle glow and halation. The boost multiplies the strength – for very soft, dreamy pictures. Applies to every film. You see the softness in the viewfinder already, glow and halation only in the finished film.",
+"Moiré": "Moiré",
+"Unterdrückt Moiré – flimmernde Muster bei feinen Linien und Rastern wie Stoffen, Gittern oder Bildschirmen. Ein optischer Tiefpass glättet nur die feinsten Muster, wie der Anti-Moiré-Filter echter Kameras. Bei Bildraten bis 30 fps liest die App den Sensor außerdem vollständig aus statt im schnellen 60-fps-Modus.": "Suppresses moiré – shimmering patterns on fine lines and grids such as fabrics, fences or screens. An optical low-pass smooths only the finest patterns, like the anti-moiré filter of real cameras. At frame rates up to 30 fps the app also reads the sensor fully instead of in the fast 60 fps mode."
 }

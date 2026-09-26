@@ -8,7 +8,7 @@ import hashlib, html, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 APP = os.path.join(HERE, "..", "app", "src", "main")
-VERSION = sys.argv[1] if len(sys.argv) > 1 else "0.8.2 beta"
+VERSION = sys.argv[1] if len(sys.argv) > 1 else "0.9.0 beta"
 FDROID = "https://volkskamera.goip.de/fdroid/repo"
 FDROID_FP = "8DA9DEF44C65856A1B098DB7BF876D48514997EF17C7256E23E91EAC6C486500"
 CERT = "7806bf101cca62f7bd57a9e08d8e2d0514bd58888d4d94a78100064c46fbebfc"

@@ -1,5 +1,6 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.render.withAnalog
 import android.app.Application
 import android.content.ContentUris
 import android.graphics.Bitmap
@@ -181,6 +182,26 @@ class FilmViewModel(app: Application) : AndroidViewModel(app) {
     // ---------- Aufnahme-Einstellungen ----------
     var recordResolution by mutableStateOf(com.volkskamera.app.data.CameraPrefs.resolution(getApplication())); private set
     fun chooseResolution(r: Int) { recordResolution = r; com.volkskamera.app.data.CameraPrefs.setResolution(getApplication(), r) }
+
+    /** Regler „Analog“ (0…1): gilt für jeden Film, bleibt beim Filmwechsel erhalten */
+    var analog by mutableStateOf(com.volkskamera.app.data.CameraPrefs.analog(getApplication())); private set
+    var analogFactor by mutableStateOf(com.volkskamera.app.data.CameraPrefs.analogFactor(getApplication())); private set
+    var weave by mutableStateOf(com.volkskamera.app.data.CameraPrefs.weave(getApplication())); private set
+    var flicker by mutableStateOf(com.volkskamera.app.data.CameraPrefs.flicker(getApplication())); private set
+    var vignette by mutableStateOf(com.volkskamera.app.data.CameraPrefs.vignette(getApplication())); private set
+    var moire by mutableStateOf(com.volkskamera.app.data.CameraPrefs.moire(getApplication())); private set
+    private fun analogApplied(l: FilmLook, filmHalation: Boolean = selectedFilm?.look?.halation == true) =
+        l.withAnalog(analog, analogFactor, filmHalation, weave, flicker, vignette).copy(antiMoire = moire)
+    private fun storeAnalog(key: String, v: Float) {
+        com.volkskamera.app.data.CameraPrefs.setFloat(getApplication(), key, v)
+        look = analogApplied(look)
+    }
+    fun chooseAnalog(a: Float) { analog = a; storeAnalog("analog", a) }
+    fun chooseAnalogFactor(f: Float) { analogFactor = f; storeAnalog("analog_factor", f) }
+    fun chooseWeave(v: Float) { weave = v; storeAnalog("weave", v) }
+    fun chooseFlicker(v: Float) { flicker = v; storeAnalog("flicker", v) }
+    fun chooseVignette(v: Float) { vignette = v; storeAnalog("vignette", v) }
+    fun chooseMoire(v: Float) { moire = v; storeAnalog("moire", v) }
     var mirrorFront by mutableStateOf(com.volkskamera.app.data.CameraPrefs.mirrorFront(getApplication())); private set
     fun chooseMirrorFront(m: Boolean) { mirrorFront = m; com.volkskamera.app.data.CameraPrefs.setMirrorFront(getApplication(), m) }
 
@@ -348,7 +369,7 @@ class FilmViewModel(app: Application) : AndroidViewModel(app) {
             grain = c.find(grainId), grainAmount = grainAmt,
             halation = if (lk.halation) 0.5f else 0f,
             finderLook = look.finderLook,
-        ).withAudioFrom(look)
+        ).let { analogApplied(it, lk.halation) }.withAudioFrom(look)
         refreshLutInfo()
     }
 

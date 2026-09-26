@@ -123,6 +123,10 @@ class FilmLookRenderer(private val context: Context, private val maxCachedSequen
         p.setFloatUniform("uVignette", look.vignette)
         p.setFloatUniform("uAspect", outW / outH.toFloat())
         p.setFloatUniform("uHalation", look.halation)
+        p.setFloatUniform("uDiffuse", look.diffusion)
+        p.setFloatUniform("uDiffR", 0.006f * look.diffusionSize)
+        p.setFloatUniform("uBlurPx", look.blurPx)
+        p.setFloatUniform("uMoireR", look.antiMoire * 1.5f)
 
         p.setFloatUniform("uFlicker", look.flicker * 0.10f * (hash(filmFrame * 7 + 1) - 0.5f))
         val w = look.weave * 0.004f
@@ -426,6 +430,10 @@ class FilmLookRenderer(private val context: Context, private val maxCachedSequen
             uniform float uVignette;
             uniform float uAspect;
             uniform float uHalation;
+            uniform float uDiffuse;
+            uniform float uDiffR;
+            uniform float uBlurPx;
+            uniform float uMoireR;
             uniform float uFlicker;
             uniform vec2 uWeave;
             uniform float uZoom;
@@ -516,10 +524,31 @@ class FilmLookRenderer(private val context: Context, private val maxCachedSequen
                 vec2 uv = (vUv - 0.5) / uZoom + 0.5 + uWeave;
 
                 vec3 c = src(uv);
+                // Moiré-Filter: optischer Tiefpass (3×3-Zeltfilter), wie der Anti-Moiré-Filter vor echten Sensoren –
+                // nimmt nur die feinsten Muster knapp an der Auflösungsgrenze heraus
+                if (uMoireR > 0.01) {
+                    vec2 d = uTexel * uMoireR;
+                    c = (4.0 * c
+                        + 2.0 * (src(uv + vec2(d.x, 0.0)) + src(uv - vec2(d.x, 0.0)) + src(uv + vec2(0.0, d.y)) + src(uv - vec2(0.0, d.y)))
+                        + src(uv + d) + src(uv - d) + src(uv + vec2(d.x, -d.y)) + src(uv + vec2(-d.x, d.y))) / 16.0;
+                }
                 if (uSoften > 0.0) {
                     vec2 d = uTexel * uSoften;
                     c = c * 0.4 + 0.15 * (src(uv + vec2(d.x, 0.0)) + src(uv - vec2(d.x, 0.0))
                                         + src(uv + vec2(0.0, d.y)) + src(uv - vec2(0.0, d.y)));
+                }
+                // Analog: gleichmäßige Scheiben-Unschärfe (24 Punkte auf einer Vogel-Spirale, je Bildpunkt
+                // zufällig gedreht – bleibt auch bei großem Radius frei von Geisterbildern und Ringen)
+                if (uBlurPx > 0.05) {
+                    vec3 acc = c;
+                    float rot = fract(sin(dot(vUv, vec2(12.9898, 78.233))) * 43758.5453) * 6.2831853;
+                    for (int i = 0; i < 24; i++) {
+                        float fi = float(i);
+                        float rr = sqrt((fi + 0.5) / 24.0) * uBlurPx;
+                        float a = fi * 2.3999632 + rot;
+                        acc += src(uv + vec2(cos(a), sin(a)) * uTexel * rr);
+                    }
+                    c = acc / 25.0;
                 }
                 // Schärfe (Unscharf-Maske) bzw. Unschärfe (zwei Ringe à 6 Abtastpunkte)
                 if (uSharp > 0.0) {
@@ -562,6 +591,20 @@ class FilmLookRenderer(private val context: Context, private val maxCachedSequen
                     }
                     glow = glow / 8.0 * vec3(1.0, 0.35, 0.12);
                     c = mix(c, screen(c, glow), uHalation);
+                }
+
+                // Diffusion: weicher, fast neutraler Schimmer um helle Stellen (Nebel-/Diffusionsfilter),
+                // nimmt harten Kanten und Lichtern das Digitale
+                if (uDiffuse > 0.0) {
+                    vec3 mist = vec3(0.0);
+                    for (int i = 0; i < 8; i++) {
+                        float a = float(i) * 0.785398 + 0.39;
+                        vec3 s = src(uv + vec2(cos(a), sin(a)) * uDiffR);
+                        mist += s * smoothstep(0.35, 0.9, dot(s, vec3(0.299, 0.587, 0.114)));
+                    }
+                    mist = mist / 8.0 * vec3(1.0, 0.97, 0.92);
+                    c = mix(c, screen(c, mist * 0.8), uDiffuse);
+                    c = mix(c, c * 0.94 + 0.03, uDiffuse * 0.5);   // Schwarz leicht angehoben, wie bei Streulicht
                 }
 
                 // Vignette (Objektiv): Ränder abdunkeln, bezogen auf das Ausgabeformat

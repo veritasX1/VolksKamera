@@ -180,8 +180,10 @@ fun CameraScreen(
     // gemerkter Objektiv-Index könnte für dieses Gerät zu groß sein -> begrenzen
     LaunchedEffect(lenses) { if (lenses.isNotEmpty() && lensIdx > lenses.lastIndex) lensIdx = 0 }
     // (Neu) binden bei Objektiv- oder Formatwechsel – nie während einer Aufnahme
-    LaunchedEffect(lenses, lensIdx, aspect43, resolution, mirrorFront) {
+    val sensor30 = vm.moire > 0.05f && (vm.look.targetFps ?: 60f) <= 30f
+    LaunchedEffect(lenses, lensIdx, aspect43, resolution, mirrorFront, sensor30) {
         val lens = lenses.getOrNull(lensIdx) ?: return@LaunchedEffect
+        controller.preferSensor30 = sensor30
         torch = false
         manualFocus = false
         controller.bind(owner, previewView, lens, aspect43, rotation) { _, fps ->
@@ -191,10 +193,25 @@ fun CameraScreen(
         }
     }
     LaunchedEffect(rotation) { controller.setRotation(rotation) }
-    // Farblook im Sucher: Farbmatrix als Layer-Filter der View – kostet die Kamera keine fps
+    // Farblook im Sucher: Farbmatrix als Layer-Filter der View – kostet die Kamera keine fps.
+    // Ab Android 12 zusätzlich die Unschärfe des Reglers „Analog“ als Vorschau (RenderEffect auf der GPU).
     val finderMatrix = vm.viewfinderMatrix
-    LaunchedEffect(finderMatrix?.toList()) {
-        if (finderMatrix == null) {
+    val finderBlur = vm.look.blurPx
+    LaunchedEffect(finderMatrix?.toList(), finderBlur) {
+        if (android.os.Build.VERSION.SDK_INT >= 31) {
+            previewView.setLayerType(android.view.View.LAYER_TYPE_NONE, null)
+            var effect: android.graphics.RenderEffect? = finderMatrix?.let {
+                android.graphics.RenderEffect.createColorFilterEffect(android.graphics.ColorMatrixColorFilter(android.graphics.ColorMatrix(it)))
+            }
+            if (finderBlur > 0.05f) {
+                // blurPx gilt für das Video (lange Seite ~1920 px) → auf die Sucher-Breite umrechnen
+                val scale = maxOf(previewView.width, previewView.height, 1).toFloat() / 1920f
+                val r = (finderBlur * scale * 0.6f).coerceAtLeast(0.5f)
+                val blur = android.graphics.RenderEffect.createBlurEffect(r, r, android.graphics.Shader.TileMode.CLAMP)
+                effect = effect?.let { android.graphics.RenderEffect.createChainEffect(blur, it) } ?: blur
+            }
+            previewView.setRenderEffect(effect)
+        } else if (finderMatrix == null) {
             previewView.setLayerType(android.view.View.LAYER_TYPE_NONE, null)
         } else {
             val paint = android.graphics.Paint().apply {
@@ -320,6 +337,8 @@ fun CameraScreen(
     }
     // Belichtungszeit anwenden (analog: feste Film-ISO, Helligkeit über die Zeit) – sofort, ohne Verzögerung
     LaunchedEffect(shutterIdx, filmIso) { controller.setExposure(SHUTTER_SPEEDS[shutterIdx].second, filmIso) }
+    // Regler „Analog“: ab einem Hauch die Nachschärfung der Handykamera abschalten
+    LaunchedEffect(vm.analog > 0.05f) { controller.setCameraSharpening(vm.analog > 0.05f) }
     // Weißabgleich bleibt automatisch: die Farbe kommt allein aus der LUT des Films
     LaunchedEffect(lenses, lensIdx) {
         kotlinx.coroutines.delay(350)

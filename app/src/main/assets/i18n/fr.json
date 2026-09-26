@@ -867,5 +867,15 @@
 "Dielen verwittert": "Planches patinées",
 "Parkett Eiche": "Parquet chêne",
 "© seit %d Olaf Winkler": "© depuis %d Olaf Winkler",
-"Entwickelt in Schleswig-Holstein": "Développé au Schleswig-Holstein (Allemagne)"
+"Entwickelt in Schleswig-Holstein": "Développé au Schleswig-Holstein (Allemagne)",
+"Analog": "Analogique",
+"Verstärkung": "Amplification",
+"Projektor und Objektiv": "Projecteur et objectif",
+"Wackeln": "Flottement",
+"Flackern": "Scintillement",
+"Vignette": "Vignetage",
+"Wackeln: der Film läuft nicht ganz ruhig durch die Kamera. Flackern: die Helligkeit schwankt von Bild zu Bild. Vignette: das Objektiv dunkelt die Ränder ab.": "Flottement : le film ne défile pas tout à fait régulièrement dans la caméra. Scintillement : la luminosité varie d’une image à l’autre. Vignetage : l’objectif assombrit les bords.",
+"Nimmt dem Handybild das digital Knackige: Die Nachschärfung der Kamera wird abgeschaltet, die Zeichnung wird weicher, helle Stellen bekommen einen sanften Schimmer und einen Lichthof. Die Verstärkung vervielfacht die Stärke – für sehr weiche, verträumte Bilder. Gilt für jeden Film. Die Weichheit siehst du schon im Sucher, Schimmer und Lichthof erst im fertigen Film.": "Retire à l’image du téléphone son piqué numérique : l’accentuation intégrée de la caméra est désactivée, le rendu devient plus doux, les zones claires reçoivent une douce lueur et un halo. L’amplification multiplie l’intensité – pour des images très douces et rêveuses. S’applique à chaque film. La douceur est visible dès le viseur, la lueur et le halo seulement dans le film terminé.",
+"Moiré": "Moiré",
+"Unterdrückt Moiré – flimmernde Muster bei feinen Linien und Rastern wie Stoffen, Gittern oder Bildschirmen. Ein optischer Tiefpass glättet nur die feinsten Muster, wie der Anti-Moiré-Filter echter Kameras. Bei Bildraten bis 30 fps liest die App den Sensor außerdem vollständig aus statt im schnellen 60-fps-Modus.": "Supprime le moiré – les motifs scintillants sur les lignes et trames fines comme les tissus, grilles ou écrans. Un passe-bas optique ne lisse que les motifs les plus fins, comme le filtre anti-moiré des vraies caméras. Jusqu’à 30 i/s, l’application lit en outre le capteur entièrement au lieu du mode rapide à 60 i/s."
 }

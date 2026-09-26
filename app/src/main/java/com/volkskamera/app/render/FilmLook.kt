@@ -46,6 +46,14 @@ data class FilmLook(
     val frameBlack: Float = 0.4f,
     val halation: Float = 0f,
     val soften: Float = 0f,
+    /** Diffusion: weicher Schimmer um helle Bildteile (wie ein Diffusionsfilter / Nebel vor dem Objektiv) */
+    val diffusion: Float = 0f,
+    /** Größe des Schimmers (1 = normal, wächst mit der Analog-Verstärkung) */
+    val diffusionSize: Float = 1f,
+    /** Scheiben-Unschärfe in Bildpunkten (Regler „Analog“) */
+    val blurPx: Float = 0f,
+    /** Moiré-Filter 0…1: optischer Tiefpass vor allen anderen Stufen (glättet feinste Linien-/Rastermuster) */
+    val antiMoire: Float = 0f,
     val flicker: Float = 0f,
     val weave: Float = 0f,
     val mono: Boolean = false,
@@ -155,6 +163,8 @@ data class FilmLook(
         frame = frame.takeIf { isOn(Stage.RAHMEN) },
         halation = if (isOn(Stage.HALATION)) halation else 0f,
         soften = if (isOn(Stage.WEICH)) soften else 0f,
+        diffusion = if (isOn(Stage.WEICH)) diffusion else 0f,
+        blurPx = if (isOn(Stage.WEICH)) blurPx else 0f,
         flicker = if (isOn(Stage.FLACKERN)) flicker else 0f,
         weave = if (isOn(Stage.WACKELN)) weave else 0f,
     )
@@ -207,4 +217,22 @@ object Presets {
         else -> base
         }
     }
+}
+
+/**
+ * Regler „Analog“: nimmt dem Handybild das Digital-Knackige – echte Scheiben-Unschärfe statt Nachschärfung,
+ * Schimmer um Lichter und Lichthof. [a] = Stärke 0…1, [factor] = Verstärkung (1…100), beides multipliziert.
+ * Wackeln, Flackern und Vignette sind eigene Regler (0…1). [filmHalation]: der Film selbst hat einen Lichthof.
+ */
+fun FilmLook.withAnalog(a: Float, factor: Float, filmHalation: Boolean, weave: Float, flicker: Float, vignette: Float): FilmLook {
+    val s = a.coerceIn(0f, 1f) * factor.coerceIn(1f, 100f)
+    return copy(
+        soften = 0f,
+        sharpness = 0f,
+        blurPx = 4f * kotlin.math.sqrt(s),                          // 1× → 4 px, 10× → 13 px, 100× → 40 px
+        diffusion = (0.55f * s).coerceAtMost(1f),
+        diffusionSize = 1f + 0.6f * kotlin.math.ln(maxOf(1f, 0.55f * s)),
+        halation = maxOf(if (filmHalation) 0.5f else 0f, (0.35f * s).coerceAtMost(1f)),
+        weave = weave, flicker = flicker, vignette = vignette,
+    )
 }

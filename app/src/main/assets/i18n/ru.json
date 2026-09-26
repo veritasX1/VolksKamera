@@ -867,5 +867,15 @@
 "Dielen verwittert": "Выветренные доски",
 "Parkett Eiche": "Дубовый паркет",
 "© seit %d Olaf Winkler": "© с %d года, Olaf Winkler",
-"Entwickelt in Schleswig-Holstein": "Разработано в Шлезвиг-Гольштейне (Германия)"
+"Entwickelt in Schleswig-Holstein": "Разработано в Шлезвиг-Гольштейне (Германия)",
+"Analog": "Аналоговость",
+"Verstärkung": "Усиление",
+"Projektor und Objektiv": "Проектор и объектив",
+"Wackeln": "Дрожание",
+"Flackern": "Мерцание",
+"Vignette": "Виньетка",
+"Wackeln: der Film läuft nicht ganz ruhig durch die Kamera. Flackern: die Helligkeit schwankt von Bild zu Bild. Vignette: das Objektiv dunkelt die Ränder ab.": "Дрожание: плёнка идёт через камеру не совсем ровно. Мерцание: яркость меняется от кадра к кадру. Виньетка: объектив затемняет края.",
+"Nimmt dem Handybild das digital Knackige: Die Nachschärfung der Kamera wird abgeschaltet, die Zeichnung wird weicher, helle Stellen bekommen einen sanften Schimmer und einen Lichthof. Die Verstärkung vervielfacht die Stärke – für sehr weiche, verträumte Bilder. Gilt für jeden Film. Die Weichheit siehst du schon im Sucher, Schimmer und Lichthof erst im fertigen Film.": "Убирает с изображения телефона цифровую «резкость»: встроенное повышение резкости камеры отключается, рисунок становится мягче, светлые места получают мягкое свечение и ореол. Усиление умножает силу – для очень мягких, мечтательных кадров. Действует для любой плёнки. Мягкость видна уже в видоискателе, свечение и ореол – только в готовом фильме.",
+"Moiré": "Муар",
+"Unterdrückt Moiré – flimmernde Muster bei feinen Linien und Rastern wie Stoffen, Gittern oder Bildschirmen. Ein optischer Tiefpass glättet nur die feinsten Muster, wie der Anti-Moiré-Filter echter Kameras. Bei Bildraten bis 30 fps liest die App den Sensor außerdem vollständig aus statt im schnellen 60-fps-Modus.": "Подавляет муар – мерцающие узоры на тонких линиях и растрах: тканях, решётках, экранах. Оптический фильтр нижних частот сглаживает только самые мелкие узоры, как антимуаровый фильтр настоящих камер. При частоте кадров до 30 к/с приложение к тому же считывает сенсор полностью, а не в быстром режиме 60 к/с."
 }
