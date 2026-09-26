@@ -59,6 +59,33 @@ class CameraController(private val context: Context) {
     data class Exposure(val filmTimeNs: Long, val filmIso: Int)
     var exposure: Exposure? = null; private set
     private var appliedTo: Camera? = null
+
+    /**
+     * ALLE eigenen Aufnahme-Einstellungen (Belichtung, Sperre, Weißabgleich, LED) in einem Satz:
+     * Camera2CameraControl.setCaptureRequestOptions ERSETZT jedes Mal alles – einzeln gesetzt würde z. B. der
+     * Weißabgleich die manuelle Belichtung löschen. Die LED läuft bewusst nicht über enableTorch(): CameraX
+     * schaltet dafür die Belichtungsautomatik ein. FLASH_MODE_TORCH funktioniert auch bei AE_MODE_OFF.
+     */
+    private val requestOptions = linkedMapOf<CaptureRequest.Key<*>, Any>()
+
+    private fun <T : Any> option(key: CaptureRequest.Key<T>, value: T) { requestOptions[key] = value }
+
+    private fun applyOptions() {
+        val cam = camera ?: return
+        val b = androidx.camera.camera2.interop.CaptureRequestOptions.Builder()
+        @Suppress("UNCHECKED_CAST")
+        requestOptions.forEach { (k, v) -> b.setCaptureRequestOption(k as CaptureRequest.Key<Any>, v) }
+        androidx.camera.camera2.interop.Camera2CameraControl.from(cam.cameraControl).setCaptureRequestOptions(b.build())
+    }
+
+    private fun putExposure(cam: Camera, e: Exposure) {
+        val s = sensorExposure(cam.cameraInfo, e, boundFps)
+        option(CaptureRequest.CONTROL_AE_MODE, android.hardware.camera2.CameraMetadata.CONTROL_AE_MODE_OFF)
+        option(CaptureRequest.SENSOR_EXPOSURE_TIME, s.timeNs)
+        option(CaptureRequest.SENSOR_SENSITIVITY, s.iso)
+        option(CaptureRequest.SENSOR_FRAME_DURATION, s.frameNs)
+        appliedTo = cam
+    }
     /** Aufnahme-Auflösung (kurze Seite): 480, 576, 720 oder 1080 */
     var resolution: Int = 1080
     /** Frontkamera-Aufnahme spiegeln (wie im Spiegel) */
@@ -105,6 +132,11 @@ class CameraController(private val context: Context) {
                 if (bound != null) {
                     camera = bound
                     boundFps = fps
+                    // neue Kamera: LED aus, Sperre gelöst – die feste Belichtung sofort wieder in den Satz
+                    requestOptions.clear()
+                    exposureLocked = false
+                    exposure?.let { putExposure(bound, it) }
+                    applyOptions()
                     onBound(bound, fps)
                     // kein automatisches Scharfstellen: fokussiert wird nur, wenn der Nutzer in den Sucher tippt
                     return@addListener
@@ -210,12 +242,9 @@ class CameraController(private val context: Context) {
     fun setExposureLock(on: Boolean) {
         val cam = camera ?: return
         exposureLocked = on
-        androidx.camera.camera2.interop.Camera2CameraControl.from(cam.cameraControl).setCaptureRequestOptions(
-            androidx.camera.camera2.interop.CaptureRequestOptions.Builder()
-                .setCaptureRequestOption(CaptureRequest.CONTROL_AE_LOCK, on)
-                .setCaptureRequestOption(CaptureRequest.CONTROL_AWB_LOCK, on)
-                .build(),
-        )
+        option(CaptureRequest.CONTROL_AE_LOCK, on)
+        option(CaptureRequest.CONTROL_AWB_LOCK, on)
+        applyOptions()
     }
 
     /**
@@ -228,26 +257,16 @@ class CameraController(private val context: Context) {
         if (e == exposure && cam0 === appliedTo) return   // unverändert und schon angewandt
         exposure = e
         val cam = cam0 ?: return
-        appliedTo = cam
-        val s = sensorExposure(cam.cameraInfo, e, boundFps)
-        androidx.camera.camera2.interop.Camera2CameraControl.from(cam.cameraControl).setCaptureRequestOptions(
-            androidx.camera.camera2.interop.CaptureRequestOptions.Builder()
-                .setCaptureRequestOption(CaptureRequest.CONTROL_AE_MODE, android.hardware.camera2.CameraMetadata.CONTROL_AE_MODE_OFF)
-                .setCaptureRequestOption(CaptureRequest.SENSOR_EXPOSURE_TIME, s.timeNs)
-                .setCaptureRequestOption(CaptureRequest.SENSOR_SENSITIVITY, s.iso)
-                .setCaptureRequestOption(CaptureRequest.SENSOR_FRAME_DURATION, s.frameNs)
-                .build())
+        putExposure(cam, e)
+        applyOptions()
     }
 
     /** Weißabgleich-Voreinstellung setzen (CONTROL_AWB_MODE, z.B. Tageslicht/Bewölkt/Kunstlicht). */
     fun setWhiteBalance(awbMode: Int) {
-        val cam = camera ?: return
-        androidx.camera.camera2.interop.Camera2CameraControl.from(cam.cameraControl).setCaptureRequestOptions(
-            androidx.camera.camera2.interop.CaptureRequestOptions.Builder()
-                .setCaptureRequestOption(CaptureRequest.CONTROL_AWB_LOCK, false)
-                .setCaptureRequestOption(CaptureRequest.CONTROL_AWB_MODE, awbMode)
-                .build(),
-        )
+        if (camera == null) return
+        option(CaptureRequest.CONTROL_AWB_LOCK, false)
+        option(CaptureRequest.CONTROL_AWB_MODE, awbMode)
+        applyOptions()
     }
 
     /**
@@ -274,7 +293,9 @@ class CameraController(private val context: Context) {
     }
 
     fun setTorch(on: Boolean) {
-        camera?.cameraControl?.enableTorch(on)
+        if (camera == null) return
+        option(CaptureRequest.FLASH_MODE, if (on) CaptureRequest.FLASH_MODE_TORCH else CaptureRequest.FLASH_MODE_OFF)
+        applyOptions()
     }
 
     fun hasFlash() = camera?.cameraInfo?.hasFlashUnit() == true

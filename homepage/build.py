@@ -8,7 +8,7 @@ import hashlib, html, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 APP = os.path.join(HERE, "..", "app", "src", "main")
-VERSION = sys.argv[1] if len(sys.argv) > 1 else "0.8 beta"
+VERSION = sys.argv[1] if len(sys.argv) > 1 else "0.8.1 beta"
 CERT = "7806bf101cca62f7bd57a9e08d8e2d0514bd58888d4d94a78100064c46fbebfc"
 LANGS = ["de", "en", "fr", "ru"]
 NAMES = {"de": "Deutsch", "en": "English", "fr": "Français", "ru": "Русский"}
