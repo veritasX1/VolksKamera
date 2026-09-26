@@ -1,5 +1,6 @@
 package com.volkskamera.app.ui
 
+import androidx.compose.foundation.horizontalScroll
 import com.volkskamera.app.t
 import com.volkskamera.app.tf
 import android.graphics.BitmapFactory
@@ -51,6 +52,26 @@ fun RecordingScreen(vm: FilmViewModel, onBack: () -> Unit) {
             listOf(480, 576, 720, 1080).forEach { r -> Pill("${r}p", selected = vm.recordResolution == r) { vm.chooseResolution(r) } }
         }
         Hint(t("Auflösung des fertigen Films (kurze Seite). 480p und 576p entsprechen alter Video- und Fernsehnorm, 1080p ist volle HD-Auflösung."))
+
+        Heading(t("Analog"))
+        LabeledSlider(t("Stärke"), vm.analog, enabled = true) { vm.chooseAnalog(it) }
+        Text(t("Verstärkung"), color = FilmWhite.copy(alpha = 0.7f), fontSize = 13.sp, modifier = Modifier.padding(top = 6.dp, bottom = 4.dp))
+        Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+            listOf(1f, 2f, 5f, 10f, 20f, 50f, 100f).forEach { f ->
+                Pill("${f.toInt()}×", selected = vm.analogFactor == f) { vm.chooseAnalogFactor(f) }
+            }
+        }
+        Hint(t("Nimmt dem Handybild das digital Knackige: Die Nachschärfung der Kamera wird abgeschaltet, die Zeichnung wird weicher, helle Stellen bekommen einen sanften Schimmer und einen Lichthof. Die Verstärkung vervielfacht die Stärke – für sehr weiche, verträumte Bilder. Gilt für jeden Film. Die Weichheit siehst du schon im Sucher, Schimmer und Lichthof erst im fertigen Film."))
+
+        Heading(t("Moiré"))
+        LabeledSlider(t("Filter"), vm.moire, enabled = true) { vm.chooseMoire(it) }
+        Hint(t("Unterdrückt Moiré – flimmernde Muster bei feinen Linien und Rastern wie Stoffen, Gittern oder Bildschirmen. Ein optischer Tiefpass glättet nur die feinsten Muster, wie der Anti-Moiré-Filter echter Kameras. Bei Bildraten bis 30 fps liest die App den Sensor außerdem vollständig aus statt im schnellen 60-fps-Modus."))
+
+        Heading(t("Projektor und Objektiv"))
+        LabeledSlider(t("Wackeln"), vm.weave, enabled = true) { vm.chooseWeave(it) }
+        LabeledSlider(t("Flackern"), vm.flicker, enabled = true) { vm.chooseFlicker(it) }
+        LabeledSlider(t("Vignette"), vm.vignette, enabled = true) { vm.chooseVignette(it) }
+        Hint(t("Wackeln: der Film läuft nicht ganz ruhig durch die Kamera. Flackern: die Helligkeit schwankt von Bild zu Bild. Vignette: das Objektiv dunkelt die Ränder ab."))
 
         Heading(t("Frontkamera"))
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {

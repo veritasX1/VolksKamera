@@ -70,6 +70,22 @@ class CameraController(private val context: Context) {
 
     private fun <T : Any> option(key: CaptureRequest.Key<T>, value: T) { requestOptions[key] = value }
 
+    /** Regler „Analog“ aktiv: die kamerainterne Nachschärfung (EDGE_MODE) abschalten – sie macht das Bild „digital“. */
+    private var sharpeningOff = false
+    /** vor bind() setzen: Sensor lieber mit 30 fps auslesen (Moiré-Filter) */
+    var preferSensor30 = false
+    fun setCameraSharpening(off: Boolean) {
+        sharpeningOff = off
+        putSharpening()
+        applyOptions()
+    }
+    private fun putSharpening() {
+        val cam = camera ?: return
+        val modes = Camera2CameraInfo.from(cam.cameraInfo).getCameraCharacteristic(CameraCharacteristics.EDGE_AVAILABLE_EDGE_MODES)
+        if (sharpeningOff && modes?.contains(CaptureRequest.EDGE_MODE_OFF) == true) option(CaptureRequest.EDGE_MODE, CaptureRequest.EDGE_MODE_OFF)
+        else requestOptions.remove(CaptureRequest.EDGE_MODE)
+    }
+
     private fun applyOptions() {
         val cam = camera ?: return
         val b = androidx.camera.camera2.interop.CaptureRequestOptions.Builder()
@@ -126,7 +142,9 @@ class CameraController(private val context: Context) {
             val p = future.get()
             provider = p
             p.unbindAll()
-            val wanted = listOf(60, 30, 0).filter { it == 0 || supportsFps(lens.cameraInfo, it) }
+            // Moiré-Filter bei Bildraten bis 30: Sensor mit 30 fps auslesen (bei 60 fps fassen viele Handys
+            // Bildpunkte zusammen oder überspringen Zeilen – die klassische Moiré-Quelle)
+            val wanted = (if (preferSensor30) listOf(30, 60, 0) else listOf(60, 30, 0)).filter { it == 0 || supportsFps(lens.cameraInfo, it) }
             for (fps in wanted) {
                 val bound = tryBind(p, owner, previewView, lens, aspect43, rotation, fps)
                 if (bound != null) {
@@ -136,6 +154,7 @@ class CameraController(private val context: Context) {
                     requestOptions.clear()
                     exposureLocked = false
                     exposure?.let { putExposure(bound, it) }
+                    putSharpening()
                     applyOptions()
                     onBound(bound, fps)
                     // kein automatisches Scharfstellen: fokussiert wird nur, wenn der Nutzer in den Sucher tippt

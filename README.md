@@ -4,7 +4,7 @@
 1890s via Kodachrome and Agfacolor to today's slide film – and shoot with its colours, its contrast and its grain.
 As with a real camera, every film has a fixed sensitivity; you control brightness with the shutter speed.
 
-**Version 0.8.2 beta** · Android 8.0 or newer · free · English, Deutsch, Français, Русский
+**Version 0.9.0 beta** · Android 8.0 or newer · free · English, Deutsch, Français, Русский
 
 ➡️ **Download only here:** [volkskamera.goip.de](https://volkskamera.goip.de/en/) or under
 [Releases](https://github.com/veritasX1/VolksKamera/releases). Volkskamera is free – a "premium" or "mod" APK from
@@ -39,6 +39,12 @@ Volkskamera has **no internet permission**. It technically cannot send anything:
 no cloud. Your recordings stay on your device. The source code is open so anyone can verify this.
 
 ## Version history
+**0.9.0 beta**
+- New: "Analogue" slider with boost (1×–100×) – switches off the phone’s built-in sharpening, softens the rendering and adds glow and halation; the softness is previewed live in the viewfinder
+- New: separate sliders for gate weave, flicker and vignette
+- New: moiré filter – optical low-pass for fine lines and grids; up to 30 fps the sensor is read in its full (non-binned) mode
+- Available via F-Droid: add the repository from the website to get updates automatically
+
 **0.8.2 beta**
 - Fixed: film selection in portrait mode – no more large empty header, buttons no longer wrap
 

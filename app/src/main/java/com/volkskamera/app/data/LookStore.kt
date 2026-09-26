@@ -102,7 +102,7 @@ object LookStore {
         put("leak", look.leak?.id ?: ""); put("leakAmount", look.leakAmount); put("leakFrequency", look.leakFrequency)
         put("frame", look.frame?.id ?: ""); put("frameMode", look.frameMode.name)
         put("frameTint", look.frameTint); put("frameBlack", look.frameBlack)
-        put("halation", look.halation); put("soften", look.soften)
+        put("halation", look.halation); put("soften", look.soften); put("diffusion", look.diffusion); put("diffusionSize", look.diffusionSize); put("blurPx", look.blurPx); put("antiMoire", look.antiMoire)
         put("flicker", look.flicker); put("weave", look.weave)
         put("mono", look.mono); put("finderLook", look.finderLook)
         put("aspect", look.aspect ?: -1f); put("targetFps", look.targetFps ?: -1f)
@@ -148,7 +148,7 @@ object LookStore {
             frame = asset("frame"),
             frameMode = runCatching { FrameMode.valueOf(o.optString("frameMode")) }.getOrDefault(d.frameMode),
             frameTint = f("frameTint", d.frameTint), frameBlack = f("frameBlack", d.frameBlack),
-            halation = f("halation", d.halation), soften = f("soften", d.soften),
+            halation = f("halation", d.halation), soften = f("soften", d.soften), diffusion = f("diffusion", d.diffusion), diffusionSize = f("diffusionSize", d.diffusionSize), blurPx = f("blurPx", d.blurPx), antiMoire = f("antiMoire", d.antiMoire),
             flicker = f("flicker", d.flicker), weave = f("weave", d.weave),
             mono = o.optBoolean("mono", d.mono), finderLook = o.optBoolean("finderLook", d.finderLook),
             aspect = f("aspect", -1f).takeIf { it > 0f },
