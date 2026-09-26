@@ -7,6 +7,7 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.horizontalScroll
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -87,14 +88,11 @@ fun FilmPickerScreen(
     androidx.activity.compose.BackHandler { up() }
 
     Column(Modifier.fillMaxSize().background(Color(0xFF0E0E0E)).padding(16.dp)) {
-        // Kopf: Zurück + Brotkrume
-        Row(verticalAlignment = Alignment.CenterVertically) {
-            Chip(t("‹ Zurück")) { up() }
-            Spacer(Modifier.width(12.dp))
-            val crumb = (if (eigene) listOf(t("Film"), t("Eigene LUTs")) else listOfNotNull(t("Film"), hersteller, breite?.let { "$it mm" }))
-                .joinToString("  ›  ")
-            Text(crumb, color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 16.sp,
-                modifier = Modifier.weight(1f))
+        // Kopf: Zurück + Brotkrume, daneben (quer) bzw. darunter (hoch) Hilfe und die Einstellungs-Knöpfe.
+        // Hoch in EINER Zeile blieb für die Brotkrume fast keine Breite → sie brach Buchstabe für Buchstabe um.
+        val crumb = (if (eigene) listOf(t("Film"), t("Eigene LUTs")) else listOfNotNull(t("Film"), hersteller, breite?.let { "$it mm" }))
+            .joinToString("  ›  ")
+        val buttons: @Composable RowScope.() -> Unit = {
             // Hilfe: Kreis mit Fragezeichen
             Box(Modifier.size(34.dp).clip(androidx.compose.foundation.shape.CircleShape)
                 .border(2.dp, FilmAccent, androidx.compose.foundation.shape.CircleShape)
@@ -107,6 +105,22 @@ fun FilmPickerScreen(
             Chip(t("Mikrofon")) { onMic() }
             Spacer(Modifier.width(6.dp))
             Chip(t("Gehäuse")) { onHousing() }
+        }
+        BoxWithConstraints(Modifier.fillMaxWidth()) {
+            val schmal = maxWidth < 600.dp
+            Column {
+                Row(verticalAlignment = Alignment.CenterVertically) {
+                    Chip(t("‹ Zurück")) { up() }
+                    Spacer(Modifier.width(12.dp))
+                    Text(crumb, color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 16.sp, maxLines = 1,
+                        overflow = androidx.compose.ui.text.style.TextOverflow.Ellipsis, modifier = Modifier.weight(1f))
+                    if (!schmal) buttons()
+                }
+                if (schmal) {
+                    Spacer(Modifier.height(10.dp))
+                    Row(Modifier.horizontalScroll(rememberScrollState()), verticalAlignment = Alignment.CenterVertically, content = buttons)
+                }
+            }
         }
         Spacer(Modifier.height(12.dp))
 
@@ -210,7 +224,7 @@ private fun Chip(label: String, onClick: () -> Unit) {
     Box(
         Modifier.clip(RoundedCornerShape(50)).background(Color.White.copy(alpha = 0.2f))
             .clickable(onClick = onClick).padding(horizontal = 14.dp, vertical = 6.dp)
-    ) { Text(label, color = FilmWhite, fontSize = 14.sp) }
+    ) { Text(label, color = FilmWhite, fontSize = 14.sp, maxLines = 1, softWrap = false) }
 }
 
 /** Hersteller → Logo-Ressource (einheitlich freigestellt); null = kein Logo. */
