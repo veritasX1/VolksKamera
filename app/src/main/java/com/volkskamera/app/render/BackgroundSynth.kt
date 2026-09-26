@@ -5,15 +5,16 @@ import kotlin.math.cos
 import kotlin.math.sin
 
 /** Rauscharten: von tief (Braun) bis hell (Violett), dazu Bandrauschen wie von altem Tonband. */
-enum class NoiseType(val label: String) {
-    WEISS("Weiß"), ROSA("Rosa"), BRAUN("Braun"), BLAU("Blau"), VIOLETT("Violett"), BAND("Bandrauschen")
+enum class NoiseType(private val labelDe: String) {
+    WEISS("Weiß"), ROSA("Rosa"), BRAUN("Braun"), BLAU("Blau"), VIOLETT("Violett"), BAND("Bandrauschen");
+    val label get() = com.volkskamera.app.t(labelDe)
 }
 
 /**
  * Brumm- und Tonarten: von mechanisch (Maschine) bis digital (reiner Ton).
  * [cable] = Störungen der Tonleitung (Kabel, Masse, Einstreuung) – im Mikrofon-Bildschirm wählbar.
  */
-enum class HumType(val label: String, val cable: Boolean = false, val hint: String = "") {
+enum class HumType(private val labelDe: String, val cable: Boolean = false, private val hintDe: String = "") {
     MASCHINE("Maschinenbrummen"),
     NETZ("Brummschleife (Masse)", true, "Ruhiges Netzbrummen mit Obertönen: zwei Geräte an verschiedenen Steckdosen, Masse doppelt verbunden."),
     WACKEL("Wackelkontakt", true, "Masse nicht richtig verbunden: lautes Schnarren, das mit Knacksern ein- und aussetzt."),
@@ -21,7 +22,9 @@ enum class HumType(val label: String, val cable: Boolean = false, val hint: Stri
     DIMMER("Dimmer / Trafo-Einstreuung", true, "Unabgeschirmtes Kabel neben Dimmer oder Trafo: scharfes Schnarren mit doppelter Netzfrequenz."),
     SUMMEN("Elektrisches Summen", true, "Leuchtstoffröhre oder Trafo in der Nähe: helles, obertonreiches Summen."),
     PIEZO("Piezo-Piepton"),
-    SINUS("Digitaler Ton"),
+    SINUS("Digitaler Ton");
+    val label get() = com.volkskamera.app.t(labelDe)
+    val hint get() = com.volkskamera.app.t(hintDe)
 }
 
 /**

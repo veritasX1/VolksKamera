@@ -40,7 +40,7 @@ import java.util.concurrent.TimeUnit
  * Kamerawechsel). Der Film-Look wird erst nach der Aufnahme berechnet.
  *
  * Fokus: Camera2 CONTROL_AF_MODE_AUTO statt CONTINUOUS_VIDEO – das Objektiv bewegt sich nur,
- * wenn wir es auslösen (einmal vor der Aufnahme, danach nur beim Antippen). Kein "Pumpen".
+ * wenn der Nutzer in den Sucher tippt. Nie von selbst (auch nicht beim Start oder vor der Aufnahme).
  */
 @OptIn(ExperimentalCamera2Interop::class)
 class CameraController(private val context: Context) {
@@ -50,6 +50,19 @@ class CameraController(private val context: Context) {
     private var videoCapture: VideoCapture<Recorder>? = null
     private var recording: Recording? = null
     private var generation = 0
+
+    /**
+     * Manuelle Belichtung wie an der Filmkamera: Belichtungszeit am Zählwerk + Empfindlichkeit des Films.
+     * Wird bei JEDEM Binden sofort mitgegeben (kein Automatik-Moment beim Kamerawechsel) und
+     * beim Fokussieren nie angetastet.
+     */
+    data class Exposure(val filmTimeNs: Long, val filmIso: Int)
+    var exposure: Exposure? = null; private set
+    private var appliedTo: Camera? = null
+    /** Aufnahme-Auflösung (kurze Seite): 480, 576, 720 oder 1080 */
+    var resolution: Int = 1080
+    /** Frontkamera-Aufnahme spiegeln (wie im Spiegel) */
+    var mirrorFront: Boolean = true
 
     /** Tatsächlich gebundene Sensor-Bildrate (60 oder Rückfall 30/automatisch). */
     var boundFps: Int = 0; private set
@@ -92,9 +105,8 @@ class CameraController(private val context: Context) {
                 if (bound != null) {
                     camera = bound
                     boundFps = fps
-                    exposureLocked = false   // neue Kamera: Belichtung erst neu einregeln lassen
                     onBound(bound, fps)
-                    focusCenter(previewView)
+                    // kein automatisches Scharfstellen: fokussiert wird nur, wenn der Nutzer in den Sucher tippt
                     return@addListener
                 }
             }
@@ -116,16 +128,23 @@ class CameraController(private val context: Context) {
         val pv = Preview.Builder()
             .setResolutionSelector(ResolutionSelector.Builder().setAspectRatioStrategy(strategy).build())
             .setTargetRotation(rotation)
-            .apply { cameraOptions(this, fps) }
+            .apply { cameraOptions(this, fps, lens.cameraInfo) }
             .build()
             .also { it.setSurfaceProvider(previewView.surfaceProvider) }
+        // aufnehmen in der nächsthöheren CameraX-Stufe; auf die gewählte Auflösung skaliert wird beim Entwickeln
+        val quality = when {
+            resolution <= 480 -> Quality.SD
+            resolution <= 720 -> Quality.HD
+            else -> Quality.FHD
+        }
         val recorder = Recorder.Builder()
-            .setQualitySelector(QualitySelector.from(Quality.FHD, FallbackStrategy.lowerQualityOrHigherThan(Quality.FHD)))
+            .setQualitySelector(QualitySelector.from(quality, FallbackStrategy.higherQualityOrLowerThan(quality)))
             .setAspectRatio(if (aspect43) AspectRatio.RATIO_4_3 else AspectRatio.RATIO_16_9)
             .build()
         val vc = VideoCapture.Builder(recorder)
             .setTargetRotation(rotation)
-            .apply { cameraOptions(this, fps) }
+            .setMirrorMode(if (mirrorFront) androidx.camera.core.MirrorMode.MIRROR_MODE_ON_FRONT_ONLY else androidx.camera.core.MirrorMode.MIRROR_MODE_OFF)
+            .apply { cameraOptions(this, fps, lens.cameraInfo) }
             .build()
         return try {
             val group = UseCaseGroup.Builder().addUseCase(pv).addUseCase(vc).build()
@@ -140,12 +159,38 @@ class CameraController(private val context: Context) {
         }
     }
 
-    /** Feste Bildrate (0 = Kamera entscheidet) und Autofokus nur auf Auslösung. */
-    private fun <T> cameraOptions(b: ExtendableBuilder<T>, fps: Int) {
+    /** Feste Bildrate (0 = Kamera entscheidet), Autofokus nur auf Auslösung, manuelle Belichtung ab dem ersten Bild. */
+    private fun <T> cameraOptions(b: ExtendableBuilder<T>, fps: Int, info: CameraInfo) {
         val ext = Camera2Interop.Extender(b)
         if (debugLog && b is Preview.Builder) ext.setSessionCaptureCallback(DebugCaptureLog())
         if (fps > 0) ext.setCaptureRequestOption(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE, Range(fps, fps))
         ext.setCaptureRequestOption(CaptureRequest.CONTROL_AF_MODE, CaptureRequest.CONTROL_AF_MODE_AUTO)
+        exposure?.let { e ->
+            val s = sensorExposure(info, e, fps)
+            ext.setCaptureRequestOption(CaptureRequest.CONTROL_AE_MODE, android.hardware.camera2.CameraMetadata.CONTROL_AE_MODE_OFF)
+            ext.setCaptureRequestOption(CaptureRequest.SENSOR_EXPOSURE_TIME, s.timeNs)
+            ext.setCaptureRequestOption(CaptureRequest.SENSOR_SENSITIVITY, s.iso)
+            ext.setCaptureRequestOption(CaptureRequest.SENSOR_FRAME_DURATION, s.frameNs)
+        }
+    }
+
+    private class SensorExposure(val timeNs: Long, val iso: Int, val frameNs: Long)
+
+    /**
+     * Film-Belichtung auf den Sensor umrechnen, bei GLEICHER Lichtmenge: Zeit × Empfindlichkeit bleibt
+     * erhalten. Ein ISO-8-Film bei 1/50 s wird auf dem Sensor (Mindest-ISO z. B. 100) zu 1/625 s –
+     * das Bild ist so hell, wie es der echte Film gewesen wäre. Grenzen des Sensors werden eingehalten;
+     * Belichtungszeiten länger als ein Bild verlängern die Bilddauer (weniger Bilder pro Sekunde, wie in echt).
+     */
+    private fun sensorExposure(info: CameraInfo, e: Exposure, fps: Int): SensorExposure {
+        val ch = Camera2CameraInfo.from(info)
+        val isoRange = ch.getCameraCharacteristic(CameraCharacteristics.SENSOR_INFO_SENSITIVITY_RANGE) ?: Range(100, 3200)
+        val tRange = ch.getCameraCharacteristic(CameraCharacteristics.SENSOR_INFO_EXPOSURE_TIME_RANGE) ?: Range(20_000L, 250_000_000L)
+        val maxFrame = ch.getCameraCharacteristic(CameraCharacteristics.SENSOR_INFO_MAX_FRAME_DURATION) ?: 250_000_000L
+        val iso = e.filmIso.coerceIn(isoRange.lower, isoRange.upper)
+        val t = (e.filmTimeNs.toDouble() * e.filmIso / iso).toLong().coerceIn(tRange.lower, minOf(tRange.upper, maxFrame))
+        val frame = maxOf(if (fps > 0) 1_000_000_000L / fps else 33_333_333L, t).coerceAtMost(maxFrame)
+        return SensorExposure(t, iso, frame)
     }
 
     private fun supportsFps(info: CameraInfo, fps: Int): Boolean {
@@ -174,20 +219,24 @@ class CameraController(private val context: Context) {
     }
 
     /**
-     * Belichtungszeit wie an einer Analogkamera setzen: feste "Film-ISO" (Sensor-Empfindlichkeit),
-     * Helligkeit über die Zeit. [timeNs] = null -> zurück auf Automatik.
+     * Belichtung wie an einer Analogkamera: Belichtungszeit + Empfindlichkeit des Films. Gilt sofort für
+     * die laufende Kamera und für jede künftig gebundene (feste Bindung, keine Automatik dazwischen).
      */
-    fun setExposureTime(timeNs: Long?, iso: Int) {
-        val cam = camera ?: return
-        val b = androidx.camera.camera2.interop.CaptureRequestOptions.Builder()
-        if (timeNs == null) {
-            b.setCaptureRequestOption(CaptureRequest.CONTROL_AE_MODE, android.hardware.camera2.CameraMetadata.CONTROL_AE_MODE_ON)
-        } else {
-            b.setCaptureRequestOption(CaptureRequest.CONTROL_AE_MODE, android.hardware.camera2.CameraMetadata.CONTROL_AE_MODE_OFF)
-            b.setCaptureRequestOption(CaptureRequest.SENSOR_EXPOSURE_TIME, timeNs)
-            b.setCaptureRequestOption(CaptureRequest.SENSOR_SENSITIVITY, iso.coerceIn(100, 6400))
-        }
-        androidx.camera.camera2.interop.Camera2CameraControl.from(cam.cameraControl).setCaptureRequestOptions(b.build())
+    fun setExposure(filmTimeNs: Long, filmIso: Int) {
+        val e = Exposure(filmTimeNs, filmIso.coerceAtLeast(1))
+        val cam0 = camera
+        if (e == exposure && cam0 === appliedTo) return   // unverändert und schon angewandt
+        exposure = e
+        val cam = cam0 ?: return
+        appliedTo = cam
+        val s = sensorExposure(cam.cameraInfo, e, boundFps)
+        androidx.camera.camera2.interop.Camera2CameraControl.from(cam.cameraControl).setCaptureRequestOptions(
+            androidx.camera.camera2.interop.CaptureRequestOptions.Builder()
+                .setCaptureRequestOption(CaptureRequest.CONTROL_AE_MODE, android.hardware.camera2.CameraMetadata.CONTROL_AE_MODE_OFF)
+                .setCaptureRequestOption(CaptureRequest.SENSOR_EXPOSURE_TIME, s.timeNs)
+                .setCaptureRequestOption(CaptureRequest.SENSOR_SENSITIVITY, s.iso)
+                .setCaptureRequestOption(CaptureRequest.SENSOR_FRAME_DURATION, s.frameNs)
+                .build())
     }
 
     /** Weißabgleich-Voreinstellung setzen (CONTROL_AWB_MODE, z.B. Tageslicht/Bewölkt/Kunstlicht). */
@@ -207,7 +256,8 @@ class CameraController(private val context: Context) {
      */
     fun focusAt(point: MeteringPoint, onDone: (Boolean) -> Unit = {}) {
         val cam = camera ?: return onDone(false)
-        val flags = if (exposureLocked) FocusMeteringAction.FLAG_AF else FocusMeteringAction.FLAG_AF or FocusMeteringAction.FLAG_AE
+        // Nur scharfstellen – die Belichtung gehört allein dem Zählwerk ZEIT und dem Film (nie nachmessen)
+        val flags = FocusMeteringAction.FLAG_AF
         val action = FocusMeteringAction.Builder(point, flags)
             .disableAutoCancel()
             .build()

@@ -12,13 +12,13 @@ import java.io.File
  * Durchlässigkeit je Kanal ist eine Näherung der Filterkurven auf die drei Farbkanäle.
  */
 enum class BwFilter(
-    val label: String,
+    private val labelDe: String,
     val wratten: String,
     val others: String,
     /** Belichtungsverlängerung (Tageslicht, Richtwert) */
-    val factor: String,
+    private val factorDe: String,
     val r: Float, val g: Float, val b: Float,
-    val use: String,
+    private val useDe: String,
 ) {
     KEINER("Kein Filter", "–", "", "1×", 1f, 1f, 1f,
         "Film sieht wie er ist: Blau wird hell wiedergegeben, Himmel oft fast weiß."),
@@ -46,6 +46,10 @@ enum class BwFilter(
         "Betont Dunst und Nebel, Rot und Haut sehr dunkel – wirkt wie früher orthochromatischer Film."),
     ;
 
+    val label get() = com.volkskamera.app.t(labelDe)
+    val use get() = com.volkskamera.app.t(useDe)
+    /** Filterfaktor; Dezimalkomma nur auf Deutsch/Französisch/Russisch */
+    val factor get() = if (com.volkskamera.app.I18n.lang == com.volkskamera.app.I18n.Lang.EN) factorDe.replace(',', '.').replace("ca.", "approx.") else factorDe.replace("ca.", com.volkskamera.app.t("ca."))
     val fullName get() = if (this == KEINER) label else "$label · $wratten"
 
     companion object {

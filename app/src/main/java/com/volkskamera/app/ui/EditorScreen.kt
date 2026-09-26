@@ -1,5 +1,7 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.t
+import com.volkskamera.app.tf
 import android.graphics.Bitmap
 import android.net.Uri
 import androidx.activity.compose.BackHandler
@@ -70,27 +72,27 @@ fun EditorScreen(vm: FilmViewModel, onBack: () -> Unit, onOpenResult: (Uri) -> U
 
     Column(Modifier.fillMaxSize().background(Color.Black).safeDrawingPadding()) {
         Row(Modifier.fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Pill("‹ Filme", selected = false, onClick = onBack)
-            Text("Zusammenstellen", color = FilmAccent, fontWeight = FontWeight.Bold, fontSize = 20.sp,
+            Pill(t("‹ Filme"), selected = false, onClick = onBack)
+            Text(t("Zusammenstellen"), color = FilmAccent, fontWeight = FontWeight.Bold, fontSize = 20.sp,
                 modifier = Modifier.padding(start = 16.dp).weight(1f))
-            Pill("Film erstellen", selected = true, enabled = on && vm.editClips.isNotEmpty()) { vm.startMontage() }
+            Pill(t("Film erstellen"), selected = true, enabled = on && vm.editClips.isNotEmpty()) { vm.startMontage() }
         }
         when (val r = vm.montage) {
             is RenderState.Running -> Column(Modifier.padding(horizontal = 16.dp)) {
-                Text("Erstelle Film … ${r.percent} %", color = FilmWhite)
+                Text(tf("Erstelle Film … %d %%", r.percent), color = FilmWhite)
                 Spacer(Modifier.height(6.dp))
                 LinearProgressIndicator(progress = { r.percent / 100f }, modifier = Modifier.fillMaxWidth(),
                     color = FilmAccent, trackColor = FilmSurface)
             }
-            is RenderState.Failed -> Text("Fehler: ${r.message}", color = FilmRed, modifier = Modifier.padding(horizontal = 16.dp))
+            is RenderState.Failed -> Text(tf("Fehler: %s", r.message), color = FilmRed, modifier = Modifier.padding(horizontal = 16.dp))
             else -> {}
         }
 
         Column(Modifier.weight(1f).verticalScroll(rememberScrollState()).padding(bottom = 24.dp)) {
             val total = vm.editClips.sumOf { it.durationMs } / 1000
-            Section("Reihenfolge  ·  ${vm.editClips.size} Clips  ·  %d:%02d".format(total / 60, total % 60))
+            Section(tf("Reihenfolge  ·  %1\$d Clips  ·  %2\$d:%3\$02d", vm.editClips.size, total / 60, total % 60))
             if (vm.editClips.isEmpty()) {
-                Text("Unten Filme antippen, um sie hinzuzufügen.", color = FilmWhite.copy(alpha = 0.6f),
+                Text(t("Unten Filme antippen, um sie hinzuzufügen."), color = FilmWhite.copy(alpha = 0.6f),
                     modifier = Modifier.padding(horizontal = 16.dp))
             }
             vm.editClips.forEachIndexed { i, c ->
@@ -106,32 +108,32 @@ fun EditorScreen(vm: FilmViewModel, onBack: () -> Unit, onOpenResult: (Uri) -> U
                 }
             }
 
-            Section("Intro")
+            Section(t("Intro"))
             PillRow(Intro.entries.toList(), {
-                when (it) { Intro.KEIN -> "Kein"; Intro.SCHWARZ -> "Aus Schwarz"; Intro.WEISS -> "Aus Weiß"; Intro.COUNTDOWN -> "Countdown 5 … 1" }
+                when (it) { Intro.KEIN -> t("Kein"); Intro.SCHWARZ -> t("Aus Schwarz"); Intro.WEISS -> t("Aus Weiß"); Intro.COUNTDOWN -> t("Countdown 5 … 1") }
             }, { it == vm.editIntro }, on) { vm.editIntro = it }
 
-            Section("Outro")
+            Section(t("Outro"))
             PillRow(Outro.entries.toList(), {
-                when (it) { Outro.KEIN -> "Kein"; Outro.SCHWARZ -> "In Schwarz"; Outro.WEISS -> "In Weiß"; Outro.FILMRISS -> "Filmriss" }
+                when (it) { Outro.KEIN -> t("Kein"); Outro.SCHWARZ -> t("In Schwarz"); Outro.WEISS -> t("In Weiß"); Outro.FILMRISS -> t("Filmriss") }
             }, { it == vm.editOutro }, on) { vm.editOutro = it }
             if (vm.editOutro == Outro.FILMRISS) {
                 Spacer(Modifier.height(6.dp))
                 val burns = vm.catalog?.burns.orEmpty()
                 val sel = vm.editBurn ?: burns.firstOrNull()
-                PillRow(burns, { "Filmriss " + it.name.filter(Char::isDigit).trimStart('0') }, { it.id == sel?.id }, on) { vm.editBurn = it }
+                PillRow(burns, { t("Filmriss ") + it.name.filter(Char::isDigit).trimStart('0') }, { it.id == sel?.id }, on) { vm.editBurn = it }
             }
             val fades = vm.editIntro == Intro.SCHWARZ || vm.editIntro == Intro.WEISS ||
                 vm.editOutro == Outro.SCHWARZ || vm.editOutro == Outro.WEISS
-            LabeledSlider("Blende", (vm.editFadeSec - 0.5f) / 2.5f, on && fades) { v -> vm.editFadeSec = 0.5f + v * 2.5f }
-            Text("Blenddauer %.1f s".format(vm.editFadeSec), color = FilmWhite.copy(alpha = 0.5f), fontSize = 12.sp,
+            LabeledSlider(t("Blende"), (vm.editFadeSec - 0.5f) / 2.5f, on && fades) { v -> vm.editFadeSec = 0.5f + v * 2.5f }
+            Text(t("Blenddauer %.1f s").format(vm.editFadeSec), color = FilmWhite.copy(alpha = 0.5f), fontSize = 12.sp,
                 modifier = Modifier.padding(start = 112.dp))
 
-            Section("Filme hinzufügen")
+            Section(t("Filme hinzufügen"))
             val list = all
             when {
                 list == null -> {}
-                list.isEmpty() -> Text("Noch keine Filme.", color = FilmWhite.copy(alpha = 0.6f), modifier = Modifier.padding(horizontal = 16.dp))
+                list.isEmpty() -> Text(t("Noch keine Filme."), color = FilmWhite.copy(alpha = 0.6f), modifier = Modifier.padding(horizontal = 16.dp))
                 else -> LazyRow(contentPadding = PaddingValues(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
                     items(list, key = { it.uri.toString() }) { c ->
                         Column(Modifier.width(150.dp).clickable(enabled = on) { vm.editAdd(c) }) {

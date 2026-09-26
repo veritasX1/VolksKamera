@@ -14,7 +14,15 @@
             android:name=".MainActivity"
             android:exported="true"
             android:screenOrientation="fullUser"
-            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden" />
+            android:launchMode="singleTask"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden">
+            <!-- geteilte Kombinationen (Text) empfangen -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
         <!-- Wählbares App-Symbol: genau ein Einstieg ist aktiv (IconChooser) -->
         <activity-alias
             android:name=".IconA"

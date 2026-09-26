@@ -1,7 +1,7 @@
 package com.volkskamera.app.render
 
 /** Bauart eines Mikrofons bzw. der Aufnahmekette – zum Einordnen und Sortieren. */
-enum class MicType(val label: String) {
+enum class MicType(private val labelDe: String) {
     AKUSTISCH("Akustisch (Trichter)"),
     KOHLE("Kohlemikrofon"),
     KONDENSATOR("Kondensator"),
@@ -10,11 +10,15 @@ enum class MicType(val label: String) {
     KRISTALL("Kristall (Piezo)"),
     ELEKTRET("Elektret"),
     TONTRAEGER("Tonträger (Band, Draht, Lichtton)"),
-    UEBERTRAGUNG("Übertragung (Radio, Telefon, Funk)"),
+    UEBERTRAGUNG("Übertragung (Radio, Telefon, Funk)");
+    val label get() = com.volkskamera.app.t(labelDe)
 }
 
 /** Steckbrief: Bauart, Richtcharakteristik und typischer Einsatz. */
-class MicInfo(val type: MicType, val pattern: String, val use: String)
+class MicInfo(val type: MicType, private val patternDe: String, private val useDe: String) {
+    val pattern get() = com.volkskamera.app.t(patternDe)
+    val use get() = com.volkskamera.app.t(useDe)
+}
 
 private val INFO: Map<MicProfile, MicInfo> = mapOf(
     MicProfile.PHONOGRAPH to MicInfo(MicType.AKUSTISCH, "Trichter (gerichtet)", "Walzenaufnahmen zu Hause und im Studio"),

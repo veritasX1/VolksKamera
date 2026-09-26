@@ -1,5 +1,8 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.t
+import com.volkskamera.app.tf
+import androidx.compose.ui.draw.drawBehind
 import androidx.compose.ui.draw.drawWithContent
 import androidx.compose.ui.graphics.graphicsLayer
 import android.content.Context
@@ -39,6 +42,8 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.FlashOff
 import androidx.compose.material.icons.filled.FlashOn
+import androidx.compose.material.icons.filled.Flip
+import androidx.compose.material.icons.filled.CameraFront
 import androidx.compose.material.icons.filled.Settings
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
@@ -109,8 +114,25 @@ fun CameraScreen(
 
     var lenses by remember { mutableStateOf<List<LensOption>>(emptyList()) }
     var lensIdx by remember { mutableStateOf(com.volkskamera.app.data.CameraPrefs.lensIdx(context)) }
-    var shutterIdx by remember { mutableStateOf(com.volkskamera.app.data.CameraPrefs.shutterIdx(context)) }   // 0 = Auto
-    LaunchedEffect(lensIdx, shutterIdx) { com.volkskamera.app.data.CameraPrefs.set(context, lensIdx, shutterIdx, 0) }
+    var shutterIdx by remember {
+        mutableStateOf(SHUTTER_SPEEDS.indexOfFirst { it.first == com.volkskamera.app.data.CameraPrefs.shutter(context) }
+            .let { if (it < 0) SHUTTER_SPEEDS.indexOfFirst { s -> s.first == "1/50" } else it })
+    }
+    LaunchedEffect(lensIdx, shutterIdx) {
+        com.volkskamera.app.data.CameraPrefs.setLens(context, lensIdx)
+        com.volkskamera.app.data.CameraPrefs.setShutter(context, SHUTTER_SPEEDS[shutterIdx].first)
+    }
+    // Aufnahme-Einstellungen (Auflösung, Frontkamera spiegeln) vor jedem Binden übernehmen
+    val resolution = vm.recordResolution
+    val mirrorFront = vm.mirrorFront
+    // Belichtung (Zeit + Film-ISO) VOR dem Binden setzen: neue Kamera startet direkt manuell
+    val filmIso = vm.selectedFilm?.iso ?: 100
+    controller.setExposure(SHUTTER_SPEEDS[shutterIdx].second, filmIso)
+    controller.resolution = resolution
+    controller.mirrorFront = mirrorFront
+    // Sucher: PreviewView zeigt die Frontkamera immer gespiegelt – ohne Spiegeln zurückdrehen
+    val isFront = lenses.getOrNull(lensIdx)?.lensFacing == androidx.camera.core.CameraSelector.LENS_FACING_FRONT
+    LaunchedEffect(isFront, mirrorFront) { previewView.scaleX = if (isFront && !mirrorFront) -1f else 1f }
     var torch by remember { mutableStateOf(false) }
     var aeLocked by remember { mutableStateOf(false) }
     var hasFlash by remember { mutableStateOf(false) }
@@ -158,7 +180,7 @@ fun CameraScreen(
     // gemerkter Objektiv-Index könnte für dieses Gerät zu groß sein -> begrenzen
     LaunchedEffect(lenses) { if (lenses.isNotEmpty() && lensIdx > lenses.lastIndex) lensIdx = 0 }
     // (Neu) binden bei Objektiv- oder Formatwechsel – nie während einer Aufnahme
-    LaunchedEffect(lenses, lensIdx, aspect43) {
+    LaunchedEffect(lenses, lensIdx, aspect43, resolution, mirrorFront) {
         val lens = lenses.getOrNull(lensIdx) ?: return@LaunchedEffect
         torch = false
         manualFocus = false
@@ -214,9 +236,8 @@ fun CameraScreen(
             vm.look.ambA?.let { levelsA += com.volkskamera.app.render.SoundCues.Level(doneMs, vm.look.ambALevel) }
             vm.look.ambB?.let { levelsB += com.volkskamera.app.render.SoundCues.Level(doneMs, vm.look.ambBLevel) }
         }
-        // einmal vor der Aufnahme scharfstellen – außer der Nutzer hat selbst einen Punkt angetippt
-        // (nach einem Objektivwechsel in der Pause wird manualFocus zurückgesetzt -> neu scharfstellen)
-        if (manualFocus) start() else controller.focusCenter(previewView) { start() }
+        // Aufnahme sofort starten – scharfgestellt wird nur durch Antippen (nie automatisch)
+        start()
     }
 
     /** Auslöser: Aufnahme starten bzw. komplett beenden (auch aus der Pause heraus). */
@@ -297,12 +318,8 @@ fun CameraScreen(
             }
         }
     }
-    // Belichtungszeit anwenden (analog: feste Film-ISO, Helligkeit über die Zeit)
-    val filmIso = vm.selectedFilm?.iso?.coerceAtLeast(100) ?: 200
-    LaunchedEffect(shutterIdx, lenses, lensIdx, filmIso) {
-        kotlinx.coroutines.delay(350)
-        controller.setExposureTime(SHUTTER_SPEEDS[shutterIdx].second, filmIso)
-    }
+    // Belichtungszeit anwenden (analog: feste Film-ISO, Helligkeit über die Zeit) – sofort, ohne Verzögerung
+    LaunchedEffect(shutterIdx, filmIso) { controller.setExposure(SHUTTER_SPEEDS[shutterIdx].second, filmIso) }
     // Weißabgleich bleibt automatisch: die Farbe kommt allein aus der LUT des Films
     LaunchedEffect(lenses, lensIdx) {
         kotlinx.coroutines.delay(350)
@@ -313,34 +330,34 @@ fun CameraScreen(
         val opts = FPS_CHOICES + listOf(null)
         val cur = vm.look.targetFps
         val label = cur?.toInt()?.toString() ?: "--"
-        CounterField("BILD/S", label, housing.metal, enabled = !takeActive, drums = 2) {
+        CounterField(t("BILD/S"), label, housing.metal, enabled = !takeActive, drums = 2) {
             val i = opts.indexOfFirst { it == cur }.let { if (it < 0) 0 else it }
             vm.edit { copy(targetFps = opts[(i + 1) % opts.size]) }
         }
     }
     val formatCounter: @Composable () -> Unit = {
-        CounterField("FORMAT", if (aspect43) "4:3" else "16:9", housing.metal, enabled = !takeActive, drums = 4) {
+        CounterField(t("FORMAT"), if (aspect43) "4:3" else "16:9", housing.metal, enabled = !takeActive, drums = 4) {
             vm.edit { copy(aspect = if (aspect43) 16f / 9f else 4f / 3f) }
         }
     }
     val lensCounter: @Composable () -> Unit = {
         val label = lenses.getOrNull(lensIdx)?.label?.let { if (it == "Front") "FR" else it } ?: "-"
-        CounterField("OBJEKTIV", label, housing.metal, enabled = !recording && lenses.size > 1, drums = 3) {
+        CounterField(t("OBJEKTIV"), label, housing.metal, enabled = !recording && lenses.size > 1, drums = 3) {
             if (lenses.isNotEmpty()) lensIdx = (lensIdx + 1) % lenses.size
         }
     }
     val zeitCounter: @Composable () -> Unit = {
         // „1/“ fest aufgedruckt, die Rollen zeigen den Nenner (Auto: „AUTO“, Aufdruck ausgeblendet)
         val zeit = SHUTTER_SPEEDS[shutterIdx].first
-        CounterField("ZEIT", if (zeit.startsWith("1/")) zeit.removePrefix("1/") else zeit.uppercase(), housing.metal,
-            enabled = !takeActive, drums = 4, prefix = "1/", prefixShown = zeit.startsWith("1/")) {
+        CounterField(t("ZEIT"), zeit.removePrefix("1/"), housing.metal,
+            enabled = !takeActive, drums = 4, prefix = "1/") {
             shutterIdx = (shutterIdx + 1) % SHUTTER_SPEEDS.size
         }
     }
     // Anzeige (nicht verstellbar): Empfindlichkeit des gewählten Films – wie die ASA-Scheibe der Kamera
     val isoCounter: @Composable () -> Unit = {
         // vierstellig mit führenden Nullen wie ein Rollenzählwerk (0008, 0100, 1200); ohne Normangabe: ----
-        CounterField("ISO / ASA", vm.selectedFilm?.iso?.toString() ?: "----", housing.metal, enabled = true,
+        CounterField(t("ISO / ASA"), vm.selectedFilm?.iso?.toString() ?: "----", housing.metal, enabled = true,
             drums = 4, pad = '0') { }
     }
     val counterGrid: @Composable () -> Unit = {
@@ -360,14 +377,22 @@ fun CameraScreen(
         }
     }
     val led: @Composable () -> Unit = {
-        RoundIcon(if (torch) Icons.Filled.FlashOn else Icons.Filled.FlashOff, "LED", active = torch, enabled = hasFlash, metal = housing.metal) {
+        if (isFront) {
+            // Frontkamera: statt Blitz-LED die Spiegel-Taste (Aufnahme wie im Spiegel oder seitenrichtig)
+            // immer im Gehäuse-Metall; der Zustand steckt im Symbol (gespiegelt / seitenrichtig)
+            RoundIcon(if (mirrorFront) Icons.Filled.Flip else Icons.Filled.CameraFront,
+                if (mirrorFront) t("Gespiegelt (wie ein Spiegel)") else t("Seitenrichtig"),
+                active = false, enabled = !takeActive, metal = housing.metal) {
+                vm.chooseMirrorFront(!mirrorFront)
+            }
+        } else RoundIcon(if (torch) Icons.Filled.FlashOn else Icons.Filled.FlashOff, "LED", active = torch, enabled = hasFlash, metal = housing.metal) {
             torch = !torch
             controller.setTorch(torch)
         }
     }
     // AE-/AWB-Sperre: Helligkeit und Weißabgleich festsetzen bzw. lösen (auch während der Aufnahme)
     val aeLock: @Composable () -> Unit = {
-        RoundText(if (aeLocked) "AE\uD83D\uDD12" else "AE", active = aeLocked, enabled = lenses.isNotEmpty(), metal = housing.metal) {
+        RoundText(if (aeLocked) t("AE\uD83D\uDD12") else "AE", active = aeLocked, enabled = lenses.isNotEmpty(), metal = housing.metal) {
             aeLocked = !aeLocked
             controller.setExposureLock(aeLocked)
         }
@@ -379,7 +404,7 @@ fun CameraScreen(
         }
     }
     val gear: @Composable () -> Unit = {
-        RoundIcon(Icons.Filled.Settings, "Einstellungen", active = false, enabled = !takeActive, metal = housing.metal, onClick = onOpenSettings)
+        RoundIcon(Icons.Filled.Settings, t("Einstellungen"), active = false, enabled = !takeActive, metal = housing.metal, onClick = onOpenSettings)
     }
 
     // ---------- Anordnung ----------
@@ -395,10 +420,10 @@ fun CameraScreen(
         // Metall-Schriftzug oben mittig: Glanz je Buchstabe zur Lichtseite, Schatten vom Licht weg
         MetalTitle(housing, lightHolder, titleFont, Modifier.align(Alignment.TopCenter))
         // Hersteller + Film/Variante oben links über dem Sucher
-        val labelTop = vm.activeCustom?.let { "Eigene LUT" } ?: vm.selectedFilm?.hersteller
+        val labelTop = vm.activeCustom?.let { t("Eigene LUT") } ?: vm.selectedFilm?.hersteller
         val filterSuffix = if (vm.selectedFilm?.farbeSw == "S/W" && vm.bwFilter != com.volkskamera.app.render.BwFilter.KEINER)
-            " · ${vm.bwFilter.label}-Filter" else ""
-        val labelMain = (vm.activeCustom?.name ?: vm.selectedFilm?.variantLabel)?.let { it + filterSuffix }
+            tf(" · %s-Filter", vm.bwFilter.label) else ""
+        val labelMain = (vm.activeCustom?.name ?: vm.selectedFilm?.variantLabel?.let { t(it) })?.let { it + filterSuffix }
         if (labelTop != null && labelMain != null && !landscape) {
             // hochkant: einzeilig unter dem Schriftzug (sonst überlappt er den Titel)
             Text("$labelTop · $labelMain", color = FilmWhite, fontSize = 13.sp, fontWeight = FontWeight.Bold, maxLines = 1,
@@ -455,7 +480,7 @@ fun CameraScreen(
             }
         }
         if (sensorFps in 1..59 && !takeActive) {
-            Text("Sucher: $sensorFps fps", color = FilmWhite.copy(alpha = 0.5f), fontSize = 10.sp,
+            Text(tf("Sucher: %d fps", sensorFps), color = FilmWhite.copy(alpha = 0.5f), fontSize = 10.sp,
                 modifier = Modifier.align(Alignment.TopCenter).padding(top = 22.dp))
         }
       }
@@ -501,7 +526,7 @@ private fun RecordingBadge(ms: Long, paused: Boolean, modifier: Modifier) {
         Box(Modifier.size(10.dp).clip(CircleShape).background(if (paused) FilmAccent.copy(alpha = blink) else FilmRed))
         Spacer(Modifier.width(6.dp))
         Text("%d:%02d".format(s / 60, s % 60), color = FilmWhite, fontWeight = FontWeight.Bold)
-        if (paused) Text("  PAUSE", color = FilmAccent.copy(alpha = blink), fontWeight = FontWeight.Bold)
+        if (paused) Text(t("  PAUSE"), color = FilmAccent.copy(alpha = blink), fontWeight = FontWeight.Bold)
     }
 }
 
@@ -536,35 +561,54 @@ private fun PauseButton(paused: Boolean, onClick: () -> Unit) {
 @Composable
 private fun Shutter(recording: Boolean, enabled: Boolean,
                     style: com.volkskamera.app.ui.theme.ButtonStyle, onClick: () -> Unit) {
+    val holder = com.volkskamera.app.ui.theme.LocalLight.current
     val a = if (enabled) 1f else 0.3f
-    // Knopf-Füllung: Plastik (glänzender Radial-Verlauf um eine Grundfarbe) oder Metall
-    val fill: Brush = when {
-        style.metal != null -> Brush.linearGradient(listOf(style.metal.light.copy(alpha = a), style.metal.dark.copy(alpha = a)))
-        else -> {
-            val base = style.plastic ?: FilmRed
-            fun mix(c: Color, w: Float) = Color(
-                (c.red + (1f - c.red) * w), (c.green + (1f - c.green) * w), (c.blue + (1f - c.blue) * w))
-            fun dark(c: Color, w: Float) = Color(c.red * w, c.green * w, c.blue * w)
-            Brush.radialGradient(
-                listOf(mix(base, 0.45f).copy(alpha = a), base.copy(alpha = a), dark(base, 0.5f).copy(alpha = a)),
-                center = Offset(0.35f * 60f, 0.3f * 60f))
-        }
-    }
+    val base = style.plastic ?: FilmRed
+    val metal = style.metal
+    fun mix(c: Color, w: Float, t: Color = Color.White) = Color(c.red + (t.red - c.red) * w, c.green + (t.green - c.green) * w, c.blue + (t.blue - c.blue) * w)
+    fun dark(c: Color, w: Float) = Color(c.red * w, c.green * w, c.blue * w)
     Box(
         Modifier
             .size(76.dp)
             .lightShadow(CircleShape, 7.dp)
             .clip(CircleShape)
-            .background(Brush.linearGradient(listOf(Color(0xFFEDEFF1), Color(0xFF9A9EA2))))  // heller Metallring
-            .padding(4.dp)
-            .clip(CircleShape)
-            .background(Color(0xFF141414))
-            .clickable(enabled = enabled, onClick = onClick),
-        contentAlignment = Alignment.Center,
-    ) {
-        Box(Modifier.size(if (recording) 30.dp else 60.dp)
-            .clip(if (recording) RoundedCornerShape(8.dp) else CircleShape).background(fill))
-    }
+            .clickable(enabled = enabled, onClick = onClick)
+            .drawBehind {
+                // Licht in Bildschirm-Koordinaten: Glanz liegt auf der Lichtseite, Verlauf folgt der Richtung
+                val l = holder.light
+                val r = size.minDimension / 2
+                val c = center
+                val dir = androidx.compose.ui.geometry.Offset(l.x, l.y).let { v ->
+                    val n = kotlin.math.hypot(v.x, v.y).coerceAtLeast(0.15f); androidx.compose.ui.geometry.Offset(v.x / n, v.y / n) }
+                val lvl = l.level
+                // Metallring: heller auf der Lichtseite
+                drawCircle(Brush.linearGradient(listOf(Color(0xFFF7F8FA).copy(alpha = a), Color(0xFFB9BDC1).copy(alpha = a), Color(0xFF6E7276).copy(alpha = a)),
+                    start = c + dir * r, end = c - dir * r), r)
+                drawCircle(Color(0xFF141414), r - 4.dp.toPx())
+                // Knopf: Plastik (Radialverlauf) oder Metall (linear), jeweils zur Lichtseite hin heller
+                // Knopfgröße für den Verlauf: rund (30 dp) bzw. beim Aufnehmen das Quadrat (15 dp) – nie 0
+                val kr = if (recording) 15.dp.toPx() else 30.dp.toPx()
+                val fill = if (metal != null)
+                    Brush.linearGradient(listOf(mix(metal.light, 0.35f * lvl).copy(alpha = a), metal.light.copy(alpha = a), metal.dark.copy(alpha = a)),
+                        start = c + dir * kr, end = c - dir * kr)
+                else Brush.radialGradient(listOf(mix(base, 0.5f * lvl).copy(alpha = a), base.copy(alpha = a), dark(base, 0.45f).copy(alpha = a)),
+                    center = c + dir * kr * 0.45f, radius = kr * 1.3f)
+                if (recording) {
+                    val q = 15.dp.toPx()
+                    drawRoundRect(fill, topLeft = c - androidx.compose.ui.geometry.Offset(q, q), size = androidx.compose.ui.geometry.Size(2 * q, 2 * q),
+                        cornerRadius = androidx.compose.ui.geometry.CornerRadius(8.dp.toPx()))
+                } else {
+                    drawCircle(fill, kr)
+                    // Glanzpunkt: wandert mit dem Licht, Größe/Stärke nach Lichthöhe
+                    val hp = c + dir * kr * (0.55f - 0.25f * l.z)
+                    drawCircle(Brush.radialGradient(listOf(Color.White.copy(alpha = 0.75f * lvl * a), Color.Transparent),
+                        center = hp, radius = kr * 0.38f), kr * 0.38f, hp)
+                    // Gegenseite leicht abgeschattet (Wölbung)
+                    drawCircle(Brush.radialGradient(listOf(Color.Transparent, Color.Black.copy(alpha = 0.25f * a)),
+                        center = c + dir * kr * 0.3f, radius = kr * 1.1f), kr)
+                }
+            },
+    )
 }
 
 /** Runde Taste mit kurzem Text (z.B. AE-Sperre), gleiche Größe wie die Symbol-Tasten. */
@@ -621,7 +665,7 @@ private fun Thumbnail(vm: FilmViewModel, onClick: () -> Unit) {
         contentAlignment = Alignment.Center,
     ) {
         vm.lastFilmThumb?.let {
-            Image(it.asImageBitmap(), "Letzter Film", Modifier.fillMaxSize(), contentScale = ContentScale.Crop)
+            Image(it.asImageBitmap(), t("Letzter Film"), Modifier.fillMaxSize(), contentScale = ContentScale.Crop)
         }
         val r = vm.render
         if (r is RenderState.Running) {
@@ -634,18 +678,6 @@ private fun Thumbnail(vm: FilmViewModel, onClick: () -> Unit) {
     }
 }
 
-/** Stellrad der Film-Bildraten (18 … 60) nach der Skizze vom 24.09. */
-@Composable
-private fun FpsWheel(selected: Float?, enabled: Boolean, onPick: (Float) -> Unit) {
-    DialWheel(
-        items = FPS_CHOICES,
-        selected = selected ?: 30f,
-        label = { it.toInt().toString() },
-        onSelect = onPick,
-        title = "FPS",
-        enabled = enabled,
-    )
-}
 
 
 /** Kurzname eines Geräuschs für die Kamera-Bedienelemente. */
@@ -710,19 +742,10 @@ private fun FxButton(label: String, modifier: Modifier, onClick: () -> Unit) {
 }
 
 /** Belichtungszeiten (Anzeige, Zeit in Nanosekunden); null = Automatik. Analog-typische Werte. */
-val SHUTTER_SPEEDS: List<Pair<String, Long?>> = listOf(
-    "Auto" to null,
-    "1/24" to 41_666_667L,
-    "1/30" to 33_333_333L,
-    "1/48" to 20_833_333L,
-    "1/50" to 20_000_000L,
-    "1/60" to 16_666_667L,
-    "1/100" to 10_000_000L,
-    "1/125" to 8_000_000L,
-    "1/250" to 4_000_000L,
-    "1/500" to 2_000_000L,
-    "1/1000" to 1_000_000L,
-)
+val SHUTTER_SPEEDS: List<Pair<String, Long>> = listOf(
+    "1/5", "1/8", "1/10", "1/15", "1/24", "1/30", "1/48", "1/50", "1/60", "1/100", "1/125",
+    "1/250", "1/500", "1/1000", "1/2000", "1/4000", "1/5000",
+).map { it to 1_000_000_000L / it.removePrefix("1/").toLong() }
 
 /**
  * Schriftzug in Metall: ruhiger Metallverlauf als Grundton, darüber für JEDEN Buchstaben ein dezenter

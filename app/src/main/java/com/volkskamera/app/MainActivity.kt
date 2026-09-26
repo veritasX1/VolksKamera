@@ -42,11 +42,13 @@ class MainActivity : ComponentActivity() {
     private val vm: FilmViewModel by viewModels()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        I18n.init(applicationContext)
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         androidx.core.view.WindowCompat.setDecorFitsSystemWindows(window, false)
         hideSystemBars()
         debugRenderTest()
+        handleShared(intent)
         setContent {
             VolksKameraTheme {
                 fun granted(p: String) = ContextCompat.checkSelfPermission(this, p) == PackageManager.PERMISSION_GRANTED
@@ -70,11 +72,12 @@ class MainActivity : ComponentActivity() {
                 // Behandlung – Filmauswahl, Filter, Mikrofon, Player … – haben Vorrang, da später komponiert)
                 androidx.activity.compose.BackHandler(enabled = screen != "kamera") {
                     screen = when (screen) {
-                        "gehaeuse", "lut_editor", "filter", "mikrofon", "hilfe" -> "filmwahl"
+                        "gehaeuse", "lut_editor", "filter", "mikrofon", "hilfe", "aufnahme", "kombis" -> "filmwahl"
                         "editor" -> "filme"
                         else -> "kamera"
                     }
                 }
+                com.volkskamera.app.ui.IncomingComboDialog(vm, filmCatalog)
                 when {
                     screen == "filmwahl" -> com.volkskamera.app.ui.FilmPickerScreen(
                         vm = vm,
@@ -86,10 +89,15 @@ class MainActivity : ComponentActivity() {
                         onHousing = { screen = "gehaeuse" },
                         onMic = { screen = "mikrofon" },
                         onHelp = { screen = "hilfe" },
+                        onRecording = { screen = "aufnahme" },
+                        onCombos = { screen = "kombis" },
                         onFilter = { filterFilm = it; screen = "filter" },
                         onBack = { screen = "kamera" },
                     )
                     screen == "filter" -> com.volkskamera.app.ui.FilterScreen(vm, filterFilm ?: vm.selectedFilm) { screen = "filmwahl" }
+                    screen == "kombis" -> com.volkskamera.app.ui.ComboScreen(vm, filmCatalog,
+                        onUsed = { screen = "kamera" }, onBack = { screen = "filmwahl" })
+                    screen == "aufnahme" -> com.volkskamera.app.ui.RecordingScreen(vm) { screen = "filmwahl" }
                     screen == "hilfe" -> com.volkskamera.app.ui.HelpScreen { screen = "filmwahl" }
                     screen == "mikrofon" -> com.volkskamera.app.ui.MicScreen(vm) { screen = "filmwahl" }
                     screen == "lut_editor" -> com.volkskamera.app.ui.LutEditorScreen(
@@ -148,6 +156,18 @@ class MainActivity : ComponentActivity() {
      *        [--ez countdown true] [--es burn film_burns_hd_009]
      * Ergebnis im Log unter "VolksKameraTest".
      */
+    override fun onNewIntent(intent: android.content.Intent) {
+        super.onNewIntent(intent)
+        handleShared(intent)
+    }
+
+    /** Über „Teilen“ geschickte Kombination (Text mit „VK1:“) zur Bestätigung vormerken. */
+    private fun handleShared(i: android.content.Intent?) {
+        if (i?.action != android.content.Intent.ACTION_SEND) return
+        val text = i.getStringExtra(android.content.Intent.EXTRA_TEXT) ?: return
+        com.volkskamera.app.data.Combo.parse(text)?.let { vm.pendingCombo = it }
+    }
+
     override fun onWindowFocusChanged(hasFocus: Boolean) {
         super.onWindowFocusChanged(hasFocus)
         if (hasFocus) hideSystemBars()

@@ -1,5 +1,7 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.t
+import com.volkskamera.app.tf
 import android.graphics.Bitmap
 import android.net.Uri
 import androidx.activity.compose.BackHandler
@@ -54,18 +56,18 @@ fun FilmsScreen(onOpen: (Uri) -> Unit, onBack: () -> Unit, onCompose: () -> Unit
 
     Column(Modifier.fillMaxSize().background(Color.Black).safeDrawingPadding()) {
         Row(Modifier.fillMaxWidth().padding(12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Pill("‹ Kamera", selected = false, onClick = onBack)
-            Text("Meine Filme", color = FilmAccent, fontWeight = FontWeight.Bold, fontSize = 20.sp,
+            Pill(t("‹ Kamera"), selected = false, onClick = onBack)
+            Text(t("Meine Filme"), color = FilmAccent, fontWeight = FontWeight.Bold, fontSize = 20.sp,
                 modifier = Modifier.padding(start = 16.dp))
             films?.let { Text("  ${it.size}", color = FilmWhite.copy(alpha = 0.5f)) }
             androidx.compose.foundation.layout.Spacer(Modifier.weight(1f))
-            Pill("Zusammenstellen", selected = true, enabled = !films.isNullOrEmpty(), onClick = onCompose)
+            Pill(t("Zusammenstellen"), selected = true, enabled = !films.isNullOrEmpty(), onClick = onCompose)
         }
         val list = films
         when {
             list == null -> {}
             list.isEmpty() -> Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                Text("Noch keine Filme – einfach losfilmen.", color = FilmWhite.copy(alpha = 0.7f))
+                Text(t("Noch keine Filme – einfach losfilmen."), color = FilmWhite.copy(alpha = 0.7f))
             }
             else -> LazyVerticalGrid(
                 columns = GridCells.Adaptive(160.dp),

@@ -6,11 +6,13 @@ import android.content.pm.PackageManager
 import com.volkskamera.app.R
 
 /** Die wählbaren App-Symbole (Art déco). Jedes gehört zu einem activity-alias im Manifest. */
-enum class AppIcon(val alias: String, val label: String, val hint: String, val preview: Int) {
+enum class AppIcon(val alias: String, private val labelDe: String, private val hintDe: String, val preview: Int) {
     AUFGANG("IconA", "Aufgang", "Filmkamera vor Sonnenstrahlen", R.drawable.icon_bg_a),
     MONOGRAMM("IconB", "Monogramm", "Gestuftes V im Achteck", R.drawable.icon_bg_b),
     KRONE("IconC", "Krone", "Objektiv unter Chrysler-Bögen", R.drawable.icon_bg_c),
     ROSETTE("IconD", "Rosette", "Filmspule mit Filmstreifen", R.drawable.icon_bg_d);
+    val label get() = com.volkskamera.app.t(labelDe)
+    val hint get() = com.volkskamera.app.t(hintDe)
 
     companion object {
         private fun cn(c: Context, i: AppIcon) = ComponentName(c.packageName, "${c.packageName}.${i.alias}")

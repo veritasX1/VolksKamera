@@ -1,5 +1,7 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.t
+import com.volkskamera.app.tf
 import android.graphics.Bitmap
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -59,7 +61,7 @@ fun LutEditorScreen(
     val baseLut = custom?.baseLut ?: film?.look?.lut
     if (baseLut == null) { onBack(); return }
     var edit by remember { mutableStateOf(custom?.edit ?: LutEdit()) }
-    var name by remember { mutableStateOf(custom?.name ?: "${film?.variantLabel ?: "Film"} (eigen)") }
+    var name by remember { mutableStateOf(custom?.name ?: tf("%s (eigen)", film?.variantLabel ?: t("Film"))) }
     var showOriginal by remember { mutableStateOf(false) }
 
     // Referenzbild verkleinert (schnelle Vorschau) + Basis-Würfel
@@ -89,7 +91,7 @@ fun LutEditorScreen(
     }
 
     val landscape = LocalConfiguration.current.orientation == android.content.res.Configuration.ORIENTATION_LANDSCAPE
-    val baseName = film?.fullLabel ?: "eigene LUT"
+    val baseName = film?.fullLabel?.let { t(it) } ?: t("eigene LUT")
 
     val preview: @Composable (Modifier) -> Unit = { m ->
         Box(m.clip(RoundedCornerShape(10.dp)).background(Color.Black)
@@ -98,8 +100,8 @@ fun LutEditorScreen(
             val bmp = if (showOriginal) original else edited ?: original
             bmp?.let { Image(it.asImageBitmap(), null, contentScale = ContentScale.Fit,
                 modifier = Modifier.fillMaxWidth().aspectRatio(it.width.toFloat() / it.height)) }
-                ?: Text("Referenzbild wird geladen …", color = FilmWhite.copy(alpha = 0.6f))
-            Text(if (showOriginal) "Film-Original" else "Bearbeitet  ·  gedrückt halten = Original",
+                ?: Text(t("Referenzbild wird geladen …"), color = FilmWhite.copy(alpha = 0.6f))
+            Text(if (showOriginal) t("Film-Original") else t("Bearbeitet  ·  gedrückt halten = Original"),
                 color = FilmWhite, fontSize = 11.sp,
                 modifier = Modifier.align(Alignment.BottomStart).padding(6.dp)
                     .background(Color.Black.copy(alpha = 0.55f), RoundedCornerShape(6.dp)).padding(horizontal = 6.dp, vertical = 2.dp))
@@ -108,29 +110,29 @@ fun LutEditorScreen(
 
     val controls: @Composable (Modifier) -> Unit = { m ->
         Column(m.verticalScroll(rememberScrollState())) {
-            Section("Tonwerte")
-            BipolarSlider("Belichtung", edit.exposure, true) { edit = edit.copy(exposure = it) }
-            BipolarSlider("Kontrast", edit.contrast, true) { edit = edit.copy(contrast = it) }
-            BipolarSlider("Schwarz", edit.blacks, true, "tiefer", "verblasst") { edit = edit.copy(blacks = it) }
-            BipolarSlider("Lichter", edit.whites, true, "gedämpft", "heller") { edit = edit.copy(whites = it) }
+            Section(t("Tonwerte"))
+            BipolarSlider(t("Belichtung"), edit.exposure, true) { edit = edit.copy(exposure = it) }
+            BipolarSlider(t("Kontrast"), edit.contrast, true) { edit = edit.copy(contrast = it) }
+            BipolarSlider(t("Schwarz"), edit.blacks, true, "tiefer", "verblasst") { edit = edit.copy(blacks = it) }
+            BipolarSlider(t("Lichter"), edit.whites, true, t("gedämpft"), "heller") { edit = edit.copy(whites = it) }
             Section("Farbe")
-            BipolarSlider("Temperatur", edit.temperature, true, "kühler", "wärmer") { edit = edit.copy(temperature = it) }
-            BipolarSlider("Tönung", edit.tint, true, "grün", "magenta") { edit = edit.copy(tint = it) }
-            BipolarSlider("Sättigung", edit.saturation, true) { edit = edit.copy(saturation = it) }
-            Section("Kanäle (Mitteltöne)")
-            BipolarSlider("Rot", edit.red, true, "cyan", "rot") { edit = edit.copy(red = it) }
-            BipolarSlider("Grün", edit.green, true, "magenta", "grün") { edit = edit.copy(green = it) }
-            BipolarSlider("Blau", edit.blue, true, "gelb", "blau") { edit = edit.copy(blue = it) }
-            Section("Teiltonung")
-            HueSlider("Schatten", edit.shadowHue) { edit = edit.copy(shadowHue = it) }
-            LabeledSlider("Stärke", edit.shadowAmount, true) { edit = edit.copy(shadowAmount = it) }
-            HueSlider("Lichter", edit.highlightHue) { edit = edit.copy(highlightHue = it) }
-            LabeledSlider("Stärke", edit.highlightAmount, true) { edit = edit.copy(highlightAmount = it) }
+            BipolarSlider(t("Temperatur"), edit.temperature, true, t("kühler"), t("wärmer")) { edit = edit.copy(temperature = it) }
+            BipolarSlider(t("Tönung"), edit.tint, true, t("grün"), "magenta") { edit = edit.copy(tint = it) }
+            BipolarSlider(t("Sättigung"), edit.saturation, true) { edit = edit.copy(saturation = it) }
+            Section(t("Kanäle (Mitteltöne)"))
+            BipolarSlider(t("Rot"), edit.red, true, "cyan", "rot") { edit = edit.copy(red = it) }
+            BipolarSlider(t("Grün"), edit.green, true, "magenta", t("grün")) { edit = edit.copy(green = it) }
+            BipolarSlider(t("Blau"), edit.blue, true, "gelb", "blau") { edit = edit.copy(blue = it) }
+            Section(t("Teiltonung"))
+            HueSlider(t("Schatten"), edit.shadowHue) { edit = edit.copy(shadowHue = it) }
+            LabeledSlider(t("Stärke"), edit.shadowAmount, true) { edit = edit.copy(shadowAmount = it) }
+            HueSlider(t("Lichter"), edit.highlightHue) { edit = edit.copy(highlightHue = it) }
+            LabeledSlider(t("Stärke"), edit.highlightAmount, true) { edit = edit.copy(highlightAmount = it) }
 
-            Section("Speichern")
+            Section(t("Speichern"))
             OutlinedTextField(
                 value = name, onValueChange = { name = it }, singleLine = true,
-                label = { Text("Name der LUT") },
+                label = { Text(t("Name der LUT")) },
                 keyboardOptions = KeyboardOptions(imeAction = ImeAction.Done),
                 colors = OutlinedTextFieldDefaults.colors(focusedTextColor = FilmWhite, unfocusedTextColor = FilmWhite,
                     focusedBorderColor = FilmAccent, focusedLabelColor = FilmAccent, cursorColor = FilmAccent),
@@ -139,20 +141,20 @@ fun LutEditorScreen(
             Spacer(Modifier.height(10.dp))
             Row(Modifier.padding(horizontal = 16.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
                 if (custom != null) {
-                    Pill("Überschreiben", selected = true) {
+                    Pill(t("Überschreiben"), selected = true) {
                         vm.saveCustomLut(custom.id, name, custom.baseFilmId, custom.baseLut, edit, catalog); onBack()
                     }
-                    Pill("Als neue speichern", selected = false) {
+                    Pill(t("Als neue speichern"), selected = false) {
                         vm.saveCustomLut(null, name, custom.baseFilmId, custom.baseLut, edit, catalog); onBack()
                     }
                 } else {
-                    Pill("Als eigene LUT speichern", selected = true) {
+                    Pill(t("Als eigene LUT speichern"), selected = true) {
                         vm.saveCustomLut(null, name, film?.id, baseLut, edit, catalog); onBack()
                     }
                 }
-                Pill("Regler zurücksetzen", selected = false) { edit = LutEdit() }
+                Pill(t("Regler zurücksetzen"), selected = false) { edit = LutEdit() }
             }
-            Text("Die Original-LUT des Films bleibt unverändert. Eigene LUTs findest du in der Filmauswahl unter „Eigene LUTs“.",
+            Text(t("Die Original-LUT des Films bleibt unverändert. Eigene LUTs findest du in der Filmauswahl unter „Eigene LUTs“."),
                 color = FilmWhite.copy(alpha = 0.5f), fontSize = 11.sp, modifier = Modifier.padding(16.dp))
             Spacer(Modifier.height(24.dp))
         }
@@ -160,11 +162,11 @@ fun LutEditorScreen(
 
     Column(Modifier.fillMaxSize().background(Color(0xFF0E0E0E)).padding(top = 12.dp, start = 12.dp, end = 12.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Pill("‹ Zurück", selected = false) { onBack() }
+            Pill(t("‹ Zurück"), selected = false) { onBack() }
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
-                Text("LUT bearbeiten", color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 16.sp)
-                Text("Basis: $baseName", color = FilmAccent, fontSize = 12.sp)
+                Text(t("LUT bearbeiten"), color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                Text(tf("Basis: %s", baseName), color = FilmAccent, fontSize = 12.sp)
             }
         }
         Spacer(Modifier.height(10.dp))

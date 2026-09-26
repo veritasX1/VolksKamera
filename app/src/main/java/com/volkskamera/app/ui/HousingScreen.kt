@@ -1,5 +1,7 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.t
+import com.volkskamera.app.tf
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
@@ -54,19 +56,19 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
         Row(verticalAlignment = Alignment.CenterVertically) {
             Box(Modifier.clip(RoundedCornerShape(50)).background(Color.White.copy(alpha = 0.2f))
                 .clickable(onClick = onBack).padding(horizontal = 14.dp, vertical = 6.dp)) {
-                Text("‹ Zurück", color = FilmWhite, fontSize = 14.sp)
+                Text(t("‹ Zurück"), color = FilmWhite, fontSize = 14.sp)
             }
             Spacer(Modifier.width(12.dp))
-            Text("Gehäuse", color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 18.sp)
+            Text(t("Gehäuse"), color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 18.sp)
         }
 
-        HousingSection("Material")
+        HousingSection(t("Material"))
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             // eigenes Bild aus der Galerie
             SwatchBox(selected = h.customUri != null && h.bgAsset.isBlank(),
                 onClick = { pick.launch(PickVisualMediaRequest(ActivityResultContracts.PickVisualMedia.ImageOnly)) }) {
                 h.customUri?.let { CustomThumb(it) } ?: Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-                    Text("＋\nGalerie", color = FilmWhite, fontSize = 12.sp)
+                    Text(t("＋\nGalerie"), color = FilmWhite, fontSize = 12.sp)
                 }
             }
         }
@@ -75,7 +77,7 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
         var kat by remember { mutableStateOf(textures.firstOrNull { it.id == h.bgAsset }?.kategorie ?: "Leder") }
         Spacer(Modifier.height(8.dp))
         Row(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            com.volkskamera.app.data.HousingTextures.kategorien(context).forEach { k -> Pill(k, selected = kat == k, small = true) { kat = k } }
+            com.volkskamera.app.data.HousingTextures.kategorien(context).forEach { k -> Pill(t(k), selected = kat == k, small = true) { kat = k } }
         }
         Spacer(Modifier.height(8.dp))
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
@@ -84,26 +86,26 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
                     SwatchBox(selected = h.bgAsset == t.id, onClick = { vm.updateHousing(h.copy(bgAsset = t.id, customUri = null)) }) {
                         AssetThumb(com.volkskamera.app.data.HousingTextures.previewPath(t.id))
                     }
-                    Text(t.name, color = FilmWhite.copy(alpha = 0.8f), fontSize = 10.sp, lineHeight = 12.sp,
+                    Text(com.volkskamera.app.t(t.name), color = FilmWhite.copy(alpha = 0.8f), fontSize = 10.sp, lineHeight = 12.sp,
                         textAlign = androidx.compose.ui.text.style.TextAlign.Center, modifier = Modifier.padding(top = 3.dp))
                 }
             }
         }
-        Text("Texturen: ambientCG.com, CC0 (gemeinfrei)", color = FilmWhite.copy(alpha = 0.4f), fontSize = 10.sp,
+        Text(t("Texturen: ambientCG.com, CC0 (gemeinfrei)"), color = FilmWhite.copy(alpha = 0.4f), fontSize = 10.sp,
             modifier = Modifier.padding(top = 4.dp))
 
         // ---------- Licht ----------
-        HousingSection("Licht")
+        HousingSection(t("Licht"))
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Pill("Licht folgt der Bewegung", selected = h.light, small = true) { vm.updateHousing(h.copy(light = !h.light)) }
+            Pill(t("Licht folgt der Bewegung"), selected = h.light, small = true) { vm.updateHousing(h.copy(light = !h.light)) }
             Spacer(Modifier.width(10.dp))
-            Text(if (h.light) "Lampe steht im Raum: Neigen und Schwenken verändern Glanz, Relief und Schatten"
-                 else "Licht fest von oben links",
+            Text(if (h.light) t("Lampe steht im Raum: Neigen und Schwenken verändern Glanz, Relief und Schatten")
+                 else t("Licht fest von oben links"),
                 color = FilmWhite.copy(alpha = 0.5f), fontSize = 11.sp)
         }
         Spacer(Modifier.height(6.dp))
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Text("Stärke", color = FilmWhite, fontSize = 13.sp, modifier = Modifier.width(80.dp))
+            Text(t("Stärke"), color = FilmWhite, fontSize = 13.sp, modifier = Modifier.width(80.dp))
             androidx.compose.material3.Slider(value = h.lightStrength, onValueChange = { vm.updateHousing(h.copy(lightStrength = it)) },
                 valueRange = 0f..1.5f, modifier = Modifier.weight(1f),
                 colors = androidx.compose.material3.SliderDefaults.colors(thumbColor = FilmAccent, activeTrackColor = FilmAccent))
@@ -125,11 +127,11 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
         var capturing by remember { mutableStateOf(false) }
         val lifecycleOwner = androidx.lifecycle.compose.LocalLifecycleOwner.current
         val hasEnv = remember(h.ownEnvironment, capturing) { com.volkskamera.app.ui.theme.Environment.file(context).isFile }
-        Text("Spiegelung", color = FilmWhite, fontSize = 13.sp)
+        Text(t("Spiegelung"), color = FilmWhite, fontSize = 13.sp)
         Row(Modifier.padding(top = 4.dp), horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
-            Pill("Studio", selected = !h.ownEnvironment, small = true) { vm.updateHousing(h.copy(ownEnvironment = false)) }
-            if (hasEnv) Pill("Eigenes Foto", selected = h.ownEnvironment, small = true) { vm.updateHousing(h.copy(ownEnvironment = true)) }
-            Pill(if (capturing) "Aufnahme …" else "📷 Frontkamera-Foto aufnehmen", selected = false, small = true, enabled = !capturing) {
+            Pill(t("Studio"), selected = !h.ownEnvironment, small = true) { vm.updateHousing(h.copy(ownEnvironment = false)) }
+            if (hasEnv) Pill(t("Eigenes Foto"), selected = h.ownEnvironment, small = true) { vm.updateHousing(h.copy(ownEnvironment = true)) }
+            Pill(if (capturing) t("Aufnahme …") else t("📷 Frontkamera-Foto aufnehmen"), selected = false, small = true, enabled = !capturing) {
                 capturing = true
                 captureEnvironment(context, lifecycleOwner) { ok ->
                     capturing = false
@@ -137,7 +139,7 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
                 }
             }
         }
-        Text("Metall und glatte Flächen spiegeln die Umgebung. Mit dem Frontkamera-Foto spiegelt sich dein Raum im Gehäuse.",
+        Text(t("Metall und glatte Flächen spiegeln die Umgebung. Mit dem Frontkamera-Foto spiegelt sich dein Raum im Gehäuse."),
             color = FilmWhite.copy(alpha = 0.45f), fontSize = 11.sp, modifier = Modifier.padding(top = 4.dp))
 
         HousingSection("Metall")
@@ -152,12 +154,12 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
             }
         }
 
-        HousingSection("Schriftzug")
+        HousingSection(t("Schriftzug"))
         var titleDraft by remember { mutableStateOf(h.titleText) }
         androidx.compose.material3.OutlinedTextField(
             value = titleDraft, singleLine = true,
             onValueChange = { titleDraft = it.take(24); vm.updateHousing(vm.housing.copy(titleText = titleDraft)) },
-            label = { Text("Text (Standard: ${com.volkskamera.app.ui.theme.Housing.DEFAULT_TITLE})") },
+            label = { Text(tf("Text (Standard: %s)", com.volkskamera.app.ui.theme.Housing.DEFAULT_TITLE)) },
             colors = androidx.compose.material3.OutlinedTextFieldDefaults.colors(focusedTextColor = FilmWhite, unfocusedTextColor = FilmWhite,
                 focusedBorderColor = FilmAccent, focusedLabelColor = FilmAccent, cursorColor = FilmAccent),
             modifier = Modifier.fillMaxWidth(),
@@ -167,12 +169,12 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
                 Pill(f.label, selected = h.titleFont == f, small = true) { vm.updateHousing(h.copy(titleFont = f)) }
             }
             if (h.titleText != com.volkskamera.app.ui.theme.Housing.DEFAULT_TITLE)
-                Pill("Zurücksetzen", selected = false, small = true) {
+                Pill(t("Zurücksetzen"), selected = false, small = true) {
                     titleDraft = com.volkskamera.app.ui.theme.Housing.DEFAULT_TITLE
                     vm.updateHousing(h.copy(titleText = titleDraft))
                 }
         }
-        Text("Material der Schrift", color = FilmWhite.copy(alpha = 0.7f), fontSize = 12.sp, modifier = Modifier.padding(bottom = 4.dp))
+        Text(t("Material der Schrift"), color = FilmWhite.copy(alpha = 0.7f), fontSize = 12.sp, modifier = Modifier.padding(bottom = 4.dp))
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             MetalFinish.entries.forEach { m ->
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -184,7 +186,7 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
             }
         }
 
-        HousingSection("Auslöser")
+        HousingSection(t("Auslöser"))
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(10.dp)) {
             ButtonStyle.entries.forEach { b ->
                 Column(horizontalAlignment = Alignment.CenterHorizontally) {
@@ -200,7 +202,7 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
             }
         }
 
-        HousingSection("App-Symbol")
+        HousingSection(t("App-Symbol"))
         var icon by remember { mutableStateOf(com.volkskamera.app.ui.theme.AppIcon.current(context)) }
         Row(Modifier.horizontalScroll(rememberScrollState()), horizontalArrangement = Arrangement.spacedBy(14.dp)) {
             com.volkskamera.app.ui.theme.AppIcon.entries.forEach { ic ->
@@ -215,7 +217,7 @@ fun HousingScreen(vm: FilmViewModel, onBack: () -> Unit) {
                 }
             }
         }
-        Text("Der Startbildschirm übernimmt das neue Symbol nach einigen Sekunden.",
+        Text(t("Der Startbildschirm übernimmt das neue Symbol nach einigen Sekunden."),
             color = FilmWhite.copy(alpha = 0.45f), fontSize = 11.sp, modifier = Modifier.padding(top = 8.dp))
         Spacer(Modifier.height(24.dp))
     }

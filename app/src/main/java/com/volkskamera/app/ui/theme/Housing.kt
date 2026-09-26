@@ -5,7 +5,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 
 /** Metall-Oberfläche: heller -> dunkler Verlauf (für Blende, Ring, Icons). */
-enum class MetalFinish(val label: String, val light: Color, val dark: Color, val onColor: Color) {
+enum class MetalFinish(private val labelDe: String, val light: Color, val dark: Color, val onColor: Color) {
     SILBER("Silber", Color(0xFFEDEFF1), Color(0xFF9A9EA2), Color.Black),
     GOLD("Gold", Color(0xFFF7E7A0), Color(0xFFC9A227), Color.Black),
     ALTGOLD("Altgold", Color(0xFFD8C48A), Color(0xFF8C6E2E), Color.Black),
@@ -14,11 +14,12 @@ enum class MetalFinish(val label: String, val light: Color, val dark: Color, val
     ROSTIG("Rostig", Color(0xFFC0703A), Color(0xFF5E2A14), Color.White),
     BRUENIERT("Brüniert", Color(0xFF46515C), Color(0xFF12161B), Color.White);
 
+    val label get() = com.volkskamera.app.t(labelDe)
     fun brush() = Brush.linearGradient(listOf(light, dark))
 }
 
 /** Auslöser-/Knopf-Stil: entweder Plastik (eine Farbe) oder eine Metall-Oberfläche. */
-enum class ButtonStyle(val label: String, val plastic: Color?, val metal: MetalFinish?) {
+enum class ButtonStyle(private val labelDe: String, val plastic: Color?, val metal: MetalFinish?) {
     PLASTIK_ROT("Rot", Color(0xFFB5342B), null),
     PLASTIK_SCHWARZ("Schwarz", Color(0xFF1C1C1C), null),
     PLASTIK_ELFENBEIN("Elfenbein", Color(0xFFEDE4CF), null),
@@ -29,6 +30,7 @@ enum class ButtonStyle(val label: String, val plastic: Color?, val metal: MetalF
     METALL_GOLD("Metall Gold", null, MetalFinish.GOLD),
     METALL_ANTHRAZIT("Metall Anthrazit", null, MetalFinish.ANTHRAZIT),
     METALL_BRUENIERT("Metall Brüniert", null, MetalFinish.BRUENIERT);
+    val label get() = com.volkskamera.app.t(labelDe)
 }
 
 /** Gehäuse-Hintergrund: eine mitgelieferte Material-Textur (ambientCG) oder ein eigenes Bild. */
@@ -85,7 +87,8 @@ data class Housing(
 }
 
 /** Schriftarten für den Schriftzug. */
-enum class TitleFont(val label: String, val res: Int) {
+enum class TitleFont(private val labelDe: String, val res: Int) {
     SCHREIBSCHRIFT("Schreibschrift", com.volkskamera.app.R.font.great_vibes),
-    PINSEL("Pinselschrift", com.volkskamera.app.R.font.kaushan_script),
+    PINSEL("Pinselschrift", com.volkskamera.app.R.font.kaushan_script);
+    val label get() = com.volkskamera.app.t(labelDe)
 }

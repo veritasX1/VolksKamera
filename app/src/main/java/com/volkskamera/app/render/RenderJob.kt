@@ -81,6 +81,8 @@ class RenderJob(private val context: Context) {
                     if (sources.size > 1) add(Presentation.createForWidthAndHeight(first.width, first.height, Presentation.LAYOUT_SCALE_TO_FIT))
                     // Filmriss nur am Ende des letzten Stücks
                     add(if (last) FilmLookEffect(look, infos[i].durationUs) else FilmLookEffect(look.copy(burnEnd = null)))
+                    // gewählte Auflösung (kurze Seite: 480, 576, 720 oder 1080)
+                    add(Presentation.createForShortSide(com.volkskamera.app.data.CameraPrefs.resolution(context)))
                 }
                 EditedMediaItem.Builder(MediaItem.fromUri(src))
                     .setRemoveAudio(silent)
