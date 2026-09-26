@@ -28,6 +28,11 @@ android {
                 buildConfigField("String", "DEFAULT_LANG", "\"$l\"")
             }
         }
+        // F-Droid-Repo: keine feste Startsprache, die App folgt der Handysprache
+        create("system") {
+            dimension = "sprache"
+            buildConfigField("String", "DEFAULT_LANG", "\"\"")
+        }
     }
 
     // Release-Schlüssel liegt NICHT im Repo: ~/.volkskamera/release.properties

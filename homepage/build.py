@@ -9,6 +9,8 @@ import hashlib, html, json, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 APP = os.path.join(HERE, "..", "app", "src", "main")
 VERSION = sys.argv[1] if len(sys.argv) > 1 else "0.8.2 beta"
+FDROID = "https://volkskamera.goip.de/fdroid/repo"
+FDROID_FP = "8DA9DEF44C65856A1B098DB7BF876D48514997EF17C7256E23E91EAC6C486500"
 CERT = "7806bf101cca62f7bd57a9e08d8e2d0514bd58888d4d94a78100064c46fbebfc"
 LANGS = ["de", "en", "fr", "ru"]
 NAMES = {"de": "Deutsch", "en": "English", "fr": "Français", "ru": "Русский"}
@@ -153,6 +155,19 @@ T = {
             "fr": "© depuis 2026 Olaf Winkler · Développé au Schleswig-Holstein (Allemagne)", "ru": "© с 2026 года, Olaf Winkler · Разработано в Шлезвиг-Гольштейне (Германия)"},
  "c_dl": {"de": "Downloads", "en": "downloads", "fr": "téléchargements", "ru": "загрузок"},
  "c_vis": {"de": "Besucher", "en": "visitors", "fr": "visiteurs", "ru": "посетителей"},
+ "h_fdroid": {"de": "Über F-Droid", "en": "Via F-Droid", "fr": "Via F-Droid", "ru": "Через F-Droid"},
+ "fdroid": {"de": "Mit der App <a href=\"https://f-droid.org\">F-Droid</a> bekommst du jedes Update automatisch. Füge dazu einmal meine Paketquelle hinzu – darin findest du auch meine Apps <b>Schmalfilm</b> und <b>RetroCam</b> (frühe Testversion).",
+            "en": "With the <a href=\"https://f-droid.org\">F-Droid</a> app you get every update automatically. Just add my repository once – it also contains my apps <b>Schmalfilm</b> and <b>RetroCam</b> (early test version).",
+            "fr": "Avec l’application <a href=\"https://f-droid.org\">F-Droid</a>, vous recevez chaque mise à jour automatiquement. Ajoutez une fois mon dépôt – vous y trouverez aussi mes applications <b>Schmalfilm</b> et <b>RetroCam</b> (version de test précoce).",
+            "ru": "С приложением <a href=\"https://f-droid.org\">F-Droid</a> все обновления приходят автоматически. Добавьте один раз мой репозиторий – в нём также есть мои приложения <b>Schmalfilm</b> и <b>RetroCam</b> (ранняя тестовая версия)."},
+ "fdroid_btn": {"de": "Paketquelle in F-Droid hinzufügen", "en": "Add repository to F-Droid", "fr": "Ajouter le dépôt à F-Droid", "ru": "Добавить репозиторий в F-Droid"},
+ "fdroid_qr": {"de": "Am Computer? Scanne den Code mit dem Handy:", "en": "On a computer? Scan the code with your phone:", "fr": "Sur un ordinateur ? Scannez le code avec votre téléphone :", "ru": "На компьютере? Отсканируйте код телефоном:"},
+ "fdroid_manual": {"de": "Von Hand: Adresse", "en": "Manually: address", "fr": "Manuellement : adresse", "ru": "Вручную: адрес"},
+ "fdroid_fp": {"de": "Fingerabdruck", "en": "Fingerprint", "fr": "Empreinte", "ru": "Отпечаток"},
+ "fdroid_note": {"de": "Die F-Droid-Version startet in der Sprache deines Handys. Sie ist mit demselben Schlüssel signiert wie die APK hier – du kannst jederzeit wechseln, deine Einstellungen bleiben.",
+                 "en": "The F-Droid version starts in your phone’s language. It is signed with the same key as the APK here – you can switch at any time and keep your settings.",
+                 "fr": "La version F-Droid démarre dans la langue de votre téléphone. Elle est signée avec la même clé que l’APK d’ici – vous pouvez changer à tout moment et garder vos réglages.",
+                 "ru": "Версия из F-Droid запускается на языке телефона. Она подписана тем же ключом, что и APK здесь, – можно переходить в любой момент, настройки сохраняются."},
  "report": {"de": "Fehler melden", "en": "Report a bug", "fr": "Signaler un bug", "ru": "Сообщить об ошибке"},
  "code": {"de": "Quellcode", "en": "Source code", "fr": "Code source", "ru": "Исходный код"},
  "back": {"de": "‹ Zur Startseite", "en": "‹ Back to home", "fr": "‹ Retour à l’accueil", "ru": "‹ На главную"},
@@ -201,6 +216,10 @@ figcaption { padding:10px 16px 14px; font-size:15px; color:var(--muted); }
 .zaehler span { display:inline-flex; align-items:center; gap:9px; }
 .zw { font:600 17px/1 "Courier New",monospace; letter-spacing:3px; color:#f4f0e6; background:#050505; padding:6px 6px 6px 9px; border-radius:4px;
   border:2px solid var(--gold2); box-shadow:inset 0 2px 6px #000, 0 1px 0 #3a3226; }
+.fdqr { display:flex; gap:18px; align-items:center; flex-wrap:wrap; margin:14px 0; }
+.fdqr img { border-radius:8px; background:#fff; }
+.fdqr p { flex:1; min-width:220px; margin:0; }
+code.fp { word-break:break-all; }
 footer { padding:28px 0 50px; text-align:center; color:var(--muted); font:13px system-ui,sans-serif; }
 """
 
@@ -254,6 +273,10 @@ def main_page(l):
   <p class="fine">{T['source_code'][l]} <a href="https://github.com/veritasX1/VolksKamera">github.com/veritasX1/VolksKamera</a></p></section>
 <section><h2>{T['h_only'][l]}</h2><div class="card warn"><p style="margin:0">{T['only'][l]}</p></div></section>
 <section><h2>{T['h_install'][l]}</h2><ol>{''.join('<li>' + x + '</li>' for x in T['install'][l])}</ol><p class="fine">{T['update_note'][l]}</p></section>
+<section><h2>{T['h_fdroid'][l]}</h2><p>{T['fdroid'][l]}</p>
+<p><a class="btn2" href="fdroidrepos://volkskamera.goip.de/fdroid/repo?fingerprint={FDROID_FP}">{T['fdroid_btn'][l]}</a></p>
+<div class="fdqr"><img src="{root}bilder/fdroid_qr.png" alt="QR" width="150" height="150"><p class="fine">{T['fdroid_qr'][l]}<br>{T['fdroid_manual'][l]}: <code>{FDROID}</code><br>{T['fdroid_fp'][l]}: <code class="fp">{FDROID_FP}</code></p></div>
+<p class="fine">{T['fdroid_note'][l]}</p></section>
 <section><h2>{T['h_license'][l]}</h2><p>{T['license'][l]} <a href="https://github.com/veritasX1/VolksKamera/blob/main/LICENSE.md">{T['license_link'][l]}</a></p></section>
 <section><h2>{T['h_sources'][l]}</h2><ul>{''.join('<li>' + x + '</li>' for x in T['sources'][l])}</ul>
   <p class="fine"><a href="https://github.com/veritasX1/VolksKamera/blob/main/QUELLEN.md">{T['sources_full'][l]}</a></p></section>
