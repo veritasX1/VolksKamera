@@ -36,7 +36,7 @@ import kotlin.math.max
 import kotlin.math.sqrt
 
 /** Lichtfarben (Farbtemperatur der „Lampe im Raum“). */
-enum class LightColor(val label: String, val r: Float, val g: Float, val b: Float) {
+enum class LightColor(private val labelDe: String, val r: Float, val g: Float, val b: Float) {
     TAGESLICHT("Tageslicht", 1f, 1f, 1f),
     GLUEHLAMPE("Glühlampe", 1f, 0.84f, 0.62f),
     KERZE("Kerzenlicht", 1f, 0.72f, 0.42f),
@@ -45,6 +45,7 @@ enum class LightColor(val label: String, val r: Float, val g: Float, val b: Floa
     MONDLICHT("Mondlicht", 0.72f, 0.8f, 1f);
 
     val color get() = Color(r, g, b)
+    val label get() = com.volkskamera.app.t(labelDe)
 }
 
 /**

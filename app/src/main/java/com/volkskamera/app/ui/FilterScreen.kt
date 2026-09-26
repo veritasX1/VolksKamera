@@ -1,5 +1,7 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.t
+import com.volkskamera.app.tf
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -40,16 +42,16 @@ fun FilterScreen(vm: FilmViewModel, film: com.volkskamera.app.data.FilmStock?, o
 
     Column(Modifier.fillMaxSize().background(Color(0xFF0E0E0E)).padding(top = 12.dp, start = 12.dp, end = 12.dp)) {
         Row(verticalAlignment = Alignment.CenterVertically) {
-            Pill("‹ Zurück", selected = false) { onBack() }
+            Pill(t("‹ Zurück"), selected = false) { onBack() }
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
-                Text("Farbfilter", color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 16.sp)
-                Text(film?.let { "für ${it.fullLabel}" } ?: "", color = FilmAccent, fontSize = 12.sp)
+                Text(t("Farbfilter"), color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                Text(film?.let { tf("für %s", t(it.fullLabel)) } ?: "", color = FilmAccent, fontSize = 12.sp)
             }
         }
-        Text("Ein Filter hellt seine eigene Farbe auf und dunkelt die Gegenfarbe ab. Die längere Belichtung (Filterfaktor) ist bereits ausgeglichen." +
+        Text(t("Ein Filter hellt seine eigene Farbe auf und dunkelt die Gegenfarbe ab. Die längere Belichtung (Filterfaktor) ist bereits ausgeglichen.") +
             if (film?.materialtyp?.contains("ortho", ignoreCase = true) == true || film?.name?.contains("ortho", ignoreCase = true) == true)
-                " Hinweis: orthochromatischer Film ist rotblind – Rot- und Orangefilter sperren fast alles, was er sieht, und waren dafür in der Praxis kaum brauchbar." else "",
+                t(" Hinweis: orthochromatischer Film ist rotblind – Rot- und Orangefilter sperren fast alles, was er sieht, und waren dafür in der Praxis kaum brauchbar.") else "",
             color = FilmWhite.copy(alpha = 0.55f), fontSize = 12.sp, modifier = Modifier.padding(vertical = 8.dp))
         LazyColumn(verticalArrangement = Arrangement.spacedBy(8.dp), contentPadding = PaddingValues(bottom = 24.dp)) {
             items(BwFilter.entries, key = { it.name }) { f ->
@@ -75,7 +77,7 @@ fun FilterScreen(vm: FilmViewModel, film: com.volkskamera.app.data.FilmStock?, o
                         if (f != BwFilter.KEINER) {
                             Text(listOf("Kodak ${f.wratten}", f.others).filter { it.isNotBlank() }.joinToString(" · "),
                                 color = FilmAccent.copy(alpha = 0.9f), fontSize = 11.sp)
-                            Text("Filterfaktor ${f.factor}", color = FilmWhite.copy(alpha = 0.5f), fontSize = 11.sp)
+                            Text(tf("Filterfaktor %s", f.factor), color = FilmWhite.copy(alpha = 0.5f), fontSize = 11.sp)
                         }
                         Spacer(Modifier.height(3.dp))
                         Text(f.use, color = FilmWhite.copy(alpha = 0.8f), fontSize = 12.sp)

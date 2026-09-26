@@ -19,8 +19,8 @@ import kotlin.math.tanh
  */
 enum class MicProfile(
     val decade: String,
-    val label: String,
-    val hint: String,
+    private val labelDe: String,
+    private val hintDe: String,
     val hp: Double,
     val lp: Double,
     /** steile Flanken (4. Ordnung) – enge, harte Bandbegrenzung */
@@ -206,8 +206,13 @@ enum class MicProfile(
         60.0, 16000.0, false, listOf(Triple(5000.0, 3.0, 1.0)), lowShelf = 4.0,
         drive = 0.05f, noise = 0.03f, noiseLp = 14000.0, shape = MicShape.CAPSULE);
 
+    val label get() = com.volkskamera.app.t(labelDe)
+    val hint get() = com.volkskamera.app.t(hintDe)
+
     companion object {
         val decades = entries.map { it.decade }.distinct()
+        /** „1920er“ -> „1920s“ usw. */
+        fun decadeLabel(d: String) = com.volkskamera.app.tf("%ser", d.removeSuffix("er"))
     }
 }
 

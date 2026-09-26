@@ -1,6 +1,6 @@
 # Volkskamera-Lizenz (Version 1.0)
 
-Copyright © 2026 veritasX1 und Mitwirkende. Alle Rechte vorbehalten, soweit unten nicht ausdrücklich eingeräumt.
+Copyright © seit 2026 Olaf Winkler (veritasX1) und Mitwirkende. Entwickelt in Schleswig-Holstein. Alle Rechte vorbehalten, soweit unten nicht ausdrücklich eingeräumt.
 
 Die Volkskamera ist **kostenlos** und soll es bleiben. Diese Lizenz sorgt dafür, dass jeder sie frei nutzen kann –
 und dass niemand Geld mit ihr verdient, der sie nicht geschaffen hat.

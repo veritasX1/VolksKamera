@@ -1,28 +1,60 @@
 # Volkskamera
 
-**Die Filmkamera für dein Android-Handy.** Wähle ein echtes Filmmaterial – vom orthochromatischen Kinofilm der
-1890er über Kodachrome und Agfacolor bis zum heutigen Diafilm – und filme mit seinen Farben, seinem Kontrast und
-seinem Korn. Wie bei einer echten Kamera hat jeder Film eine feste Empfindlichkeit; die Helligkeit regelst du über
-die Belichtungszeit.
+**The film camera for your Android phone.** Choose a real film stock – from the orthochromatic cinema film of the
+1890s via Kodachrome and Agfacolor to today's slide film – and shoot with its colours, its contrast and its grain.
+As with a real camera, every film has a fixed sensitivity; you control brightness with the shutter speed.
 
-**Version 0.7 beta** · Android 8.0 oder neuer · kostenlos
+**Version 0.8 beta** · Android 8.0 or newer · free · English, Deutsch, Français, Русский
 
-➡️ **Download nur hier:** [volkskamera.goip.de](https://volkskamera.goip.de) oder unter
-[Releases](https://github.com/veritasX1/VolksKamera/releases). Die Volkskamera ist frei – eine „Premium“- oder
-„Mod“-APK von anderen Seiten ist immer eine Fälschung.
+➡️ **Download only here:** [volkskamera.goip.de](https://volkskamera.goip.de/en/) or under
+[Releases](https://github.com/veritasX1/VolksKamera/releases). Volkskamera is free – a "premium" or "mod" APK from
+any other site is always a fake.
 
-## Funktionen
-- **289 Filmmaterialien** von 26 Herstellern (8, 16 und 35 mm), jeweils mit Steckbrief, Beispielbild und Quellen
-- **Farbfilter für Schwarzweißfilm** (Kodak-Wratten-, B+W- und Hoya-Bezeichnungen, Filterfaktor, Einsatzzweck)
-- **LUT-Editor**: jeden Film anpassen und als eigene Fassung speichern
-- **50 Mikrofone** von 1900 bis heute, dazu Rauschen, Knacken und elektrisches Brummen
-- **Mechanische Zählwerke** für Bildrate, Format, Objektiv, Belichtungszeit und ISO/ASA
-- **Gehäuse nach Wahl**: 127 Materialien mit Licht, das Neigen und Schwenken folgt; eigener Schriftzug, vier App-Symbole
+🇩🇪 [Deutsch](https://volkskamera.goip.de/) · 🇫🇷 [Français](https://volkskamera.goip.de/fr/) ·
+🇷🇺 [Русский](https://volkskamera.goip.de/ru/) · 📖 [Guide](https://volkskamera.goip.de/en/guide.html)
 
-## Datenschutz
-Die Volkskamera hat **keine Internet-Berechtigung**. Sie kann technisch nichts senden: keine Werbung, kein Tracking,
-keine Konten, keine Cloud. Deine Aufnahmen bleiben auf deinem Gerät. Der Quellcode ist offen, damit jeder das
-nachprüfen kann.
+## Features
+- **289 film stocks** from 26 manufacturers (8, 16 and 35 mm), each with profile, sample image and sources
+- **Colour filters for B&W** (Kodak Wratten, B+W and Hoya names, filter factor, purpose)
+- **Real exposure**: fixed film sensitivity, shutter speeds from 1/5 to 1/5000 – no auto mode, no re-exposure
+- **Sensor calibration**: measures how your phone alters the image and compensates before every film
+- **LUT editor**: adjust any film and save it as your own version
+- **50 microphones** from the Edison phonograph to the camcorder, plus noise, crackle and hum
+- **Share combinations**: save film, filter and sound and pass them on as a short text
+- **Mechanical counters** for frame rate, format, lens, shutter speed and ISO/ASA
+- **Your camera body**: 127 materials with light that follows tilting and turning; your own lettering, four app icons
 
-## Lizenz
-Frei nutzbar, nicht verkäuflich – siehe [LICENSE.md](LICENSE.md). Material Dritter: [QUELLEN.md](QUELLEN.md).
+## Screenshots
+Screenshots show the German interface; the app is fully available in English, French and Russian.
+
+| | |
+|---|---|
+| ![The camera](homepage/bilder/01_kamera.webp) The camera | ![Film selection](homepage/bilder/02_hersteller.webp) Film selection |
+| ![Film profile](homepage/bilder/03_steckbrief.webp) Film profile | ![Colour filters](homepage/bilder/04_farbfilter.webp) Colour filters for B&W |
+| ![LUT editor](homepage/bilder/05_luteditor.webp) LUT editor | ![Microphones](homepage/bilder/06_mikrofon.webp) Microphones of the era |
+| ![Camera body](homepage/bilder/07_gehaeuse.webp) Your camera body | |
+
+## Privacy
+Volkskamera has **no internet permission**. It technically cannot send anything: no ads, no tracking, no accounts,
+no cloud. Your recordings stay on your device. The source code is open so anyone can verify this.
+
+## Version history
+**0.8 beta**
+- Available in English, French and Russian (switchable in the settings); one download per start language
+- Fully manual exposure: sensor ISO follows the film ISO, shutter 1/5–1/5000, no re-exposure on focus or camera switch
+- Sensor calibration (RAW vs. phone image) with step-by-step instructions
+- Combinations: save and share film, filter and sound
+- Recording resolution 480p–1080p; front camera can be mirrored
+- The app never focuses by itself – tap the viewfinder to focus
+- Fixed: crash when starting a recording
+
+**0.7 beta** – first public beta
+
+## Updating from 0.7
+Every release is signed with the same key (certificate SHA-256
+`7806bf101cca62f7bd57a9e08d8e2d0514bd58888d4d94a78100064c46fbebfc`), so 0.8 installs over 0.7 and keeps your settings.
+
+## Licence
+Free to use, not for sale – see [LICENSE.md](LICENSE.md). Third-party material: [QUELLEN.md](QUELLEN.md).
+
+© since 2026 Olaf Winkler (veritasX1) · Developed in Schleswig-Holstein, Germany

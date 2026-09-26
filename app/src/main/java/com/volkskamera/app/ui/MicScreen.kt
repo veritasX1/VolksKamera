@@ -1,5 +1,7 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.t
+import com.volkskamera.app.tf
 import androidx.compose.foundation.background
 import androidx.compose.foundation.border
 import androidx.compose.foundation.clickable
@@ -72,24 +74,24 @@ fun MicScreen(vm: FilmViewModel, onBack: () -> Unit) {
 
     Column(Modifier.fillMaxSize().background(Color(0xFF0E0E0E)).padding(top = 12.dp)) {
         Row(Modifier.padding(horizontal = 12.dp), verticalAlignment = Alignment.CenterVertically) {
-            Pill("‹ Zurück", selected = false) { onBack() }
+            Pill(t("‹ Zurück"), selected = false) { onBack() }
             Spacer(Modifier.width(12.dp))
             Column(Modifier.weight(1f)) {
-                Text("Mikrofon", color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 16.sp)
-                Text(l.mic?.let { "${it.decade} · ${it.label}" } ?: "Originalton des Handys",
+                Text(t("Mikrofon"), color = FilmWhite, fontWeight = FontWeight.Bold, fontSize = 16.sp)
+                Text(l.mic?.let { "${MicProfile.decadeLabel(it.decade)} · ${it.label}" } ?: t("Originalton des Handys"),
                     color = FilmAccent, fontSize = 12.sp)
             }
-            Pill("Originalton", selected = l.mic == null) { vm.editQuiet { withMic(null) } }
+            Pill(t("Originalton"), selected = l.mic == null) { vm.editQuiet { withMic(null) } }
         }
         Spacer(Modifier.height(8.dp))
         Row(Modifier.padding(horizontal = 12.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            Pill("nach Jahrzehnt", selected = !byType, small = true) { byType = false }
-            Pill("nach Bauart", selected = byType, small = true) { byType = true }
+            Pill(t("nach Jahrzehnt"), selected = !byType, small = true) { byType = false }
+            Pill(t("nach Bauart"), selected = byType, small = true) { byType = true }
         }
         Spacer(Modifier.height(6.dp))
         if (byType) PillRow(MicType.entries.filter { t -> MicProfile.entries.any { it.info.type == t } }, { it.label },
             { it == type }, true) { type = it }
-        else PillRow(MicProfile.decades, { it }, { it == decade }, true) { decade = it }
+        else PillRow(MicProfile.decades, { MicProfile.decadeLabel(it) }, { it == decade }, true) { decade = it }
         Spacer(Modifier.height(8.dp))
 
         Column(Modifier.weight(1f)) {
@@ -130,7 +132,7 @@ private fun MicCard(m: MicProfile, selected: Boolean, onClick: () -> Unit) {
         Spacer(Modifier.height(6.dp))
         Text(m.label, color = FilmWhite, fontSize = 11.sp, textAlign = TextAlign.Center, lineHeight = 13.sp,
             fontWeight = if (selected) FontWeight.Bold else FontWeight.Normal, minLines = 2, maxLines = 3)
-        Text("${m.decade} · ${m.info.type.label.substringBefore(" (")}", color = FilmAccent.copy(alpha = 0.8f),
+        Text("${MicProfile.decadeLabel(m.decade)} · ${m.info.type.label.substringBefore(" (")}", color = FilmAccent.copy(alpha = 0.8f),
             fontSize = 9.sp, textAlign = TextAlign.Center, maxLines = 1)
     }
 }
@@ -147,35 +149,35 @@ private fun MicControls(vm: FilmViewModel, playing: Boolean, onPlay: () -> Unit)
                 Spacer(Modifier.height(4.dp))
                 Text(m.hint, color = FilmWhite.copy(alpha = 0.75f), fontSize = 12.sp)
                 Spacer(Modifier.height(6.dp))
-                InfoLine("Bauart", m.info.type.label)
-                InfoLine("Richtcharakteristik", m.info.pattern)
-                InfoLine("Frequenzbereich", "ca. ${m.rangeText}")
-                InfoLine("Einsatz", m.info.use)
-                InfoLine("Zeit", m.decade)
+                InfoLine(t("Bauart"), m.info.type.label)
+                InfoLine(t("Richtcharakteristik"), m.info.pattern)
+                InfoLine(t("Frequenzbereich"), tf("ca. %s", m.rangeText))
+                InfoLine(t("Einsatz"), m.info.use)
+                InfoLine(t("Zeit"), MicProfile.decadeLabel(m.decade))
             }
         }
-        Section("Klang")
-        LabeledSlider("Rauschen", l.micNoise, on) { v -> vm.editQuiet { copy(micNoise = v) } }
-        LabeledSlider("Rauschsperre", l.micGate, on) { v -> vm.editQuiet { copy(micGate = v) } }
-        Text("Rauschen = Eigenrauschen des alten Geräts (0 = ganz still). Rauschsperre dämpft das Rauschen des Handymikrofons in leisen Stellen.",
+        Section(t("Klang"))
+        LabeledSlider(t("Rauschen"), l.micNoise, on) { v -> vm.editQuiet { copy(micNoise = v) } }
+        LabeledSlider(t("Rauschsperre"), l.micGate, on) { v -> vm.editQuiet { copy(micGate = v) } }
+        Text(t("Rauschen = Eigenrauschen des alten Geräts (0 = ganz still). Rauschsperre dämpft das Rauschen des Handymikrofons in leisen Stellen."),
             color = FilmWhite.copy(alpha = 0.45f), fontSize = 11.sp, modifier = Modifier.padding(horizontal = 16.dp, vertical = 2.dp))
-        LabeledSlider("Verzerrung", l.micDrive, on) { v -> vm.editQuiet { copy(micDrive = v) } }
-        BipolarSlider("Bandbreite", l.micBandwidth, on, "enger", "weiter") { v -> vm.editQuiet { copy(micBandwidth = v) } }
-        LabeledSlider("Automatik", l.micAgc, on) { v -> vm.editQuiet { copy(micAgc = v) } }
+        LabeledSlider(t("Verzerrung"), l.micDrive, on) { v -> vm.editQuiet { copy(micDrive = v) } }
+        BipolarSlider(t("Bandbreite"), l.micBandwidth, on, "enger", "weiter") { v -> vm.editQuiet { copy(micBandwidth = v) } }
+        LabeledSlider(t("Automatik"), l.micAgc, on) { v -> vm.editQuiet { copy(micAgc = v) } }
         InterferenceSection(vm)
-        Section("Sprachprobe")
+        Section(t("Sprachprobe"))
         Row(Modifier.padding(horizontal = 16.dp, vertical = 4.dp), horizontalArrangement = Arrangement.spacedBy(8.dp),
             verticalAlignment = Alignment.CenterVertically) {
-            Text("Länge", color = FilmWhite, modifier = Modifier.width(108.dp))
+            Text(t("Länge"), color = FilmWhite, modifier = Modifier.width(108.dp))
             listOf(3, 5, 8).forEach { s -> Pill("$s s", selected = vm.probeSeconds == s, small = true) { vm.chooseProbeSeconds(s) } }
         }
         Row(Modifier.padding(horizontal = 16.dp, vertical = 10.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-            Pill(if (vm.probeRecording) "● Sprich jetzt …" else "● Sprachprobe (${vm.probeSeconds} s)", selected = vm.probeRecording,
+            Pill(if (vm.probeRecording) t("● Sprich jetzt …") else tf("● Sprachprobe (%d s)", vm.probeSeconds), selected = vm.probeRecording,
                 enabled = !vm.probeRecording) { vm.recordProbe(vm.probeSeconds) }
-            Pill(if (playing) "■ Stopp" else "▶ Probe anhören", selected = playing,
+            Pill(if (playing) t("■ Stopp") else t("▶ Probe anhören"), selected = playing,
                 enabled = vm.probe != null && !vm.probeRecording) { onPlay() }
         }
-        Text("Die Probe klingt wie der fertige Film und wird einmal abgespielt. Sie wird nicht gespeichert.",
+        Text(t("Die Probe klingt wie der fertige Film und wird einmal abgespielt. Sie wird nicht gespeichert."),
             color = FilmWhite.copy(alpha = 0.45f), fontSize = 11.sp, modifier = Modifier.padding(horizontal = 16.dp))
     }
 }
@@ -213,20 +215,20 @@ private fun InterferenceSection(vm: FilmViewModel) {
     val any = l.crackleOn || l.bgHumOn
     if (playing && !any) { preview.stop(); playing = false }
 
-    Section("Knacken & Brummen")
+    Section(t("Knacken & Brummen"))
     Row(Modifier.padding(horizontal = 16.dp, vertical = 4.dp), horizontalArrangement = Arrangement.spacedBy(8.dp)) {
-        Pill("Knacken", selected = l.crackleOn) { vm.editQuiet { copy(crackleOn = !crackleOn) } }
-        Pill("Brummen", selected = l.bgHumOn) {
+        Pill(t("Knacken"), selected = l.crackleOn) { vm.editQuiet { copy(crackleOn = !crackleOn) } }
+        Pill(t("Brummen"), selected = l.bgHumOn) {
             vm.editQuiet { copy(bgHumOn = !bgHumOn, bgHumType = if (bgHumType.cable) bgHumType else HumType.NETZ,
                 bgHumFreq = if (bgHumFreq == 60f) 60f else 50f) }
         }
-        Pill(if (playing) "■ Stopp" else "▶ Anhören", selected = playing, enabled = any) {
+        Pill(if (playing) t("■ Stopp") else t("▶ Anhören"), selected = playing, enabled = any) {
             if (playing) preview.stop() else preview.start(l)
             playing = !playing
         }
     }
-    LabeledSlider("Stärke", l.crackleAmount, l.crackleOn) { v -> vm.editQuiet { copy(crackleAmount = v) } }
-    LabeledSlider("Häufigkeit", l.crackleDensity, l.crackleOn) { v -> vm.editQuiet { copy(crackleDensity = v) } }
+    LabeledSlider(t("Stärke"), l.crackleAmount, l.crackleOn) { v -> vm.editQuiet { copy(crackleAmount = v) } }
+    LabeledSlider(t("Häufigkeit"), l.crackleDensity, l.crackleOn) { v -> vm.editQuiet { copy(crackleDensity = v) } }
     Spacer(Modifier.height(8.dp))
     PillRow(HumType.entries.filter { it.cable }, { it.label }, { l.bgHumOn && it == l.bgHumType }, l.bgHumOn) { t ->
         vm.editQuiet { copy(bgHumType = t) }
@@ -235,9 +237,9 @@ private fun InterferenceSection(vm: FilmViewModel) {
         modifier = Modifier.padding(horizontal = 16.dp, vertical = 4.dp))
     Row(Modifier.padding(horizontal = 16.dp, vertical = 4.dp), horizontalArrangement = Arrangement.spacedBy(8.dp),
         verticalAlignment = Alignment.CenterVertically) {
-        Text("Stromnetz", color = FilmWhite.copy(alpha = if (l.bgHumOn) 1f else 0.4f), modifier = Modifier.width(108.dp))
-        Pill("50 Hz (Europa)", selected = l.bgHumFreq != 60f, small = true, enabled = l.bgHumOn) { vm.editQuiet { copy(bgHumFreq = 50f) } }
-        Pill("60 Hz (USA)", selected = l.bgHumFreq == 60f, small = true, enabled = l.bgHumOn) { vm.editQuiet { copy(bgHumFreq = 60f) } }
+        Text(t("Stromnetz"), color = FilmWhite.copy(alpha = if (l.bgHumOn) 1f else 0.4f), modifier = Modifier.width(108.dp))
+        Pill(t("50 Hz (Europa)"), selected = l.bgHumFreq != 60f, small = true, enabled = l.bgHumOn) { vm.editQuiet { copy(bgHumFreq = 50f) } }
+        Pill(t("60 Hz (USA)"), selected = l.bgHumFreq == 60f, small = true, enabled = l.bgHumOn) { vm.editQuiet { copy(bgHumFreq = 60f) } }
     }
-    LabeledSlider("Pegel", l.bgHumLevel, l.bgHumOn) { v -> vm.editQuiet { copy(bgHumLevel = v) } }
+    LabeledSlider(t("Pegel"), l.bgHumLevel, l.bgHumOn) { v -> vm.editQuiet { copy(bgHumLevel = v) } }
 }

@@ -133,6 +133,57 @@ class FilmViewModel(app: Application) : AndroidViewModel(app) {
     /** Navigationszustand der Filmauswahl (null = beim Film in Verwendung beginnen). */
     var pickerNav by mutableStateOf<PickerNav?>(null)
 
+    // ---------- Kombinationen (Film + Filter + Ton) ----------
+    var combos by mutableStateOf(com.volkskamera.app.data.Combo.load(getApplication())); private set
+
+    fun saveCombo(name: String) {
+        val n = name.trim().ifEmpty { selectedFilmLabel ?: com.volkskamera.app.t("Meine Kombination") }
+        val c = com.volkskamera.app.data.Combo.from(n, look, selectedFilm?.id, activeCustom?.name, bwFilter.name)
+        combos = combos.filterNot { it.name == n } + c
+        com.volkskamera.app.data.Combo.store(getApplication(), combos)
+    }
+
+    fun deleteCombo(name: String) {
+        combos = combos.filterNot { it.name == name }
+        com.volkskamera.app.data.Combo.store(getApplication(), combos)
+    }
+
+    /** Geteilte Kombination übernehmen (in die Liste); false = kein gültiger Text */
+    fun importCombo(text: String): Boolean {
+        val c = com.volkskamera.app.data.Combo.parse(text) ?: return false
+        combos = combos.filterNot { it.name == c.name } + c
+        com.volkskamera.app.data.Combo.store(getApplication(), combos)
+        return true
+    }
+
+    /** Kombination verwenden: Film bzw. eigene LUT, Farbfilter und alle Toneinstellungen setzen. */
+    fun applyCombo(c: com.volkskamera.app.data.Combo, catalog: com.volkskamera.app.data.FilmCatalog) {
+        bwFilter = com.volkskamera.app.render.BwFilter.byName(c.bwFilter)
+        cameraPrefs().edit().putString("bw_filter", bwFilter.name).apply()
+        val custom = c.customLutName?.let { n -> customLuts.firstOrNull { it.name == n } }
+        when {
+            custom != null -> selectCustomLut(custom, catalog)
+            c.filmId != null -> catalog.byId(c.filmId)?.let { selectFilm(it) }
+        }
+        editQuiet {
+            withMic(c.mic?.let { m -> runCatching { com.volkskamera.app.render.MicProfile.valueOf(m) }.getOrNull() }).copy(
+                micNoise = c.micNoise, micGate = c.micGate, micDrive = c.micDrive, micBandwidth = c.micBandwidth, micAgc = c.micAgc,
+                crackleOn = c.crackleOn, crackleAmount = c.crackleAmount, crackleDensity = c.crackleDensity,
+                bgHumOn = c.humOn, bgHumType = runCatching { com.volkskamera.app.render.HumType.valueOf(c.humType) }.getOrDefault(bgHumType),
+                bgHumFreq = c.humFreq, bgHumLevel = c.humLevel)
+        }
+        pendingCombo = null
+    }
+
+    /** Über „Teilen“ an die App geschickte Kombination (wartet auf Bestätigung) */
+    var pendingCombo by mutableStateOf<com.volkskamera.app.data.Combo?>(null)
+
+    // ---------- Aufnahme-Einstellungen ----------
+    var recordResolution by mutableStateOf(com.volkskamera.app.data.CameraPrefs.resolution(getApplication())); private set
+    fun chooseResolution(r: Int) { recordResolution = r; com.volkskamera.app.data.CameraPrefs.setResolution(getApplication(), r) }
+    var mirrorFront by mutableStateOf(com.volkskamera.app.data.CameraPrefs.mirrorFront(getApplication())); private set
+    fun chooseMirrorFront(m: Boolean) { mirrorFront = m; com.volkskamera.app.data.CameraPrefs.setMirrorFront(getApplication(), m) }
+
     // ---------- eigene LUTs ----------
     var customLuts by mutableStateOf(com.volkskamera.app.data.CustomLuts.load(getApplication())); private set
     /** Gewählte eigene LUT (statt der Original-LUT des Films); null = Film-Original. */
@@ -156,7 +207,7 @@ class FilmViewModel(app: Application) : AndroidViewModel(app) {
                       edit: com.volkskamera.app.render.LutEdit, catalog: com.volkskamera.app.data.FilmCatalog) {
         viewModelScope.launch {
             val (list, lut) = withContext(Dispatchers.IO) {
-                com.volkskamera.app.data.CustomLuts.save(getApplication(), customLuts, id, name.trim().ifEmpty { "Meine LUT" },
+                com.volkskamera.app.data.CustomLuts.save(getApplication(), customLuts, id, name.trim().ifEmpty { com.volkskamera.app.t("Meine LUT") },
                     baseFilmId, baseLut, edit)
             }
             customLuts = list
@@ -269,7 +320,17 @@ class FilmViewModel(app: Application) : AndroidViewModel(app) {
     fun effectiveLut(f: com.volkskamera.app.data.FilmStock, base: String? = null,
                      filter: com.volkskamera.app.render.BwFilter = bwFilter): String? {
         val b = base ?: f.look?.lut ?: return null
-        return if (f.farbeSw == "S/W") com.volkskamera.app.render.BwFilter.lutWith(getApplication(), b, filter) else b
+        val withFilter = if (f.farbeSw == "S/W") com.volkskamera.app.render.BwFilter.lutWith(getApplication(), b, filter) else b
+        // Sensor-Kalibrierung als äußerste Stufe: LUT(Filter(Kalibrierung(Kamerabild)))
+        return com.volkskamera.app.camera.Calibration.lutWith(getApplication(), withFilter)
+    }
+
+    /** Nach Kalibrierung / Ein-Aus: Look neu anwenden und Beispielbilder neu rechnen. */
+    var calibrationVersion by mutableStateOf(0); private set
+    fun calibrationChanged() {
+        calibrationVersion++
+        referenceVersion++
+        selectedFilm?.let { applyFilmLook(it, activeCustom?.file); persist() }
     }
 
     private fun applyFilmLook(f: com.volkskamera.app.data.FilmStock, lutOverride: String? = null) {

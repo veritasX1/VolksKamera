@@ -14,8 +14,20 @@ android {
         applicationId = "com.volkskamera.app"
         minSdk = 26
         targetSdk = 35
-        versionCode = 16
-        versionName = "0.7 beta"
+        versionCode = 17
+        versionName = "0.8 beta"
+        buildConfigField("String", "DEFAULT_LANG", "\"\"")
+    }
+
+    // Sprachvarianten zum Download: gleiche App, nur die Startsprache unterscheidet sich (umschaltbar in der App)
+    flavorDimensions += "sprache"
+    productFlavors {
+        listOf("de", "en", "fr", "ru").forEach { l ->
+            create(l) {
+                dimension = "sprache"
+                buildConfigField("String", "DEFAULT_LANG", "\"$l\"")
+            }
+        }
     }
 
     // Release-Schlüssel liegt NICHT im Repo: ~/.volkskamera/release.properties
@@ -48,6 +60,7 @@ android {
 
     buildFeatures {
         compose = true
+        buildConfig = true
     }
 
     androidResources {

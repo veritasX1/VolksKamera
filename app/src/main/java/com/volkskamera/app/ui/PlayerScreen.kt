@@ -1,5 +1,7 @@
 package com.volkskamera.app.ui
 
+import com.volkskamera.app.t
+import com.volkskamera.app.tf
 import android.content.Intent
 import android.net.Uri
 import androidx.activity.compose.BackHandler
@@ -109,7 +111,7 @@ fun PlayerScreen(uri: Uri, onBack: () -> Unit, onOverview: () -> Unit, onDeleted
         ) {
             if (!playing) {
                 Box(Modifier.size(84.dp).clip(CircleShape).background(Color(0x88000000)), contentAlignment = Alignment.Center) {
-                    Icon(Icons.Filled.PlayArrow, "Abspielen", tint = FilmWhite, modifier = Modifier.size(56.dp))
+                    Icon(Icons.Filled.PlayArrow, t("Abspielen"), tint = FilmWhite, modifier = Modifier.size(56.dp))
                 }
             }
         }
@@ -120,24 +122,24 @@ fun PlayerScreen(uri: Uri, onBack: () -> Unit, onOverview: () -> Unit, onDeleted
                 horizontalArrangement = Arrangement.spacedBy(8.dp),
                 verticalAlignment = Alignment.CenterVertically,
             ) {
-                Pill("‹ Kamera", selected = false, onClick = onBack)
-                Pill("Alle Filme", selected = false, onClick = onOverview)
+                Pill(t("‹ Kamera"), selected = false, onClick = onBack)
+                Pill(t("Alle Filme"), selected = false, onClick = onOverview)
                 Spacer(Modifier.weight(1f))
                 if (confirmDelete) {
-                    Text("Löschen?", color = FilmWhite)
-                    Pill("Ja", selected = true) {
+                    Text(t("Löschen?"), color = FilmWhite)
+                    Pill(t("Ja"), selected = true) {
                         player.stop()
                         if (Films.delete(context, uri)) onDeleted()
                         confirmDelete = false
                     }
-                    Pill("Nein", selected = false) { confirmDelete = false }
+                    Pill(t("Nein"), selected = false) { confirmDelete = false }
                 } else {
-                    RoundButton(Icons.Filled.Share, "Teilen") {
+                    RoundButton(Icons.Filled.Share, t("Teilen")) {
                         context.startActivity(Intent.createChooser(
                             Intent(Intent.ACTION_SEND).setType("video/mp4").putExtra(Intent.EXTRA_STREAM, uri)
-                                .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION), "Film teilen"))
+                                .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION), t("Film teilen")))
                     }
-                    RoundButton(Icons.Filled.Delete, "Löschen", tint = FilmRed) { confirmDelete = true }
+                    RoundButton(Icons.Filled.Delete, t("Löschen"), tint = FilmRed) { confirmDelete = true }
                 }
             }
             Row(
