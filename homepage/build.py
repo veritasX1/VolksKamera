@@ -8,7 +8,7 @@ import hashlib, html, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 APP = os.path.join(HERE, "..", "app", "src", "main")
-VERSION = sys.argv[1] if len(sys.argv) > 1 else "0.9.0 beta"
+VERSION = sys.argv[1] if len(sys.argv) > 1 else "1.0"
 FDROID = "https://volkskamera.goip.de/fdroid/repo"
 FDROID_FP = "8DA9DEF44C65856A1B098DB7BF876D48514997EF17C7256E23E91EAC6C486500"
 CERT = "7806bf101cca62f7bd57a9e08d8e2d0514bd58888d4d94a78100064c46fbebfc"
@@ -60,7 +60,9 @@ T = {
          ("50 Mikrofone", "vom Edison-Phonographen bis zum Camcorder, dazu Rauschen, Knacken und Brummen."),
          ("Kombinationen teilen", "Film, Filter und Ton speichern und als kurzen Text weitergeben."),
          ("LUT-Editor", "Jeden Film anpassen und als eigene Fassung speichern."),
-         ("Dein Gehäuse", "127 Materialien mit Licht, das Neigen und Schwenken folgt; eigener Schriftzug, vier App-Symbole.")],
+         ("Dein Gehäuse", "127 Materialien mit Licht, das Neigen und Schwenken folgt; eigener Schriftzug, vier App-Symbole."),
+         ("Analog-Look", "Schaltet die Nachschärfung des Handys ab – weiche Zeichnung, Schimmer und Lichthof, bis zu 100-fach verstärkbar."),
+         ("Moiré-Filter", "Ruhige Stoffe, Gitter und Bildschirme: optischer Tiefpass und vollständige Sensor-Auslesung.")],
   "en": [("289 film stocks", "from 26 manufacturers in 8, 16 and 35 mm – each with profile, sample image and sources."),
          ("Colour filters for B&W", "yellow, orange, red, green, blue – with Kodak Wratten, B+W and Hoya names."),
          ("Real exposure", "Fixed film sensitivity, shutter speeds from 1/5 to 1/5000 – no auto mode, no re-exposure."),
@@ -68,7 +70,9 @@ T = {
          ("50 microphones", "from the Edison phonograph to the camcorder, plus noise, crackle and hum."),
          ("Share combinations", "Save film, filter and sound and pass them on as a short text."),
          ("LUT editor", "Adjust any film and save it as your own version."),
-         ("Your camera body", "127 materials with light that follows tilting and turning; your own lettering, four app icons.")],
+         ("Your camera body", "127 materials with light that follows tilting and turning; your own lettering, four app icons."),
+         ("Analogue look", "Switches off the phone’s sharpening – soft rendering, glow and halation, boostable up to 100×."),
+         ("Moiré filter", "Calm fabrics, fences and screens: optical low-pass and full sensor readout.")],
   "fr": [("289 pellicules", "de 26 fabricants en 8, 16 et 35 mm – chacune avec fiche, image d’exemple et sources."),
          ("Filtres colorés pour le N&B", "jaune, orange, rouge, vert, bleu – avec désignations Kodak Wratten, B+W et Hoya."),
          ("Vraie exposition", "Sensibilité du film fixe, vitesses de 1/5 à 1/5000 – pas d’automatisme, pas de correction."),
@@ -76,7 +80,9 @@ T = {
          ("50 microphones", "du phonographe d’Edison au caméscope, plus souffle, craquements et ronflement."),
          ("Partager des combinaisons", "Enregistre film, filtre et son et transmets-les sous forme de court texte."),
          ("Éditeur de LUT", "Adapte chaque film et enregistre ta propre version."),
-         ("Ton boîtier", "127 matières avec une lumière qui suit l’inclinaison et la rotation ; inscription perso, quatre icônes.")],
+         ("Ton boîtier", "127 matières avec une lumière qui suit l’inclinaison et la rotation ; inscription perso, quatre icônes."),
+         ("Rendu analogique", "Désactive l’accentuation du téléphone – rendu doux, lueur et halo, amplifiable jusqu’à 100×."),
+         ("Filtre anti-moiré", "Tissus, grilles et écrans apaisés : passe-bas optique et lecture complète du capteur.")],
   "ru": [("289 плёнок", "от 26 производителей в 8, 16 и 35 мм – у каждой карточка, пример изображения и источники."),
          ("Цветные фильтры для ч/б", "жёлтый, оранжевый, красный, зелёный, синий – с обозначениями Kodak Wratten, B+W и Hoya."),
          ("Настоящая экспозиция", "Фиксированная светочувствительность плёнки, выдержки от 1/5 до 1/5000 – без автоматики."),
@@ -84,15 +90,17 @@ T = {
          ("50 микрофонов", "от фонографа Эдисона до видеокамеры, плюс шум, треск и гул."),
          ("Делитесь комбинациями", "Сохраняйте плёнку, фильтр и звук и передавайте их коротким текстом."),
          ("Редактор LUT", "Настройте любую плёнку и сохраните свою версию."),
-         ("Ваш корпус", "127 материалов со светом, который следует за наклоном и поворотом; своя надпись, четыре значка.")]},
+         ("Ваш корпус", "127 материалов со светом, который следует за наклоном и поворотом; своя надпись, четыре значка."),
+         ("Аналоговый вид", "Отключает повышение резкости телефона – мягкий рисунок, свечение и ореол, усиление до 100×."),
+         ("Антимуаровый фильтр", "Спокойные ткани, решётки и экраны: оптический фильтр нижних частот и полное считывание сенсора.")]},
  "h_shots": {"de": "Einblicke", "en": "Screenshots", "fr": "Aperçus", "ru": "Как это выглядит"},
  "shots_note": {"de": "", "en": "Screenshots show the German interface; the app is fully available in English.",
                 "fr": "Les captures montrent l’interface allemande ; l’application est entièrement disponible en français.",
                 "ru": "На снимках показан немецкий интерфейс; приложение полностью доступно на русском."},
- "shots": {"de": ["Die Kamera", "Filmsteckbrief", "Farbfilter für Schwarzweiß", "LUT-Editor", "Mikrofone der Zeit", "Filmauswahl", "Dein Gehäuse"],
-           "en": ["The camera", "Film profile", "Colour filters for B&W", "LUT editor", "Microphones of the era", "Film selection", "Your camera body"],
-           "fr": ["La caméra", "Fiche du film", "Filtres colorés pour le N&B", "Éditeur de LUT", "Micros d’époque", "Sélection des films", "Ton boîtier"],
-           "ru": ["Камера", "Карточка плёнки", "Цветные фильтры для ч/б", "Редактор LUT", "Микрофоны эпохи", "Выбор плёнки", "Ваш корпус"]},
+ "shots": {"de": ["Die Kamera", "Analog-Look und Moiré-Filter", "Filmsteckbrief", "Farbfilter für Schwarzweiß", "LUT-Editor", "Mikrofone der Zeit", "Filmauswahl", "Dein Gehäuse"],
+           "en": ["The camera", "Analogue look and moiré filter", "Film profile", "Colour filters for B&W", "LUT editor", "Microphones of the era", "Film selection", "Your camera body"],
+           "fr": ["La caméra", "Rendu analogique et filtre anti-moiré", "Fiche du film", "Filtres colorés pour le N&B", "Éditeur de LUT", "Micros d’époque", "Sélection des films", "Ton boîtier"],
+           "ru": ["Камера", "Аналоговый вид и антимуаровый фильтр", "Карточка плёнки", "Цветные фильтры для ч/б", "Редактор LUT", "Микрофоны эпохи", "Выбор плёнки", "Ваш корпус"]},
  "h_privacy": {"de": "Datenschutz", "en": "Privacy", "fr": "Confidentialité", "ru": "Конфиденциальность"},
  "privacy": {"de": ["<b>Die Volkskamera hat keine Internet-Berechtigung.</b> Sie kann technisch nichts senden: keine Werbung, kein Tracking, keine Konten, keine Cloud, keine Analyse. Deine Aufnahmen bleiben auf deinem Gerät. Die App fragt nur nach Kamera und Mikrofon – zum Filmen.",
                     "Auch diese Seite setzt keine Cookies, bindet nichts von fremden Servern ein (keine Schriften, keine Skripte, keine Statistik) und kommt ohne JavaScript aus."],
@@ -254,7 +262,7 @@ def main_page(l):
     guide = "anleitung.html" if l == "de" else "guide.html"
     mb = round(os.path.getsize(os.path.join(HERE, apk(l))) / 1e6) if os.path.exists(os.path.join(HERE, apk(l))) else 81
     feats = "\n".join(f'<div class="card"><b>{a}</b><br>{b}</div>' for a, b in T["features"][l])
-    names = ["01_kamera", "03_steckbrief", "04_farbfilter", "05_luteditor", "06_mikrofon", "02_hersteller", "07_gehaeuse"]
+    names = ["01_kamera", "08_aufnahme", "03_steckbrief", "04_farbfilter", "05_luteditor", "06_mikrofon", "02_hersteller", "07_gehaeuse"]
     figs = "\n".join(f'<figure><img src="{root}bilder/{n}.webp" alt="{c}" loading="lazy"><figcaption><b>{c}</b></figcaption></figure>'
                      for n, c in zip(names, T["shots"][l]))
     body = f"""<header><div class="wrap">
