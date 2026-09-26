@@ -1,0 +1,81 @@
+{
+ "luts": [],
+ "_info": {
+  "lut_format": "Streifen N*N x N, Kachel b = Blau, x in Kachel = Rot, y = Grün",
+  "ausgabe_fps_standard": 18,
+  "seitenverhaeltnisse": [
+   "4:3",
+   "16:9"
+  ]
+ },
+ "grain": [
+  {
+   "id": "filmgrain_4kdci_8mm_24fps_heavy",
+   "name": "8 mm kräftig",
+   "kategorie": "grain",
+   "fps": 12,
+   "staerke": 0.7,
+   "quelle": "tdcat.com – Lizenz nachtragen",
+   "blend": "overlay",
+   "graustufen": true,
+   "bilder": 12,
+   "ordner": "grain/filmgrain_4kdci_8mm_24fps_heavy",
+   "groesse": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "filmgrain_4kdci_16mm_24fps",
+   "name": "16 mm",
+   "kategorie": "grain",
+   "fps": 12,
+   "staerke": 0.7,
+   "quelle": "tdcat.com – Lizenz nachtragen",
+   "blend": "overlay",
+   "graustufen": true,
+   "bilder": 12,
+   "ordner": "grain/filmgrain_4kdci_16mm_24fps",
+   "groesse": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "filmgrain_4kdci_35mm_24fps",
+   "name": "35 mm",
+   "kategorie": "grain",
+   "fps": 12,
+   "staerke": 0.7,
+   "quelle": "tdcat.com – Lizenz nachtragen",
+   "blend": "overlay",
+   "graustufen": true,
+   "bilder": 12,
+   "ordner": "grain/filmgrain_4kdci_35mm_24fps",
+   "groesse": [
+    960,
+    540
+   ]
+  },
+  {
+   "id": "filmgrain_4kdci_8mm_24fps",
+   "name": "8 mm",
+   "kategorie": "grain",
+   "fps": 12,
+   "staerke": 0.7,
+   "quelle": "tdcat.com – Lizenz nachtragen",
+   "blend": "overlay",
+   "graustufen": true,
+   "bilder": 12,
+   "ordner": "grain/filmgrain_4kdci_8mm_24fps",
+   "groesse": [
+    960,
+    540
+   ]
+  }
+ ],
+ "dirt": [],
+ "leaks": [],
+ "burns": [],
+ "frames": []
+}

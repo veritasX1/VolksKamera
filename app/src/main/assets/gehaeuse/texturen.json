@@ -1,0 +1,1145 @@
+{
+ "Asphalt019": {
+  "name": "Asphalt",
+  "nr": "019",
+  "kategorie": "Stein",
+  "farbe": "#3a3a39",
+  "metall": 0.0,
+  "quelle": "ambientCG Asphalt019",
+  "lizenz": "CC0 1.0"
+ },
+ "DiamondPlate008C": {
+  "name": "Riffelblech",
+  "nr": "008C",
+  "kategorie": "Metall",
+  "farbe": "#595a5e",
+  "metall": 0.77,
+  "quelle": "ambientCG DiamondPlate008C",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric009": {
+  "name": "Steppstoff Altrosa",
+  "nr": "009",
+  "kategorie": "Stoff",
+  "farbe": "#794343",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric009",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric010": {
+  "name": "Korbgeflecht Oliv",
+  "nr": "010",
+  "kategorie": "Stoff",
+  "farbe": "#534f3b",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric010",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric011": {
+  "name": "Korbgeflecht Sand",
+  "nr": "011",
+  "kategorie": "Stoff",
+  "farbe": "#716955",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric011",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric013": {
+  "name": "Korbgeflecht Braun",
+  "nr": "013",
+  "kategorie": "Stoff",
+  "farbe": "#45362f",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric013",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric015": {
+  "name": "Webband Blau-Weiß",
+  "nr": "015",
+  "kategorie": "Stoff",
+  "farbe": "#515c79",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric015",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric016": {
+  "name": "Strick Bordeaux",
+  "nr": "016",
+  "kategorie": "Stoff",
+  "farbe": "#672629",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric016",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric020": {
+  "name": "Samt Königsblau",
+  "nr": "020",
+  "kategorie": "Stoff",
+  "farbe": "#2e2d7d",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric020",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric029": {
+  "name": "Samt Schwarz",
+  "nr": "029",
+  "kategorie": "Stoff",
+  "farbe": "#201c13",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric029",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric043": {
+  "name": "Filz Grau meliert",
+  "nr": "043",
+  "kategorie": "Stoff",
+  "farbe": "#8d8583",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric043",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric050": {
+  "name": "Karo Bunt",
+  "nr": "050",
+  "kategorie": "Stoff",
+  "farbe": "#3d3c25",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric050",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric053": {
+  "name": "Schottenkaro Braun",
+  "nr": "053",
+  "kategorie": "Stoff",
+  "farbe": "#533c23",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric053",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric054": {
+  "name": "Schottenkaro Rot",
+  "nr": "054",
+  "kategorie": "Stoff",
+  "farbe": "#740f0f",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric054",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric060": {
+  "name": "Leinen Weiß",
+  "nr": "060",
+  "kategorie": "Stoff",
+  "farbe": "#e9ebef",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric060",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric061": {
+  "name": "Leinen Grau",
+  "nr": "061",
+  "kategorie": "Stoff",
+  "farbe": "#77736e",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric061",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric062": {
+  "name": "Leinen Hellgrau",
+  "nr": "062",
+  "kategorie": "Stoff",
+  "farbe": "#a8a39c",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric062",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric063": {
+  "name": "Canvas Anthrazit",
+  "nr": "063",
+  "kategorie": "Stoff",
+  "farbe": "#3d3933",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric063",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric070": {
+  "name": "Stoff Limette",
+  "nr": "070",
+  "kategorie": "Stoff",
+  "farbe": "#9ac02f",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric070",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric076": {
+  "name": "Streifen Marine",
+  "nr": "076",
+  "kategorie": "Stoff",
+  "farbe": "#adafb4",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric076",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric077": {
+  "name": "Jeans",
+  "nr": "077",
+  "kategorie": "Stoff",
+  "farbe": "#5d6a77",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric077",
+  "lizenz": "CC0 1.0"
+ },
+ "Fabric080": {
+  "name": "Karo Pastell",
+  "nr": "080",
+  "kategorie": "Stoff",
+  "farbe": "#ac848e",
+  "metall": 0.0,
+  "quelle": "ambientCG Fabric080",
+  "lizenz": "CC0 1.0"
+ },
+ "Foil002": {
+  "name": "Goldfolie zerknittert",
+  "nr": "002",
+  "kategorie": "Metall",
+  "farbe": "#e7d18f",
+  "metall": 1.0,
+  "quelle": "ambientCG Foil002",
+  "lizenz": "CC0 1.0"
+ },
+ "Ground093C": {
+  "name": "Sand",
+  "nr": "093C",
+  "kategorie": "Stein",
+  "farbe": "#c8b591",
+  "metall": 0.0,
+  "quelle": "ambientCG Ground093C",
+  "lizenz": "CC0 1.0"
+ },
+ "Ground102": {
+  "name": "Erde mit Moos",
+  "nr": "102",
+  "kategorie": "Stein",
+  "farbe": "#856f45",
+  "metall": 0.0,
+  "quelle": "ambientCG Ground102",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather002": {
+  "name": "Leder Schwarzbraun",
+  "nr": "002",
+  "kategorie": "Leder",
+  "farbe": "#23190e",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather002",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather003": {
+  "name": "Wildleder Braun",
+  "nr": "003",
+  "kategorie": "Leder",
+  "farbe": "#61482f",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather003",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather004": {
+  "name": "Leder Sand",
+  "nr": "004",
+  "kategorie": "Leder",
+  "farbe": "#b49b80",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather004",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather006": {
+  "name": "Leder Espresso",
+  "nr": "006",
+  "kategorie": "Leder",
+  "farbe": "#23180c",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather006",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather007": {
+  "name": "Vintage-Leder Braun",
+  "nr": "007",
+  "kategorie": "Leder",
+  "farbe": "#3f2811",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather007",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather016": {
+  "name": "Lochleder Cognac",
+  "nr": "016",
+  "kategorie": "Leder",
+  "farbe": "#5f3e1f",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather016",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather018": {
+  "name": "Lochleder Weiß",
+  "nr": "018",
+  "kategorie": "Leder",
+  "farbe": "#dfdfd0",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather018",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather020": {
+  "name": "Leder Kirschrot",
+  "nr": "020",
+  "kategorie": "Leder",
+  "farbe": "#972e2e",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather020",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather024": {
+  "name": "Leder Ziegelrot",
+  "nr": "024",
+  "kategorie": "Leder",
+  "farbe": "#8e2510",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather024",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather028": {
+  "name": "Leder Mokka",
+  "nr": "028",
+  "kategorie": "Leder",
+  "farbe": "#543d35",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather028",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather029": {
+  "name": "Leder Terrakotta",
+  "nr": "029",
+  "kategorie": "Leder",
+  "farbe": "#93604f",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather029",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather030": {
+  "name": "Leder Dunkelbraun",
+  "nr": "030",
+  "kategorie": "Leder",
+  "farbe": "#3a2720",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather030",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather032": {
+  "name": "Leder Schwarz",
+  "nr": "032",
+  "kategorie": "Leder",
+  "farbe": "#1c1c1c",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather032",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather033A": {
+  "name": "Vintage-Leder Rotbraun",
+  "nr": "033A",
+  "kategorie": "Leder",
+  "farbe": "#49241a",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather033A",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather034B": {
+  "name": "Steppleder Schwarz",
+  "nr": "034B",
+  "kategorie": "Leder",
+  "farbe": "#281e1c",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather034B",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather035A": {
+  "name": "Steppleder Creme, Doppelnaht",
+  "nr": "035A",
+  "kategorie": "Leder",
+  "farbe": "#c8b294",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather035A",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather035B": {
+  "name": "Steppleder Creme",
+  "nr": "035B",
+  "kategorie": "Leder",
+  "farbe": "#cbb597",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather035B",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather036A": {
+  "name": "Steppleder Rot",
+  "nr": "036A",
+  "kategorie": "Leder",
+  "farbe": "#b13128",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather036A",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather037": {
+  "name": "Leder Kastanie",
+  "nr": "037",
+  "kategorie": "Leder",
+  "farbe": "#643729",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather037",
+  "lizenz": "CC0 1.0"
+ },
+ "Leather038": {
+  "name": "Leder Orange",
+  "nr": "038",
+  "kategorie": "Leder",
+  "farbe": "#d26d2f",
+  "metall": 0.0,
+  "quelle": "ambientCG Leather038",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble007": {
+  "name": "Marmor Sand",
+  "nr": "007",
+  "kategorie": "Stein",
+  "farbe": "#907b6a",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble007",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble009": {
+  "name": "Marmor Verde",
+  "nr": "009",
+  "kategorie": "Stein",
+  "farbe": "#101514",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble009",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble012": {
+  "name": "Marmor Grau",
+  "nr": "012",
+  "kategorie": "Stein",
+  "farbe": "#acadb6",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble012",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble015": {
+  "name": "Marmor Creme",
+  "nr": "015",
+  "kategorie": "Stein",
+  "farbe": "#d8cdbb",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble015",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble016": {
+  "name": "Marmor Nero",
+  "nr": "016",
+  "kategorie": "Stein",
+  "farbe": "#3c3e3d",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble016",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble019": {
+  "name": "Marmor Weiß",
+  "nr": "019",
+  "kategorie": "Stein",
+  "farbe": "#e9e9e9",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble019",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble020": {
+  "name": "Marmor Rosé",
+  "nr": "020",
+  "kategorie": "Stein",
+  "farbe": "#b1a295",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble020",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble023": {
+  "name": "Marmor Anthrazit",
+  "nr": "023",
+  "kategorie": "Stein",
+  "farbe": "#575d63",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble023",
+  "lizenz": "CC0 1.0"
+ },
+ "Marble024": {
+  "name": "Marmor Taupe",
+  "nr": "024",
+  "kategorie": "Stein",
+  "farbe": "#8f847a",
+  "metall": 0.0,
+  "quelle": "ambientCG Marble024",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal004": {
+  "name": "Stahlblech fleckig",
+  "nr": "004",
+  "kategorie": "Metall",
+  "farbe": "#b8bebf",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal004",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal007": {
+  "name": "Messing gealtert",
+  "nr": "007",
+  "kategorie": "Metall",
+  "farbe": "#c5974f",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal007",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal008": {
+  "name": "Kupfer gealtert",
+  "nr": "008",
+  "kategorie": "Metall",
+  "farbe": "#aa8265",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal008",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal009": {
+  "name": "Aluminium gebürstet",
+  "nr": "009",
+  "kategorie": "Metall",
+  "farbe": "#929497",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal009",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal012": {
+  "name": "Aluminium hell",
+  "nr": "012",
+  "kategorie": "Metall",
+  "farbe": "#d5dce4",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal012",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal016": {
+  "name": "Weißblech verwittert",
+  "nr": "016",
+  "kategorie": "Metall",
+  "farbe": "#dfd9da",
+  "metall": 0.86,
+  "quelle": "ambientCG Metal016",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal018": {
+  "name": "Rostblech dunkel",
+  "nr": "018",
+  "kategorie": "Metall",
+  "farbe": "#756459",
+  "metall": 0.3,
+  "quelle": "ambientCG Metal018",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal027": {
+  "name": "Lack Nachtblau",
+  "nr": "027",
+  "kategorie": "Metall",
+  "farbe": "#2d2c34",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal027",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal028": {
+  "name": "Lack Schwarz",
+  "nr": "028",
+  "kategorie": "Metall",
+  "farbe": "#1c2120",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal028",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal029": {
+  "name": "Lack Schwarz matt",
+  "nr": "029",
+  "kategorie": "Metall",
+  "farbe": "#1d2221",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal029",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal035": {
+  "name": "Kupfer",
+  "nr": "035",
+  "kategorie": "Metall",
+  "farbe": "#ae7139",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal035",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal038": {
+  "name": "Stahl verzinkt",
+  "nr": "038",
+  "kategorie": "Metall",
+  "farbe": "#5f6161",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal038",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal041A": {
+  "name": "Stahl hell",
+  "nr": "041A",
+  "kategorie": "Metall",
+  "farbe": "#b7baba",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal041A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal042A": {
+  "name": "Gold",
+  "nr": "042A",
+  "kategorie": "Metall",
+  "farbe": "#f2d690",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal042A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal046A": {
+  "name": "Stahl dunkel",
+  "nr": "046A",
+  "kategorie": "Metall",
+  "farbe": "#5c5c5e",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal046A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal047B": {
+  "name": "Rostblech",
+  "nr": "047B",
+  "kategorie": "Metall",
+  "farbe": "#6a5042",
+  "metall": 0.87,
+  "quelle": "ambientCG Metal047B",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal048A": {
+  "name": "Messing poliert",
+  "nr": "048A",
+  "kategorie": "Metall",
+  "farbe": "#fee39c",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal048A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal048B": {
+  "name": "Messing matt",
+  "nr": "048B",
+  "kategorie": "Metall",
+  "farbe": "#fbe09a",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal048B",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal048C": {
+  "name": "Messing verkratzt",
+  "nr": "048C",
+  "kategorie": "Metall",
+  "farbe": "#f8de98",
+  "metall": 0.99,
+  "quelle": "ambientCG Metal048C",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal050A": {
+  "name": "Chrom",
+  "nr": "050A",
+  "kategorie": "Metall",
+  "farbe": "#f6f7f7",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal050A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal051A": {
+  "name": "Lack Weiß",
+  "nr": "051A",
+  "kategorie": "Metall",
+  "farbe": "#f6f7f7",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal051A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal052A": {
+  "name": "Aluminium eloxiert",
+  "nr": "052A",
+  "kategorie": "Metall",
+  "farbe": "#c4c7c7",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal052A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal052C": {
+  "name": "Zinkblech fleckig",
+  "nr": "052C",
+  "kategorie": "Metall",
+  "farbe": "#bdc0bf",
+  "metall": 0.99,
+  "quelle": "ambientCG Metal052C",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal053B": {
+  "name": "Blech mit Rostspuren",
+  "nr": "053B",
+  "kategorie": "Metall",
+  "farbe": "#bab5b0",
+  "metall": 0.91,
+  "quelle": "ambientCG Metal053B",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal053C": {
+  "name": "Blech stark verrostet",
+  "nr": "053C",
+  "kategorie": "Metall",
+  "farbe": "#a48772",
+  "metall": 0.54,
+  "quelle": "ambientCG Metal053C",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal054A": {
+  "name": "Aluminium geschliffen",
+  "nr": "054A",
+  "kategorie": "Metall",
+  "farbe": "#c1c4c4",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal054A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal055A": {
+  "name": "Edelstahl",
+  "nr": "055A",
+  "kategorie": "Metall",
+  "farbe": "#bebdbd",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal055A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal056A": {
+  "name": "Blech zerkratzt",
+  "nr": "056A",
+  "kategorie": "Metall",
+  "farbe": "#bcb7b3",
+  "metall": 0.96,
+  "quelle": "ambientCG Metal056A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal056B": {
+  "name": "Blech zerkratzt, Rost",
+  "nr": "056B",
+  "kategorie": "Metall",
+  "farbe": "#b5a99f",
+  "metall": 0.86,
+  "quelle": "ambientCG Metal056B",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal057A": {
+  "name": "Roségold",
+  "nr": "057A",
+  "kategorie": "Metall",
+  "farbe": "#fad1c1",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal057A",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal058C": {
+  "name": "Kupfer mit Patina",
+  "nr": "058C",
+  "kategorie": "Metall",
+  "farbe": "#8db7aa",
+  "metall": 0.36,
+  "quelle": "ambientCG Metal058C",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal061B": {
+  "name": "Aluminium matt",
+  "nr": "061B",
+  "kategorie": "Metall",
+  "farbe": "#c0c2c0",
+  "metall": 1.0,
+  "quelle": "ambientCG Metal061B",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal062C": {
+  "name": "Blech verwittert",
+  "nr": "062C",
+  "kategorie": "Metall",
+  "farbe": "#c0b9b1",
+  "metall": 0.87,
+  "quelle": "ambientCG Metal062C",
+  "lizenz": "CC0 1.0"
+ },
+ "Metal063": {
+  "name": "Stahl brüniert",
+  "nr": "063",
+  "kategorie": "Metall",
+  "farbe": "#6e6d6a",
+  "metall": 0.96,
+  "quelle": "ambientCG Metal063",
+  "lizenz": "CC0 1.0"
+ },
+ "MetalPlates008": {
+  "name": "Stahlplatten",
+  "nr": "008",
+  "kategorie": "Metall",
+  "farbe": "#8a8e91",
+  "metall": 1.0,
+  "quelle": "ambientCG MetalPlates008",
+  "lizenz": "CC0 1.0"
+ },
+ "MetalWalkway014": {
+  "name": "Lochblech rostig",
+  "nr": "014",
+  "kategorie": "Metall",
+  "farbe": "#74513c",
+  "metall": 0.02,
+  "quelle": "ambientCG MetalWalkway014",
+  "lizenz": "CC0 1.0"
+ },
+ "Onyx001": {
+  "name": "Onyx Grau",
+  "nr": "001",
+  "kategorie": "Stein",
+  "farbe": "#9f9990",
+  "metall": 0.0,
+  "quelle": "ambientCG Onyx001",
+  "lizenz": "CC0 1.0"
+ },
+ "Onyx004": {
+  "name": "Onyx Elfenbein",
+  "nr": "004",
+  "kategorie": "Stein",
+  "farbe": "#cac2b1",
+  "metall": 0.0,
+  "quelle": "ambientCG Onyx004",
+  "lizenz": "CC0 1.0"
+ },
+ "Onyx006": {
+  "name": "Onyx Blau",
+  "nr": "006",
+  "kategorie": "Stein",
+  "farbe": "#757b7a",
+  "metall": 0.0,
+  "quelle": "ambientCG Onyx006",
+  "lizenz": "CC0 1.0"
+ },
+ "Onyx010": {
+  "name": "Onyx Rot",
+  "nr": "010",
+  "kategorie": "Stein",
+  "farbe": "#917469",
+  "metall": 0.0,
+  "quelle": "ambientCG Onyx010",
+  "lizenz": "CC0 1.0"
+ },
+ "Onyx011": {
+  "name": "Onyx Petrol",
+  "nr": "011",
+  "kategorie": "Stein",
+  "farbe": "#60665e",
+  "metall": 0.0,
+  "quelle": "ambientCG Onyx011",
+  "lizenz": "CC0 1.0"
+ },
+ "Onyx012": {
+  "name": "Onyx Sand",
+  "nr": "012",
+  "kategorie": "Stein",
+  "farbe": "#a08e77",
+  "metall": 0.0,
+  "quelle": "ambientCG Onyx012",
+  "lizenz": "CC0 1.0"
+ },
+ "Onyx015": {
+  "name": "Onyx Weiß",
+  "nr": "015",
+  "kategorie": "Stein",
+  "farbe": "#cdcac8",
+  "metall": 0.0,
+  "quelle": "ambientCG Onyx015",
+  "lizenz": "CC0 1.0"
+ },
+ "PaintedWood008C": {
+  "name": "Holz lackiert, verwittert",
+  "nr": "008C",
+  "kategorie": "Holz",
+  "farbe": "#5a452b",
+  "metall": 0.0,
+  "quelle": "ambientCG PaintedWood008C",
+  "lizenz": "CC0 1.0"
+ },
+ "Plaster001": {
+  "name": "Putz Weiß",
+  "nr": "001",
+  "kategorie": "Stein",
+  "farbe": "#d6d3d0",
+  "metall": 0.0,
+  "quelle": "ambientCG Plaster001",
+  "lizenz": "CC0 1.0"
+ },
+ "Plaster004": {
+  "name": "Putz Grau",
+  "nr": "004",
+  "kategorie": "Stein",
+  "farbe": "#9a9a96",
+  "metall": 0.0,
+  "quelle": "ambientCG Plaster004",
+  "lizenz": "CC0 1.0"
+ },
+ "Porcelain001": {
+  "name": "Porzellan Weiß",
+  "nr": "001",
+  "kategorie": "Fliesen",
+  "farbe": "#f9f9f9",
+  "metall": 0.0,
+  "quelle": "ambientCG Porcelain001",
+  "lizenz": "CC0 1.0"
+ },
+ "Rock020": {
+  "name": "Fels Grau-Grün",
+  "nr": "020",
+  "kategorie": "Stein",
+  "farbe": "#4d4c45",
+  "metall": 0.0,
+  "quelle": "ambientCG Rock020",
+  "lizenz": "CC0 1.0"
+ },
+ "Rock037": {
+  "name": "Fels Dunkelgrün",
+  "nr": "037",
+  "kategorie": "Stein",
+  "farbe": "#1b1e1b",
+  "metall": 0.0,
+  "quelle": "ambientCG Rock037",
+  "lizenz": "CC0 1.0"
+ },
+ "Rope001": {
+  "name": "Tauwerk",
+  "nr": "001",
+  "kategorie": "Stoff",
+  "farbe": "#79694d",
+  "metall": 0.0,
+  "quelle": "ambientCG Rope001",
+  "lizenz": "CC0 1.0"
+ },
+ "SheetMetal001": {
+  "name": "Lochblech Schwarz",
+  "nr": "001",
+  "kategorie": "Metall",
+  "farbe": "#191819",
+  "metall": 0.02,
+  "quelle": "ambientCG SheetMetal001",
+  "lizenz": "CC0 1.0"
+ },
+ "Tiles032": {
+  "name": "Fliesen Metrogrün",
+  "nr": "032",
+  "kategorie": "Fliesen",
+  "farbe": "#1e4e36",
+  "metall": 0.0,
+  "quelle": "ambientCG Tiles032",
+  "lizenz": "CC0 1.0"
+ },
+ "Tiles075": {
+  "name": "Fliesen Marmor Schwarz",
+  "nr": "075",
+  "kategorie": "Fliesen",
+  "farbe": "#121314",
+  "metall": 0.0,
+  "quelle": "ambientCG Tiles075",
+  "lizenz": "CC0 1.0"
+ },
+ "Tiles078": {
+  "name": "Fliesen Travertin",
+  "nr": "078",
+  "kategorie": "Fliesen",
+  "farbe": "#9b8674",
+  "metall": 0.0,
+  "quelle": "ambientCG Tiles078",
+  "lizenz": "CC0 1.0"
+ },
+ "Tiles081": {
+  "name": "Fliesen Sternmuster",
+  "nr": "081",
+  "kategorie": "Fliesen",
+  "farbe": "#7a786f",
+  "metall": 0.0,
+  "quelle": "ambientCG Tiles081",
+  "lizenz": "CC0 1.0"
+ },
+ "Tiles108": {
+  "name": "Fliesen Schwarz",
+  "nr": "108",
+  "kategorie": "Fliesen",
+  "farbe": "#20201f",
+  "metall": 0.0,
+  "quelle": "ambientCG Tiles108",
+  "lizenz": "CC0 1.0"
+ },
+ "Tiles129B": {
+  "name": "Mosaik Schwarz",
+  "nr": "129B",
+  "kategorie": "Fliesen",
+  "farbe": "#1b1b1a",
+  "metall": 0.0,
+  "quelle": "ambientCG Tiles129B",
+  "lizenz": "CC0 1.0"
+ },
+ "Tiles131": {
+  "name": "Fliesen Kreuzmuster",
+  "nr": "131",
+  "kategorie": "Fliesen",
+  "farbe": "#907551",
+  "metall": 0.0,
+  "quelle": "ambientCG Tiles131",
+  "lizenz": "CC0 1.0"
+ },
+ "Tiles133D": {
+  "name": "Fliesen Weiß, gesprungen",
+  "nr": "133D",
+  "kategorie": "Fliesen",
+  "farbe": "#b0b3b0",
+  "metall": 0.0,
+  "quelle": "ambientCG Tiles133D",
+  "lizenz": "CC0 1.0"
+ },
+ "Travertine004": {
+  "name": "Travertin Grau",
+  "nr": "004",
+  "kategorie": "Stein",
+  "farbe": "#a29384",
+  "metall": 0.0,
+  "quelle": "ambientCG Travertine004",
+  "lizenz": "CC0 1.0"
+ },
+ "Travertine005": {
+  "name": "Travertin Braun",
+  "nr": "005",
+  "kategorie": "Stein",
+  "farbe": "#5e5046",
+  "metall": 0.0,
+  "quelle": "ambientCG Travertine005",
+  "lizenz": "CC0 1.0"
+ },
+ "Travertine013": {
+  "name": "Travertin Blau",
+  "nr": "013",
+  "kategorie": "Stein",
+  "farbe": "#8b9eaa",
+  "metall": 0.0,
+  "quelle": "ambientCG Travertine013",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood048": {
+  "name": "Kiefer",
+  "nr": "048",
+  "kategorie": "Holz",
+  "farbe": "#af8f65",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood048",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood058": {
+  "name": "Eiche",
+  "nr": "058",
+  "kategorie": "Holz",
+  "farbe": "#a0795b",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood058",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood060": {
+  "name": "Nussbaum",
+  "nr": "060",
+  "kategorie": "Holz",
+  "farbe": "#63422f",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood060",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood061": {
+  "name": "Ahorn",
+  "nr": "061",
+  "kategorie": "Holz",
+  "farbe": "#d7bca7",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood061",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood062": {
+  "name": "Treibholz",
+  "nr": "062",
+  "kategorie": "Holz",
+  "farbe": "#5e4f47",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood062",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood067": {
+  "name": "Mahagoni",
+  "nr": "067",
+  "kategorie": "Holz",
+  "farbe": "#371e0e",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood067",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood068": {
+  "name": "Buche",
+  "nr": "068",
+  "kategorie": "Holz",
+  "farbe": "#ac896c",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood068",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood094": {
+  "name": "Esche hell",
+  "nr": "094",
+  "kategorie": "Holz",
+  "farbe": "#a78263",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood094",
+  "lizenz": "CC0 1.0"
+ },
+ "Wood095": {
+  "name": "Fichte",
+  "nr": "095",
+  "kategorie": "Holz",
+  "farbe": "#cc9c6e",
+  "metall": 0.0,
+  "quelle": "ambientCG Wood095",
+  "lizenz": "CC0 1.0"
+ },
+ "WoodFloor041": {
+  "name": "Dielen verwittert",
+  "nr": "041",
+  "kategorie": "Holz",
+  "farbe": "#5a4938",
+  "metall": 0.0,
+  "quelle": "ambientCG WoodFloor041",
+  "lizenz": "CC0 1.0"
+ },
+ "WoodFloor051": {
+  "name": "Parkett Eiche",
+  "nr": "051",
+  "kategorie": "Holz",
+  "farbe": "#99795c",
+  "metall": 0.0,
+  "quelle": "ambientCG WoodFloor051",
+  "lizenz": "CC0 1.0"
+ }
+}

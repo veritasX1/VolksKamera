@@ -1,0 +1,111 @@
+<!doctype html><html><head><meta charset="utf-8">
+<link href="https://fonts.googleapis.com/css2?family=Poiret+One&family=Limelight&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#2a2622;font-family:'Poiret One',sans-serif;color:#eee}
+.row{display:flex;gap:48px;padding:40px 48px 10px;justify-content:center}
+.cell{text-align:center;width:300px}
+.cell svg{width:300px;height:300px;border-radius:66px;box-shadow:0 10px 30px rgba(0,0,0,.6)}
+.small{display:flex;gap:14px;justify-content:center;margin-top:18px;align-items:center}
+.small svg{width:64px;height:64px;border-radius:15px}
+.small svg.s{width:40px;height:40px;border-radius:10px}
+h2{font-family:'Limelight';font-weight:400;font-size:30px;margin:18px 0 4px;color:#f0d67a}
+p{margin:0;font-size:19px;line-height:1.3;color:#ddd}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute"><defs>
+ <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1B0"/><stop offset=".35" stop-color="#E8C35A"/><stop offset=".7" stop-color="#B8891E"/><stop offset="1" stop-color="#7A5810"/></linearGradient>
+ <linearGradient id="goldH" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#8A6612"/><stop offset=".5" stop-color="#F4DA7C"/><stop offset="1" stop-color="#8A6612"/></linearGradient>
+ <radialGradient id="glow" cx=".5" cy=".62" r=".6"><stop offset="0" stop-color="#3a2a12"/><stop offset="1" stop-color="#0b0906"/></radialGradient>
+ <radialGradient id="emer" cx=".5" cy=".45" r=".7"><stop offset="0" stop-color="#17544a"/><stop offset="1" stop-color="#062520"/></radialGradient>
+ <radialGradient id="burg" cx=".5" cy=".4" r=".75"><stop offset="0" stop-color="#7a1a2c"/><stop offset="1" stop-color="#2c0610"/></radialGradient>
+ <radialGradient id="lens" cx=".42" cy=".38" r=".7"><stop offset="0" stop-color="#5a6f8a"/><stop offset=".35" stop-color="#1b2433"/><stop offset="1" stop-color="#05070b"/></radialGradient>
+ <!-- A: Sonnenaufgang mit Filmkamera -->
+ <symbol id="A" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="url(#glow)"/>
+  <g stroke="url(#gold)" stroke-width="7" opacity=".9">
+   <line x1="256" y1="420" x2="256" y2="40"/><line x1="256" y1="420" x2="120" y2="60"/><line x1="256" y1="420" x2="392" y2="60"/>
+   <line x1="256" y1="420" x2="20" y2="150"/><line x1="256" y1="420" x2="492" y2="150"/><line x1="256" y1="420" x2="0" y2="290"/><line x1="256" y1="420" x2="512" y2="290"/>
+   <line x1="256" y1="420" x2="188" y2="40"/><line x1="256" y1="420" x2="324" y2="40"/>
+  </g>
+  <circle cx="256" cy="420" r="150" fill="#0b0906" stroke="url(#gold)" stroke-width="8"/>
+  <circle cx="256" cy="420" r="126" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <!-- Kamera -->
+  <g fill="url(#gold)">
+   <circle cx="200" cy="232" r="46"/><circle cx="300" cy="222" r="56"/>
+   <rect x="160" y="282" width="176" height="104" rx="10"/>
+   <path d="M336 306 L400 280 L400 390 L336 364 Z"/>
+   <rect x="232" y="386" width="30" height="40"/>
+  </g>
+  <g fill="#0b0906"><circle cx="200" cy="232" r="14"/><circle cx="300" cy="222" r="17"/>
+   <circle cx="200" cy="232" r="6" fill="url(#gold)"/><circle cx="300" cy="222" r="7" fill="url(#gold)"/>
+   <rect x="180" y="302" width="92" height="10"/><rect x="180" y="322" width="64" height="10"/></g>
+  <rect x="14" y="14" width="484" height="484" rx="70" fill="none" stroke="url(#gold)" stroke-width="6"/>
+ </symbol>
+ <!-- B: Monogramm V mit Stufen -->
+ <symbol id="B" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="url(#emer)"/>
+  <polygon points="256,28 418,95 484,256 418,417 256,484 94,417 28,256 94,95" fill="none" stroke="url(#gold)" stroke-width="8"/>
+  <polygon points="256,56 398,115 456,256 398,397 256,456 114,397 56,256 114,115" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <g fill="url(#gold)">
+   <!-- gestuftes V -->
+   <path d="M118 128 H198 V146 H186 L256 356 L326 146 H314 V128 H394 V146 H376 L276 410 H236 L136 146 H118 Z"/>
+   <rect x="150" y="104" width="44" height="14"/><rect x="318" y="104" width="44" height="14"/>
+   <rect x="162" y="84" width="20" height="14"/><rect x="330" y="84" width="20" height="14"/>
+  </g>
+  <circle cx="256" cy="226" r="46" fill="url(#lens)" stroke="url(#gold)" stroke-width="8"/>
+  <circle cx="242" cy="212" r="10" fill="#cfe0ff" opacity=".5"/>
+  <g stroke="url(#gold)" stroke-width="4"><line x1="256" y1="160" x2="256" y2="176"/><line x1="256" y1="276" x2="256" y2="292"/></g>
+ </symbol>
+ <!-- C: Objektiv im Fächer (Chrysler-Krone) -->
+ <symbol id="C" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="url(#burg)"/>
+  <g fill="none" stroke="url(#gold)" stroke-width="7">
+   <path d="M56 330 A200 200 0 0 1 456 330"/><path d="M96 330 A160 160 0 0 1 416 330"/><path d="M136 330 A120 120 0 0 1 376 330"/>
+  </g>
+  <g fill="url(#gold)">
+   <polygon points="256,40 246,120 266,120"/><polygon points="152,80 176,150 190,140"/><polygon points="360,80 336,150 322,140"/>
+   <polygon points="84,160 138,200 146,186"/><polygon points="428,160 374,200 366,186"/>
+  </g>
+  <circle cx="256" cy="330" r="118" fill="url(#gold)"/>
+  <circle cx="256" cy="330" r="100" fill="#1a0c08"/>
+  <circle cx="256" cy="330" r="88" fill="none" stroke="url(#gold)" stroke-width="3"/>
+  <polygon points="256,262 315,296 315,364 256,398 197,364 197,296" fill="url(#lens)" stroke="url(#gold)" stroke-width="4"/>
+  <circle cx="236" cy="310" r="14" fill="#dfe8ff" opacity=".45"/>
+  <rect x="40" y="448" width="432" height="8" fill="url(#goldH)"/>
+  <rect x="80" y="466" width="352" height="5" fill="url(#goldH)"/>
+ </symbol>
+ <!-- D: Filmspule als Rosette -->
+ <symbol id="D" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#0c0b0a"/>
+  <g stroke="url(#gold)" stroke-width="3" opacity=".55">
+   <line x1="0" y1="96" x2="512" y2="96"/><line x1="0" y1="104" x2="512" y2="104"/><line x1="0" y1="408" x2="512" y2="408"/><line x1="0" y1="416" x2="512" y2="416"/>
+  </g>
+  <circle cx="256" cy="256" r="178" fill="url(#gold)"/>
+  <circle cx="256" cy="256" r="162" fill="#0c0b0a"/>
+  <circle cx="256" cy="256" r="150" fill="url(#gold)"/>
+  <g fill="#0c0b0a">
+   <path id="seg" d="M256 256 m0 -132 a132 132 0 0 1 66 17.7 L283 208 a55 55 0 0 0 -27 -7 Z"/>
+   <use href="#seg" transform="rotate(60 256 256)"/><use href="#seg" transform="rotate(120 256 256)"/>
+   <use href="#seg" transform="rotate(180 256 256)"/><use href="#seg" transform="rotate(240 256 256)"/><use href="#seg" transform="rotate(300 256 256)"/>
+  </g>
+  <circle cx="256" cy="256" r="40" fill="#0c0b0a" stroke="url(#gold)" stroke-width="6"/>
+  <g fill="url(#gold)"><rect x="248" y="218" width="16" height="12"/><rect x="248" y="282" width="16" height="12"/><rect x="218" y="248" width="12" height="16"/><rect x="282" y="248" width="12" height="16"/></g>
+  <!-- Filmstreifen -->
+  <path d="M390 360 L512 410 L512 470 L370 412 Z" fill="url(#gold)"/>
+  <g fill="#0c0b0a"><rect x="400" y="374" width="10" height="8" transform="rotate(22 405 378)"/><rect x="430" y="386" width="10" height="8" transform="rotate(22 435 390)"/><rect x="460" y="398" width="10" height="8" transform="rotate(22 465 402)"/><rect x="490" y="410" width="10" height="8" transform="rotate(22 495 414)"/>
+   <rect x="388" y="402" width="10" height="8" transform="rotate(22 393 406)"/><rect x="418" y="414" width="10" height="8" transform="rotate(22 423 418)"/><rect x="448" y="426" width="10" height="8" transform="rotate(22 453 430)"/><rect x="478" y="438" width="10" height="8" transform="rotate(22 483 442)"/></g>
+ </symbol>
+</defs></svg>
+<div class="row">
+ <div class="cell"><svg viewBox="0 0 512 512"><use href="#A"/></svg><h2>A · Aufgang</h2><p>Filmkamera vor Deco-Sonnenstrahlen, goldene Linien auf Schwarz</p></div>
+ <div class="cell"><svg viewBox="0 0 512 512"><use href="#B"/></svg><h2>B · Monogramm</h2><p>Gestuftes „V“ mit Objektiv im Achteck, Gold auf Smaragd</p></div>
+ <div class="cell"><svg viewBox="0 0 512 512"><use href="#C"/></svg><h2>C · Krone</h2><p>Objektiv unter Bögen wie die Chrysler-Krone, Gold auf Bordeaux</p></div>
+ <div class="cell"><svg viewBox="0 0 512 512"><use href="#D"/></svg><h2>D · Rosette</h2><p>Filmspule als Rosette mit Filmstreifen, Gold auf Schwarz</p></div>
+</div>
+<div class="small">
+ <svg viewBox="0 0 512 512"><use href="#A"/></svg><svg class="s" viewBox="0 0 512 512"><use href="#A"/></svg>
+ <span style="width:70px"></span><svg viewBox="0 0 512 512"><use href="#B"/></svg><svg class="s" viewBox="0 0 512 512"><use href="#B"/></svg>
+ <span style="width:70px"></span><svg viewBox="0 0 512 512"><use href="#C"/></svg><svg class="s" viewBox="0 0 512 512"><use href="#C"/></svg>
+ <span style="width:70px"></span><svg viewBox="0 0 512 512"><use href="#D"/></svg><svg class="s" viewBox="0 0 512 512"><use href="#D"/></svg>
+</div>
+<p style="text-align:center;margin-top:10px;font-size:16px;color:#aaa">unten: Größe auf dem Startbildschirm</p>
+</body></html>

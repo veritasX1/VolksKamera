@@ -1,0 +1,3270 @@
+{
+ "kodak_kodachrome_tageslicht_16": {
+  "lut": "luts_film/kodak_kodachrome_tageslicht_16.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_tageslicht_8": {
+  "lut": "luts_film/kodak_kodachrome_tageslicht_8.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_type_a_kunstlicht_16": {
+  "lut": "luts_film/kodak_kodachrome_type_a_kunstlicht_16.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_type_a_kunstlicht_8": {
+  "lut": "luts_film/kodak_kodachrome_type_a_kunstlicht_8.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_ii_daylight_16": {
+  "lut": "luts_film/kodak_kodachrome_ii_daylight_16.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_ii_daylight_8": {
+  "lut": "luts_film/kodak_kodachrome_ii_daylight_8.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_ii_type_a_8": {
+  "lut": "luts_film/kodak_kodachrome_ii_type_a_8.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_ii_type_a_16": {
+  "lut": "luts_film/kodak_kodachrome_ii_type_a_16.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_25_movie_film_16": {
+  "lut": "luts_film/kodak_kodachrome_25_movie_film_16.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_25_movie_film_8": {
+  "lut": "luts_film/kodak_kodachrome_25_movie_film_8.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_40_type_a_8": {
+  "lut": "luts_film/kodak_kodachrome_40_type_a_8.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_40_type_a_16": {
+  "lut": "luts_film/kodak_kodachrome_40_type_a_16.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_40_sound_8": {
+  "lut": "luts_film/kodak_kodachrome_40_sound_8.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_ektachrome_commercial_7252_16": {
+  "lut": "luts_film/kodak_ektachrome_commercial_7252_16.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_ektachrome_ef_7241_tageslicht_7242_kunstlicht_16": {
+  "lut": "luts_film/kodak_ektachrome_ef_7241_tageslicht_7242_kunstlicht_16.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_160_type_a_8": {
+  "lut": "luts_film/kodak_ektachrome_160_type_a_8.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_160_sound_8": {
+  "lut": "luts_film/kodak_ektachrome_160_sound_8.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_160_type_g_8": {
+  "lut": "luts_film/kodak_ektachrome_160_type_g_8.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_video_news_film_7239_160d_7240_125t_7250_400t_7251_400d_16": {
+  "lut": "luts_film/kodak_ektachrome_video_news_film_7239_160d_7240_125t_7250_400t_7251_400d_16.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_64t_7280_8": {
+  "lut": "luts_film/kodak_ektachrome_64t_7280_8.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_100d_7285_16": {
+  "lut": "luts_film/kodak_ektachrome_100d_7285_16.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_100d_7285_8": {
+  "lut": "luts_film/kodak_ektachrome_100d_7285_8.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_100d_5294_35_7294_16_s8_35": {
+  "lut": "luts_film/kodak_ektachrome_100d_5294_35_7294_16_s8_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_100d_5294_35_7294_16_s8_16": {
+  "lut": "luts_film/kodak_ektachrome_100d_5294_35_7294_16_s8_16.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_100d_5294_35_7294_16_s8_8": {
+  "lut": "luts_film/kodak_ektachrome_100d_5294_35_7294_16_s8_8.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_5247_35": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_5247_35.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_5248_35": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_5248_35.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_5250_35": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_5250_35.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_5251_7251_35": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_5251_7251_35.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_5251_7251_16": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_5251_7251_16.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_5254_7254_35": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_5254_7254_35.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_5254_7254_16": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_5254_7254_16.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_ii_5247_7247_35": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_ii_5247_7247_35.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_eastman_color_negative_ii_5247_7247_16": {
+  "lut": "luts_film/eastman_kodak_eastman_color_negative_ii_5247_7247_16.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_exr_50d_5245_7245_35": {
+  "lut": "luts_film/eastman_kodak_exr_50d_5245_7245_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_exr_50d_5245_7245_16": {
+  "lut": "luts_film/eastman_kodak_exr_50d_5245_7245_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_exr_100t_5248_7248_35": {
+  "lut": "luts_film/eastman_kodak_exr_100t_5248_7248_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_exr_100t_5248_7248_16": {
+  "lut": "luts_film/eastman_kodak_exr_100t_5248_7248_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_exr_200t_5293_7293_35": {
+  "lut": "luts_film/eastman_kodak_exr_200t_5293_7293_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_exr_200t_5293_7293_16": {
+  "lut": "luts_film/eastman_kodak_exr_200t_5293_7293_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_exr_500t_5296_7296_sp_ter_5298_7298_35": {
+  "lut": "luts_film/eastman_kodak_exr_500t_5296_7296_sp_ter_5298_7298_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_exr_500t_5296_7296_sp_ter_5298_7298_16": {
+  "lut": "luts_film/eastman_kodak_exr_500t_5296_7296_sp_ter_5298_7298_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision_200t_5274_7274_35": {
+  "lut": "luts_film/eastman_kodak_vision_200t_5274_7274_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision_200t_5274_7274_16": {
+  "lut": "luts_film/eastman_kodak_vision_200t_5274_7274_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision_250d_5246_7246_35": {
+  "lut": "luts_film/eastman_kodak_vision_250d_5246_7246_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision_250d_5246_7246_16": {
+  "lut": "luts_film/eastman_kodak_vision_250d_5246_7246_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision_320t_5277_7277_35": {
+  "lut": "luts_film/eastman_kodak_vision_320t_5277_7277_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision_320t_5277_7277_16": {
+  "lut": "luts_film/eastman_kodak_vision_320t_5277_7277_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision_500t_5279_7279_35": {
+  "lut": "luts_film/eastman_kodak_vision_500t_5279_7279_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision_500t_5279_7279_16": {
+  "lut": "luts_film/eastman_kodak_vision_500t_5279_7279_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision_800t_5289_7289_35": {
+  "lut": "luts_film/eastman_kodak_vision_800t_5289_7289_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision_800t_5289_7289_16": {
+  "lut": "luts_film/eastman_kodak_vision_800t_5289_7289_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision2_50d_5201_7201_35": {
+  "lut": "luts_film/eastman_kodak_vision2_50d_5201_7201_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_vision2_50d_5201_7201_16": {
+  "lut": "luts_film/eastman_kodak_vision2_50d_5201_7201_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_vision2_50d_5201_7201_8": {
+  "lut": "luts_film/eastman_kodak_vision2_50d_5201_7201_8.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_vision2_100t_5212_7212_35": {
+  "lut": "luts_film/eastman_kodak_vision2_100t_5212_7212_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision2_100t_5212_7212_16": {
+  "lut": "luts_film/eastman_kodak_vision2_100t_5212_7212_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision2_200t_5217_7217_35": {
+  "lut": "luts_film/eastman_kodak_vision2_200t_5217_7217_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision2_200t_5217_7217_16": {
+  "lut": "luts_film/eastman_kodak_vision2_200t_5217_7217_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision2_200t_5217_7217_8": {
+  "lut": "luts_film/eastman_kodak_vision2_200t_5217_7217_8.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision2_250d_5205_7205_35": {
+  "lut": "luts_film/eastman_kodak_vision2_250d_5205_7205_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision2_250d_5205_7205_16": {
+  "lut": "luts_film/eastman_kodak_vision2_250d_5205_7205_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision2_500t_5218_7218_35": {
+  "lut": "luts_film/eastman_kodak_vision2_500t_5218_7218_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision2_500t_5218_7218_16": {
+  "lut": "luts_film/eastman_kodak_vision2_500t_5218_7218_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision2_500t_5218_7218_8": {
+  "lut": "luts_film/eastman_kodak_vision2_500t_5218_7218_8.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision2_expression_500t_5229_7229_35": {
+  "lut": "luts_film/eastman_kodak_vision2_expression_500t_5229_7229_35.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision2_expression_500t_5229_7229_16": {
+  "lut": "luts_film/eastman_kodak_vision2_expression_500t_5229_7229_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision2_hd_7299_16": {
+  "lut": "luts_film/eastman_kodak_vision2_hd_7299_16.png",
+  "beschreibung": "Ältere Kino-Farbnegative (Vision/Vision2, EXR): neutral-natürlich, etwas gröber und weniger fein als Vision3. Farbverschiebung: dezent teal/warm, gedämpfter als moderne Stocks.",
+  "quelle": "Abgeleitet von Vision/Vision2/EXR (Vorläufer von Vision3, weniger verfeinert).",
+  "quellen": [
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision_old",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision3_50d_5203_7203_35": {
+  "lut": "luts_film/eastman_kodak_vision3_50d_5203_7203_35.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_vision3_50d_5203_7203_16": {
+  "lut": "luts_film/eastman_kodak_vision3_50d_5203_7203_16.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_vision3_50d_5203_7203_8": {
+  "lut": "luts_film/eastman_kodak_vision3_50d_5203_7203_8.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_vision3_200t_5213_7213_35": {
+  "lut": "luts_film/eastman_kodak_vision3_200t_5213_7213_35.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision3_200t_5213_7213_16": {
+  "lut": "luts_film/eastman_kodak_vision3_200t_5213_7213_16.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision3_200t_5213_7213_8": {
+  "lut": "luts_film/eastman_kodak_vision3_200t_5213_7213_8.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_vision3_250d_5207_7207_35": {
+  "lut": "luts_film/eastman_kodak_vision3_250d_5207_7207_35.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision3_250d_5207_7207_16": {
+  "lut": "luts_film/eastman_kodak_vision3_250d_5207_7207_16.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision3_250d_5207_7207_8": {
+  "lut": "luts_film/eastman_kodak_vision3_250d_5207_7207_8.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision3_500t_5219_7219_35": {
+  "lut": "luts_film/eastman_kodak_vision3_500t_5219_7219_35.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision3_500t_5219_7219_16": {
+  "lut": "luts_film/eastman_kodak_vision3_500t_5219_7219_16.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_vision3_500t_5219_7219_8": {
+  "lut": "luts_film/eastman_kodak_vision3_500t_5219_7219_8.png",
+  "beschreibung": "Moderner Kino-Farbnegativ, neutral mit großem Belichtungsspielraum und feinstem Korn (Print-/Scan-Look). Farbverschiebung: Schatten leicht teal, Lichter leicht warm ('Teal-and-Orange'-Kino-Look), sonst natürlich.",
+  "quelle": "Vision3-Reihe (250D/500T): sehr feines Korn, weiter Umfang; Kino-Negativ, T=Kunstlicht/D=Tageslicht-balanciert.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://www.kodak.com/en/motion/products/camera-films"
+  ],
+  "familie": "vision3",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "kodak_kodachrome_35": {
+  "lut": "luts_film/kodak_kodachrome_35.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_ii_35": {
+  "lut": "luts_film/kodak_kodachrome_ii_35.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_x_35": {
+  "lut": "luts_film/kodak_kodachrome_x_35.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodachrome_25_km_35": {
+  "lut": "luts_film/kodak_kodachrome_25_km_35.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_kodachrome_64_kr_35": {
+  "lut": "luts_film/kodak_kodachrome_64_kr_35.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodachrome_200_kl_35": {
+  "lut": "luts_film/kodak_kodachrome_200_kl_35.png",
+  "beschreibung": "Warmer, dichter Umkehrfilm mit tiefen, satten Schatten und reinen, kräftigen Rot-/Orangetönen. Farbverschiebung: Rot/Orange betont, warme Haut, Blau leicht gedämpft, Schatten warm und dicht.",
+  "quelle": "Umkehr-Charakter aus Kodachrome-64-Datenblatt (Dynamikumfang ~8 Blenden); RMS/Gamma von Kodak nie veröffentlicht (K-14) → Kurvenform hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-64",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-25",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodachrome-200"
+  ],
+  "familie": "kodachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_e_1_e_2_35": {
+  "lut": "luts_film/kodak_ektachrome_e_1_e_2_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_high_speed_ektachrome_35": {
+  "lut": "luts_film/kodak_high_speed_ektachrome_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_x_35": {
+  "lut": "luts_film/kodak_ektachrome_x_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_64_200_400_35": {
+  "lut": "luts_film/kodak_ektachrome_64_200_400_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_elite_chrome_100_200_400_35": {
+  "lut": "luts_film/kodak_elite_chrome_100_200_400_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_e100s_e100sw_35": {
+  "lut": "luts_film/kodak_ektachrome_e100s_e100sw_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_e100vs_35": {
+  "lut": "luts_film/kodak_ektachrome_e100vs_35.png",
+  "beschreibung": "Gesättigte Ektachrome-Variante (VS = Vivid/Saturated): kräftigere Farben, harter Kontrast, kühl. Farbverschiebung: hohe Sättigung, Blau/Grün betont, Schatten dicht.",
+  "quelle": "Abgeleitet von E100/E100VS-Datenblatt (höhere Sättigung als Standard-E100).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-100VS"
+  ],
+  "familie": "ektachrome_vs",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_e100g_e100gx_35": {
+  "lut": "luts_film/kodak_ektachrome_e100g_e100gx_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektachrome_e100_35": {
+  "lut": "luts_film/kodak_ektachrome_e100_35.png",
+  "beschreibung": "Sauberer, eher kühler Umkehrfilm, lebendig und farbtreu, knackiger Kontrast (Gamma ~1,85). Farbverschiebung: leicht kühl, Blau klar/betont, Schatten leicht cyan, neutrale Haut.",
+  "quelle": "Datenblatt E100: RMS 8, Gamma Mitten ~1,80–1,90, Dmin 0,25, Blaupeak 440–460 nm (kühl).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-E100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektachrome-64"
+  ],
+  "familie": "ektachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodacolor_x_35": {
+  "lut": "luts_film/kodak_kodacolor_x_35.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodacolor_ii_35": {
+  "lut": "luts_film/kodak_kodacolor_ii_35.png",
+  "beschreibung": "Frühe Kino-Farbnegative (Eastman Color 5247, Kodacolor früh): begrenzte Farbtreue, wärmer, weicher, gedämpft. Farbverschiebung: warm-gedämpft, geringere Sättigung, milchige Tiefen (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Eastman-Color-/Kodacolor-Negative), keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodacolor-VR-200"
+  ],
+  "familie": "eastman_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodacolor_vr_100_200_400_1000_35": {
+  "lut": "luts_film/kodak_kodacolor_vr_100_200_400_1000_35.png",
+  "beschreibung": "Warmer Konsum-Farbnegativ mit betonten Rot-/Gelbtönen und lebendigen Grundfarben (Print-/Scan-Look). Farbverschiebung: warmer Grundton, Rot/Gelb betont, nostalgisch-golden.",
+  "quelle": "Kodak veröffentlicht für Gold 200 keine RMS/Gamma-Zahlen → Charakter (warme Rot-/Gelbbias) qualitativ aus Datenblatt, Kurve hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Gold-200",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-ColorPlus-200"
+  ],
+  "familie": "gold",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodak_gold_100_200_400_35": {
+  "lut": "luts_film/kodak_kodak_gold_100_200_400_35.png",
+  "beschreibung": "Warmer Konsum-Farbnegativ mit betonten Rot-/Gelbtönen und lebendigen Grundfarben (Print-/Scan-Look). Farbverschiebung: warmer Grundton, Rot/Gelb betont, nostalgisch-golden.",
+  "quelle": "Kodak veröffentlicht für Gold 200 keine RMS/Gamma-Zahlen → Charakter (warme Rot-/Gelbbias) qualitativ aus Datenblatt, Kurve hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Gold-200",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-ColorPlus-200"
+  ],
+  "familie": "gold",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodak_ultramax_400_35": {
+  "lut": "luts_film/kodak_kodak_ultramax_400_35.png",
+  "beschreibung": "Konsum-Farbnegativ, kräftiger und etwas kühler als Gold, gute Allround-Farben. Farbverschiebung: lebendige Grundfarben, leicht warm, mehr Sättigung als Gold.",
+  "quelle": "Abgeleitet von UltraMax-400/Max-Datenblatt (kräftiger als Gold); RMS nicht veröffentlicht.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Max-800"
+  ],
+  "familie": "ultramax",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "kodak_kodak_colorplus_200_35": {
+  "lut": "luts_film/kodak_kodak_colorplus_200_35.png",
+  "beschreibung": "Warmer Konsum-Farbnegativ mit betonten Rot-/Gelbtönen und lebendigen Grundfarben (Print-/Scan-Look). Farbverschiebung: warmer Grundton, Rot/Gelb betont, nostalgisch-golden.",
+  "quelle": "Kodak veröffentlicht für Gold 200 keine RMS/Gamma-Zahlen → Charakter (warme Rot-/Gelbbias) qualitativ aus Datenblatt, Kurve hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Gold-200",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-ColorPlus-200"
+  ],
+  "familie": "gold",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodak_pro_image_100_35": {
+  "lut": "luts_film/kodak_kodak_pro_image_100_35.png",
+  "beschreibung": "Warmer Konsum-Farbnegativ mit betonten Rot-/Gelbtönen und lebendigen Grundfarben (Print-/Scan-Look). Farbverschiebung: warmer Grundton, Rot/Gelb betont, nostalgisch-golden.",
+  "quelle": "Kodak veröffentlicht für Gold 200 keine RMS/Gamma-Zahlen → Charakter (warme Rot-/Gelbbias) qualitativ aus Datenblatt, Kurve hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Gold-200",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-ColorPlus-200"
+  ],
+  "familie": "gold",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_kodak_max_400_800_35": {
+  "lut": "luts_film/kodak_kodak_max_400_800_35.png",
+  "beschreibung": "Konsum-Farbnegativ, kräftiger und etwas kühler als Gold, gute Allround-Farben. Farbverschiebung: lebendige Grundfarben, leicht warm, mehr Sättigung als Gold.",
+  "quelle": "Abgeleitet von UltraMax-400/Max-Datenblatt (kräftiger als Gold); RMS nicht veröffentlicht.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Max-800"
+  ],
+  "familie": "ultramax",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "kodak_kodak_royal_gold_100_200_400_35": {
+  "lut": "luts_film/kodak_kodak_royal_gold_100_200_400_35.png",
+  "beschreibung": "Warmer Konsum-Farbnegativ mit betonten Rot-/Gelbtönen und lebendigen Grundfarben (Print-/Scan-Look). Farbverschiebung: warmer Grundton, Rot/Gelb betont, nostalgisch-golden.",
+  "quelle": "Kodak veröffentlicht für Gold 200 keine RMS/Gamma-Zahlen → Charakter (warme Rot-/Gelbbias) qualitativ aus Datenblatt, Kurve hergeleitet.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Gold-200",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-ColorPlus-200"
+  ],
+  "familie": "gold",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_ektar_25_35": {
+  "lut": "luts_film/kodak_ektar_25_35.png",
+  "beschreibung": "Feinstkörniger, gesättigter Farbnegativ (Print-/Scan-Look): brillante Blautöne bei zugleich warmen Erdtönen. Farbverschiebung: Blau steil/leuchtend, Rot weicher/warm, hohe Sättigung, sehr feines Korn.",
+  "quelle": "Datenblatt Ektar 100: RMS ~3,8 (feinstes Farbnegativ); Dmax Blau 3,1 (steil) / Grün 2,5 / Rot 2,0 (warm).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://business.kodakmoments.com/sites/default/files/files/resources/e4045_ektar_100.pdf"
+  ],
+  "familie": "ektar",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_ektar_100_35": {
+  "lut": "luts_film/kodak_ektar_100_35.png",
+  "beschreibung": "Feinstkörniger, gesättigter Farbnegativ (Print-/Scan-Look): brillante Blautöne bei zugleich warmen Erdtönen. Farbverschiebung: Blau steil/leuchtend, Rot weicher/warm, hohe Sättigung, sehr feines Korn.",
+  "quelle": "Datenblatt Ektar 100: RMS ~3,8 (feinstes Farbnegativ); Dmax Blau 3,1 (steil) / Grün 2,5 / Rot 2,0 (warm).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Ektar-100",
+   "https://business.kodakmoments.com/sites/default/files/files/resources/e4045_ektar_100.pdf"
+  ],
+  "familie": "ektar",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_portra_160nc_160vc_400nc_400vc_35": {
+  "lut": "luts_film/kodak_portra_160nc_160vc_400nc_400vc_35.png",
+  "beschreibung": "Portra VC (Vivid Colour): kräftigere Sättigung und etwas mehr Kontrast als NC, dennoch schöne Haut. Farbverschiebung: warm, kräftiger als NC, Haut betont.",
+  "quelle": "Abgeleitet von Portra-160VC/400VC-Datenblatt (höherer Kontrast/Sättigung als NC).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Portra-400VC",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Portra-160VC"
+  ],
+  "familie": "portra_vc",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_portra_160_35": {
+  "lut": "luts_film/kodak_portra_160_35.png",
+  "beschreibung": "Weicher Farbnegativ mit warmer, schmeichelnder Haut und angehobenen Schatten (Print-/Scan-Look). Farbverschiebung: warm-gelblich, Haut betont, Grün/Blau gedämpft, sanfte Gradation, offene Schatten.",
+  "quelle": "Datenblatt Portra 400: Kontrastindex ~0,58, RMS ~8, weicher Toe (angehobene Schatten), sanfter Shoulder, warme Hautbias.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Portra-400",
+   "https://business.kodakmoments.com/sites/default/files/files/resources/e4050_portra_400.pdf",
+   "https://business.kodakmoments.com/sites/default/files/files/resources/e4051_Portra_160.pdf"
+  ],
+  "familie": "portra",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_portra_400_35": {
+  "lut": "luts_film/kodak_portra_400_35.png",
+  "beschreibung": "Weicher Farbnegativ mit warmer, schmeichelnder Haut und angehobenen Schatten (Print-/Scan-Look). Farbverschiebung: warm-gelblich, Haut betont, Grün/Blau gedämpft, sanfte Gradation, offene Schatten.",
+  "quelle": "Datenblatt Portra 400: Kontrastindex ~0,58, RMS ~8, weicher Toe (angehobene Schatten), sanfter Shoulder, warme Hautbias.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Portra-400",
+   "https://business.kodakmoments.com/sites/default/files/files/resources/e4050_portra_400.pdf",
+   "https://business.kodakmoments.com/sites/default/files/files/resources/e4051_Portra_160.pdf"
+  ],
+  "familie": "portra",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "kodak_portra_800_35": {
+  "lut": "luts_film/kodak_portra_800_35.png",
+  "beschreibung": "Weicher Farbnegativ mit warmer, schmeichelnder Haut und angehobenen Schatten (Print-/Scan-Look). Farbverschiebung: warm-gelblich, Haut betont, Grün/Blau gedämpft, sanfte Gradation, offene Schatten.",
+  "quelle": "Datenblatt Portra 400: Kontrastindex ~0,58, RMS ~8, weicher Toe (angehobene Schatten), sanfter Shoulder, warme Hautbias.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Portra-400",
+   "https://business.kodakmoments.com/sites/default/files/files/resources/e4050_portra_400.pdf",
+   "https://business.kodakmoments.com/sites/default/files/files/resources/e4051_Portra_160.pdf"
+  ],
+  "familie": "portra",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujichrome_r25_r25n_8": {
+  "lut": "luts_film/fujifilm_fujichrome_r25_r25n_8.png",
+  "beschreibung": "Frühe Fujichrome-Umkehrfilme (Single-8, R25/RT200): kräftige, leicht warme Dia-Farben der Zeit, mittlerer bis hoher Kontrast. Farbverschiebung: leicht warm, satte Grundfarben, dichte Schatten (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Fujichrome-Umkehr, Single-8); keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Sensia-100"
+  ],
+  "familie": "fujichrome_early",
+  "korn": "fein",
+  "halation": false
+ },
+ "fujifilm_fujichrome_rt200_rt200n_8": {
+  "lut": "luts_film/fujifilm_fujichrome_rt200_rt200n_8.png",
+  "beschreibung": "Frühe Fujichrome-Umkehrfilme (Single-8, R25/RT200): kräftige, leicht warme Dia-Farben der Zeit, mittlerer bis hoher Kontrast. Farbverschiebung: leicht warm, satte Grundfarben, dichte Schatten (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Fujichrome-Umkehr, Single-8); keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Sensia-100"
+  ],
+  "familie": "fujichrome_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujichrome_sound_single_8_8": {
+  "lut": "luts_film/fujifilm_fujichrome_sound_single_8_8.png",
+  "beschreibung": "Frühe Fujichrome-Umkehrfilme (Single-8, R25/RT200): kräftige, leicht warme Dia-Farben der Zeit, mittlerer bis hoher Kontrast. Farbverschiebung: leicht warm, satte Grundfarben, dichte Schatten (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (frühe Fujichrome-Umkehr, Single-8); keine modernen Datenblätter.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Sensia-100"
+  ],
+  "familie": "fujichrome_early",
+  "korn": "fein",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_64d_8522_8622_35": {
+  "lut": "luts_film/fujifilm_fujicolor_f_64d_8522_8622_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_64d_8522_8622_16": {
+  "lut": "luts_film/fujifilm_fujicolor_f_64d_8522_8622_16.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_125_8532_8632_35": {
+  "lut": "luts_film/fujifilm_fujicolor_f_125_8532_8632_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_125_8532_8632_16": {
+  "lut": "luts_film/fujifilm_fujicolor_f_125_8532_8632_16.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_250_8552_8652_35": {
+  "lut": "luts_film/fujifilm_fujicolor_f_250_8552_8652_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_250_8552_8652_16": {
+  "lut": "luts_film/fujifilm_fujicolor_f_250_8552_8652_16.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_250d_8562_8662_35": {
+  "lut": "luts_film/fujifilm_fujicolor_f_250d_8562_8662_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_250d_8562_8662_16": {
+  "lut": "luts_film/fujifilm_fujicolor_f_250d_8562_8662_16.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_500_8572_8672_35": {
+  "lut": "luts_film/fujifilm_fujicolor_f_500_8572_8672_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujicolor_f_500_8572_8672_16": {
+  "lut": "luts_film/fujifilm_fujicolor_f_500_8572_8672_16.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_250d_8563_8663_35": {
+  "lut": "luts_film/fujifilm_eterna_250d_8563_8663_35.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_250d_8563_8663_16": {
+  "lut": "luts_film/fujifilm_eterna_250d_8563_8663_16.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_250t_8553_8653_35": {
+  "lut": "luts_film/fujifilm_eterna_250t_8553_8653_35.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_250t_8553_8653_16": {
+  "lut": "luts_film/fujifilm_eterna_250t_8553_8653_16.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_400t_8583_8683_35": {
+  "lut": "luts_film/fujifilm_eterna_400t_8583_8683_35.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_400t_8583_8683_16": {
+  "lut": "luts_film/fujifilm_eterna_400t_8583_8683_16.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_500t_8573_8673_35": {
+  "lut": "luts_film/fujifilm_eterna_500t_8573_8673_35.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_500t_8573_8673_16": {
+  "lut": "luts_film/fujifilm_eterna_500t_8573_8673_16.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_eterna_vivid_160t_250d_500t_8543_8546_8547_35_86xx_16_35": {
+  "lut": "luts_film/fujifilm_eterna_vivid_160t_250d_500t_8543_8546_8547_35_86xx_16_35.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_eterna_vivid_160t_250d_500t_8543_8546_8547_35_86xx_16_16": {
+  "lut": "luts_film/fujifilm_eterna_vivid_160t_250d_500t_8543_8546_8547_35_86xx_16_16.png",
+  "beschreibung": "Kino-Farbnegativ, geringer Kontrast, natürlich-gedämpfte Farben, großer Belichtungsspielraum (Print-/Scan-Look). Farbverschiebung: neutral-gedämpft, leicht teal in den Schatten, filmisch zurückhaltend.",
+  "quelle": "Eterna-Kinoreihe: niedriger Kontrast, weiter Umfang, gedämpft-natürlich (Kino-Negativ).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Eterna"
+  ],
+  "familie": "eterna",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_reala_500d_8592_8692_35": {
+  "lut": "luts_film/fujifilm_reala_500d_8592_8692_35.png",
+  "beschreibung": "Natürlicher, farbtreuer Profi-/Konsumnegativ mit 4. Farbschicht, ausgewogen und sauber. Farbverschiebung: neutral-natürlich, gute Hauttöne, dezente Fuji-Grün-Note.",
+  "quelle": "Datenblatt Reala 100: 4. Farbschicht für natürliche Wiedergabe (Fuji), neutral; RMS fein.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Reala-100"
+  ],
+  "familie": "reala",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_reala_500d_8592_8692_16": {
+  "lut": "luts_film/fujifilm_reala_500d_8592_8692_16.png",
+  "beschreibung": "Natürlicher, farbtreuer Profi-/Konsumnegativ mit 4. Farbschicht, ausgewogen und sauber. Farbverschiebung: neutral-natürlich, gute Hauttöne, dezente Fuji-Grün-Note.",
+  "quelle": "Datenblatt Reala 100: 4. Farbschicht für natürliche Wiedergabe (Fuji), neutral; RMS fein.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Reala-100"
+  ],
+  "familie": "reala",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujicolor_super_hr_100_200_400_35": {
+  "lut": "luts_film/fujifilm_fujicolor_super_hr_100_200_400_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_reala_100_35": {
+  "lut": "luts_film/fujifilm_fujicolor_reala_100_35.png",
+  "beschreibung": "Natürlicher, farbtreuer Profi-/Konsumnegativ mit 4. Farbschicht, ausgewogen und sauber. Farbverschiebung: neutral-natürlich, gute Hauttöne, dezente Fuji-Grün-Note.",
+  "quelle": "Datenblatt Reala 100: 4. Farbschicht für natürliche Wiedergabe (Fuji), neutral; RMS fein.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Reala-100"
+  ],
+  "familie": "reala",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_superia_100_200_800_1600_35": {
+  "lut": "luts_film/fujifilm_fujicolor_superia_100_200_800_1600_35.png",
+  "beschreibung": "Konsum-/Allround-Farbnegativ mit Fuji-Signatur: betonte Grün-/Cyantöne (4. Farbschicht), lebendig. Farbverschiebung: Grün/Cyan betont, gegen Neonlicht-Grünstich optimiert, kräftige Grundfarben, leicht kühl.",
+  "quelle": "Datenblatt Superia X-TRA 400: RMS 4, 4. cyan-bildende Schicht (Fuji-Signatur), Rotschicht mit erweiterter Tiefrot-Empfindlichkeit.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Superia-XTRA-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Superia-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Superia-200"
+  ],
+  "familie": "superia",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_superia_x_tra_400_35": {
+  "lut": "luts_film/fujifilm_fujicolor_superia_x_tra_400_35.png",
+  "beschreibung": "Konsum-/Allround-Farbnegativ mit Fuji-Signatur: betonte Grün-/Cyantöne (4. Farbschicht), lebendig. Farbverschiebung: Grün/Cyan betont, gegen Neonlicht-Grünstich optimiert, kräftige Grundfarben, leicht kühl.",
+  "quelle": "Datenblatt Superia X-TRA 400: RMS 4, 4. cyan-bildende Schicht (Fuji-Signatur), Rotschicht mit erweiterter Tiefrot-Empfindlichkeit.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Superia-XTRA-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Superia-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Superia-200"
+  ],
+  "familie": "superia",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujicolor_c200_35": {
+  "lut": "luts_film/fujifilm_fujicolor_c200_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_pro_160ns_160c_400h_800z_35": {
+  "lut": "luts_film/fujifilm_fujicolor_pro_160ns_160c_400h_800z_35.png",
+  "beschreibung": "Weicher Profi-Farbnegativ, kühl-pastellige Palette mit mintigen Schatten, sehr feines Korn (Print-/Scan-Look). Farbverschiebung: kühl, Schatten mint/cyan, pastellig, gedämpfte Sättigung, schöne Haut.",
+  "quelle": "Datenblatt Pro 400H: RMS 4, kühlere Palette, mint/kühle Schatten, große Überbelichtungstoleranz (−1…+3).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Pro-400H",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Pro-160NS"
+  ],
+  "familie": "pro400h",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_natura_1600_35": {
+  "lut": "luts_film/fujifilm_fujicolor_natura_1600_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "grob",
+  "halation": false
+ },
+ "fujifilm_fujicolor_200_35": {
+  "lut": "luts_film/fujifilm_fujicolor_200_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujicolor_400_35": {
+  "lut": "luts_film/fujifilm_fujicolor_400_35.png",
+  "beschreibung": "Fuji-Konsum-Farbnegativ (C200/200/Super HR/F-Serie): lebendige Grundfarben mit Fuji-Grün-/Cyan-Note. Farbverschiebung: leicht kühl, Grün/Cyan betont, kräftige Farben, gute Allround-Balance.",
+  "quelle": "Abgeleitet von Fujicolor C200/Superia-Familie (Fuji-Signatur); RMS je nach ISO.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujicolor-C200"
+  ],
+  "familie": "fujicolor",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_fujichrome_velvia_50_rvp_rvp50_35": {
+  "lut": "luts_film/fujifilm_fujichrome_velvia_50_rvp_rvp50_35.png",
+  "beschreibung": "Extrem gesättigter Landschafts-Dia, sehr hart, hyper-gesättigte Grün- und Blautöne, dramatische Tiefe. Farbverschiebung: Grün hyper-gesättigt (Cyan unterdrückt), Blau tief, Gelb→Rot warm verschoben, Rot leicht magenta.",
+  "quelle": "Datenblatt Velvia 50: RMS 9, Dmax ~3,8–4,0, Umfang nur 5–6 Blenden (sehr hart), warmer Gelb→Rot-Cast.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Velvia-50"
+  ],
+  "familie": "velvia50",
+  "korn": "fein",
+  "halation": false
+ },
+ "fujifilm_fujichrome_velvia_100_100f_35": {
+  "lut": "luts_film/fujifilm_fujichrome_velvia_100_100f_35.png",
+  "beschreibung": "Gesättigter Landschafts-Dia, etwas weniger extrem als Velvia 50, kräftige Farben, hoher Kontrast. Farbverschiebung: sehr hohe Sättigung, Grün/Blau betont, leicht warm.",
+  "quelle": "Abgeleitet von Velvia-100/100F-Datenblatt (etwas moderater als V50).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Velvia-100"
+  ],
+  "familie": "velvia100",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujichrome_provia_100f_rdp_iii_35": {
+  "lut": "luts_film/fujifilm_fujichrome_provia_100f_rdp_iii_35.png",
+  "beschreibung": "Neutraler, sauberer Universal-Dia, natürliche Sättigung, feines Korn, leicht kühl. Farbverschiebung: neutral bis leicht kühl, Blau klar, ausgewogene Farben.",
+  "quelle": "Provia 100F: Standard-E6-Kontrast, natürliche Sättigung (weniger als Velvia), leicht kühl; RMS ~8.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Provia-400F",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Provia-400X"
+  ],
+  "familie": "provia",
+  "korn": "mittel",
+  "halation": false
+ },
+ "fujifilm_fujichrome_provia_400x_astia_100f_sensia_35": {
+  "lut": "luts_film/fujifilm_fujichrome_provia_400x_astia_100f_sensia_35.png",
+  "beschreibung": "Neutraler, sauberer Universal-Dia, natürliche Sättigung, feines Korn, leicht kühl. Farbverschiebung: neutral bis leicht kühl, Blau klar, ausgewogene Farben.",
+  "quelle": "Provia 100F: Standard-E6-Kontrast, natürliche Sättigung (weniger als Velvia), leicht kühl; RMS ~8.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Provia-400F",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Provia-400X"
+  ],
+  "familie": "provia",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_negative_film_orthochromatisch_35": {
+  "lut": "luts_film/eastman_kodak_negative_film_orthochromatisch_35.png",
+  "beschreibung": "Orthochromatisch (rotblind): Rot- und Hauttöne werden dunkel, Himmel/Blau hell, hoher Kontrast, silbrig. Charakter: früher Film-Look, Lippen/Haut dunkel, dramatische Himmel.",
+  "quelle": "Spektralklasse orthochromatisch (keine Rotempfindlichkeit) → Kanalmischung blau/grün-lastig, kaum Rot.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "ortho",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_panchromatic_negative_film_type_1_35": {
+  "lut": "luts_film/eastman_kodak_panchromatic_negative_film_type_1_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_super_x_negative_1227_35": {
+  "lut": "luts_film/eastman_kodak_super_x_negative_1227_35.png",
+  "beschreibung": "Sehr feinkörniger, langsamer S/W-Film mit hoher Schärfe und Kontrast: glasklare Details, tiefe Mitten. Panchromatisch. Charakter: hochauflösend, kontrastreich, edel.",
+  "quelle": "Datenblatt-Klasse Pan F 50 / Panatomic-X 32 / Adox (feinstes Korn, höhere Schärfe/Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Pan-F-Plus-50",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Panatomic-X-32",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Adox-Silvermax-21"
+  ],
+  "familie": "ultrafine",
+  "korn": "fein",
+  "halation": false
+ },
+ "eastman_kodak_plus_x_negative_1231_4231_5231_35_7231_16_35": {
+  "lut": "luts_film/eastman_kodak_plus_x_negative_1231_4231_5231_35_7231_16_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_plus_x_negative_1231_4231_5231_35_7231_16_16": {
+  "lut": "luts_film/eastman_kodak_plus_x_negative_1231_4231_5231_35_7231_16_16.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_super_xx_negative_1232_5232_35": {
+  "lut": "luts_film/eastman_kodak_super_xx_negative_1232_5232_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "eastman_kodak_double_x_negative_5222_35_7222_16_35": {
+  "lut": "luts_film/eastman_kodak_double_x_negative_5222_35_7222_16_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_double_x_negative_5222_35_7222_16_16": {
+  "lut": "luts_film/eastman_kodak_double_x_negative_5222_35_7222_16_16.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_4_x_negative_5224_7224_35": {
+  "lut": "luts_film/eastman_kodak_4_x_negative_5224_7224_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "eastman_kodak_4_x_negative_5224_7224_16": {
+  "lut": "luts_film/eastman_kodak_4_x_negative_5224_7224_16.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "kodak_cine_kodak_safety_film_16": {
+  "lut": "luts_film/kodak_cine_kodak_safety_film_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_cine_kodak_super_x_reversal_16": {
+  "lut": "luts_film/kodak_cine_kodak_super_x_reversal_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_cine_kodak_super_x_reversal_8": {
+  "lut": "luts_film/kodak_cine_kodak_super_x_reversal_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_cine_kodak_super_xx_reversal_16": {
+  "lut": "luts_film/kodak_cine_kodak_super_xx_reversal_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_cine_kodak_super_xx_reversal_8": {
+  "lut": "luts_film/kodak_cine_kodak_super_xx_reversal_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_plus_x_reversal_7276_7265_16": {
+  "lut": "luts_film/kodak_plus_x_reversal_7276_7265_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_plus_x_reversal_7276_7265_8": {
+  "lut": "luts_film/kodak_plus_x_reversal_7276_7265_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_tri_x_reversal_7278_16": {
+  "lut": "luts_film/kodak_tri_x_reversal_7278_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_tri_x_reversal_7278_8": {
+  "lut": "luts_film/kodak_tri_x_reversal_7278_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_tri_x_reversal_7266_16": {
+  "lut": "luts_film/kodak_tri_x_reversal_7266_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_tri_x_reversal_7266_8": {
+  "lut": "luts_film/kodak_tri_x_reversal_7266_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_4_x_reversal_7277_16": {
+  "lut": "luts_film/kodak_4_x_reversal_7277_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_agfa_superpan_kino_35": {
+  "lut": "luts_film/agfa_agfa_superpan_kino_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_agfa_superpan_kino_16": {
+  "lut": "luts_film/agfa_agfa_superpan_kino_16.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfapan_250_kino_35": {
+  "lut": "luts_film/agfa_gevaert_agfapan_250_kino_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "agfa_gevaert_agfapan_250_kino_16": {
+  "lut": "luts_film/agfa_gevaert_agfapan_250_kino_16.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "gevaert_gevapan_kino_35": {
+  "lut": "luts_film/gevaert_gevapan_kino_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "gevaert_gevapan_kino_16": {
+  "lut": "luts_film/gevaert_gevapan_kino_16.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwo_up_15_16": {
+  "lut": "luts_film/orwo_orwo_up_15_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwo_up_15_8": {
+  "lut": "luts_film/orwo_orwo_up_15_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwo_up_21_16": {
+  "lut": "luts_film/orwo_orwo_up_21_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwo_up_21_8": {
+  "lut": "luts_film/orwo_orwo_up_21_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwo_up_27_16": {
+  "lut": "luts_film/orwo_orwo_up_27_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwo_up_27_8": {
+  "lut": "luts_film/orwo_orwo_up_27_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_filmotec_orwo_n74_plus_35": {
+  "lut": "luts_film/orwo_filmotec_orwo_n74_plus_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "orwo_filmotec_orwo_n74_plus_16": {
+  "lut": "luts_film/orwo_filmotec_orwo_n74_plus_16.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "orwo_filmotec_orwo_un_54_35": {
+  "lut": "luts_film/orwo_filmotec_orwo_un_54_35.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_filmotec_orwo_un_54_16": {
+  "lut": "luts_film/orwo_filmotec_orwo_un_54_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_filmotec_orwo_un_54_8": {
+  "lut": "luts_film/orwo_filmotec_orwo_un_54_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "3m_cr_64_cr_160_cr_250_camera_reversal_16": {
+  "lut": "luts_film/3m_cr_64_cr_160_cr_250_camera_reversal_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "dupont_superior_2_35": {
+  "lut": "luts_film/dupont_superior_2_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "dupont_superior_4_35": {
+  "lut": "luts_film/dupont_superior_4_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "ferrania_pancro_p30_kino_35": {
+  "lut": "luts_film/ferrania_pancro_p30_kino_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "foma_fomapan_r_100_8": {
+  "lut": "luts_film/foma_fomapan_r_100_8.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "foma_fomapan_r_100_16": {
+  "lut": "luts_film/foma_fomapan_r_100_16.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "foma_fomapan_r_100_35": {
+  "lut": "luts_film/foma_fomapan_r_100_35.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_panatomic_x_35": {
+  "lut": "luts_film/kodak_panatomic_x_35.png",
+  "beschreibung": "Sehr feinkörniger, langsamer S/W-Film mit hoher Schärfe und Kontrast: glasklare Details, tiefe Mitten. Panchromatisch. Charakter: hochauflösend, kontrastreich, edel.",
+  "quelle": "Datenblatt-Klasse Pan F 50 / Panatomic-X 32 / Adox (feinstes Korn, höhere Schärfe/Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Pan-F-Plus-50",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Panatomic-X-32",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Adox-Silvermax-21"
+  ],
+  "familie": "ultrafine",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_plus_x_pan_35": {
+  "lut": "luts_film/kodak_plus_x_pan_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "kodak_tri_x_pan_35": {
+  "lut": "luts_film/kodak_tri_x_pan_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "kodak_technical_pan_35": {
+  "lut": "luts_film/kodak_technical_pan_35.png",
+  "beschreibung": "Dokumenten-/Technikfilm mit extrem hohem Kontrast und feinstem Korn: harte Schwarzweiß-Trennung, kaum Mitten. Charakter: sehr hart, ultrafein (Technical Pan, Recording, Luftbild).",
+  "quelle": "Technical Pan / Recording 2475: extrem hoher Kontrast, feinstes Korn (Datenblatt-Ordner tw. 404 → Klasse-Herleitung).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Technical-Pan",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Recording-Film-2475"
+  ],
+  "familie": "technical",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_t_max_100_400_35": {
+  "lut": "luts_film/kodak_t_max_100_400_35.png",
+  "beschreibung": "Moderner Tabularkorn-S/W: sehr feines Korn, glatte, weite Tonwertskala, neutrale Wiedergabe. Panchromatisch, sachlich-sauber. Charakter: fein, modern, kontrolliert.",
+  "quelle": "T-Max-Reihe: Tabularkorn (RMS ~10 bei 400, ~8 bei 100), glatte Gradation, weiter Umfang (Datenblatt-Ordner tw. 404 → aus Wissen).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-T-Max-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Delta-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Acros"
+  ],
+  "familie": "tmax",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_t_max_p3200_35": {
+  "lut": "luts_film/kodak_t_max_p3200_35.png",
+  "beschreibung": "Moderner Tabularkorn-S/W: sehr feines Korn, glatte, weite Tonwertskala, neutrale Wiedergabe. Panchromatisch, sachlich-sauber. Charakter: fein, modern, kontrolliert.",
+  "quelle": "T-Max-Reihe: Tabularkorn (RMS ~10 bei 400, ~8 bei 100), glatte Gradation, weiter Umfang (Datenblatt-Ordner tw. 404 → aus Wissen).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-T-Max-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Delta-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Acros"
+  ],
+  "familie": "tmax",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_bw400cn_35": {
+  "lut": "luts_film/kodak_bw400cn_35.png",
+  "beschreibung": "Chromogener S/W-Film (C-41): sehr feines Korn, glatte, weiche Tonwerte, geringer Kontrast. Charakter: cremig-fein, moderne Anmutung.",
+  "quelle": "Datenblatt XP2 Super (C-41-S/W, sehr fein, weich, weite Latitüde).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-XP2-Super"
+  ],
+  "familie": "chromogen",
+  "korn": "fein",
+  "halation": false
+ },
+ "kodak_high_speed_infrared_hie_35": {
+  "lut": "luts_film/kodak_high_speed_infrared_hie_35.png",
+  "beschreibung": "Infrarot-S/W: Grün (Laub) und Haut leuchtend hell, Himmel/Wasser tiefschwarz, hoher Kontrast, traumhaft-surreal. Charakter: Wood-Effekt, glühendes Laub, dramatische dunkle Himmel.",
+  "quelle": "Spektralklasse Infrarot (starke Rot-/IR-Empfindlichkeit) → extrem rotbetonte Kanalmischung, hoher Kontrast.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400"
+  ],
+  "familie": "infrared",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "fujifilm_neopan_400_1600_ss_presto_35": {
+  "lut": "luts_film/fujifilm_neopan_400_1600_ss_presto_35.png",
+  "beschreibung": "Hochempfindlicher S/W-Film: grobes, ausgeprägtes Korn, flauerer Kontrast, verfügbares Licht. Charakter: körnig-atmosphärisch, dokumentarisch bei wenig Licht.",
+  "quelle": "Datenblatt-Klasse Delta 3200 / T-Max P3200 / Neopan 1600 (grobes Korn, geringerer Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Delta-3200",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-T-Max-3200",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fuji-Neopan-1600"
+  ],
+  "familie": "highspeed",
+  "korn": "grob",
+  "halation": false
+ },
+ "fujifilm_neopan_acros_100_35": {
+  "lut": "luts_film/fujifilm_neopan_acros_100_35.png",
+  "beschreibung": "Moderner Tabularkorn-S/W: sehr feines Korn, glatte, weite Tonwertskala, neutrale Wiedergabe. Panchromatisch, sachlich-sauber. Charakter: fein, modern, kontrolliert.",
+  "quelle": "T-Max-Reihe: Tabularkorn (RMS ~10 bei 400, ~8 bei 100), glatte Gradation, weiter Umfang (Datenblatt-Ordner tw. 404 → aus Wissen).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-T-Max-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Delta-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Acros"
+  ],
+  "familie": "tmax",
+  "korn": "fein",
+  "halation": false
+ },
+ "fujifilm_acros_100_ii_35": {
+  "lut": "luts_film/fujifilm_acros_100_ii_35.png",
+  "beschreibung": "Moderner Tabularkorn-S/W: sehr feines Korn, glatte, weite Tonwertskala, neutrale Wiedergabe. Panchromatisch, sachlich-sauber. Charakter: fein, modern, kontrolliert.",
+  "quelle": "T-Max-Reihe: Tabularkorn (RMS ~10 bei 400, ~8 bei 100), glatte Gradation, weiter Umfang (Datenblatt-Ordner tw. 404 → aus Wissen).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-T-Max-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Delta-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Acros"
+  ],
+  "familie": "tmax",
+  "korn": "fein",
+  "halation": false
+ },
+ "ilford_hp4_35": {
+  "lut": "luts_film/ilford_hp4_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "ilford_hp5_35": {
+  "lut": "luts_film/ilford_hp5_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "ilford_hp5_plus_35": {
+  "lut": "luts_film/ilford_hp5_plus_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "ilford_fp4_35": {
+  "lut": "luts_film/ilford_fp4_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "ilford_fp4_plus_35": {
+  "lut": "luts_film/ilford_fp4_plus_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "ilford_pan_f_plus_35": {
+  "lut": "luts_film/ilford_pan_f_plus_35.png",
+  "beschreibung": "Sehr feinkörniger, langsamer S/W-Film mit hoher Schärfe und Kontrast: glasklare Details, tiefe Mitten. Panchromatisch. Charakter: hochauflösend, kontrastreich, edel.",
+  "quelle": "Datenblatt-Klasse Pan F 50 / Panatomic-X 32 / Adox (feinstes Korn, höhere Schärfe/Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Pan-F-Plus-50",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Panatomic-X-32",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Adox-Silvermax-21"
+  ],
+  "familie": "ultrafine",
+  "korn": "fein",
+  "halation": false
+ },
+ "ilford_delta_100_400_3200_35": {
+  "lut": "luts_film/ilford_delta_100_400_3200_35.png",
+  "beschreibung": "Moderner Tabularkorn-S/W: sehr feines Korn, glatte, weite Tonwertskala, neutrale Wiedergabe. Panchromatisch, sachlich-sauber. Charakter: fein, modern, kontrolliert.",
+  "quelle": "T-Max-Reihe: Tabularkorn (RMS ~10 bei 400, ~8 bei 100), glatte Gradation, weiter Umfang (Datenblatt-Ordner tw. 404 → aus Wissen).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-T-Max-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Delta-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Fujifilm-Acros"
+  ],
+  "familie": "tmax",
+  "korn": "fein",
+  "halation": false
+ },
+ "ilford_xp2_super_35": {
+  "lut": "luts_film/ilford_xp2_super_35.png",
+  "beschreibung": "Chromogener S/W-Film (C-41): sehr feines Korn, glatte, weiche Tonwerte, geringer Kontrast. Charakter: cremig-fein, moderne Anmutung.",
+  "quelle": "Datenblatt XP2 Super (C-41-S/W, sehr fein, weich, weite Latitüde).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-XP2-Super"
+  ],
+  "familie": "chromogen",
+  "korn": "fein",
+  "halation": false
+ },
+ "ilford_sfx_200_35": {
+  "lut": "luts_film/ilford_sfx_200_35.png",
+  "beschreibung": "Erweiterte Rotempfindlichkeit: Rottöne/Haut hell, Grün dunkler, kräftiger Kontrast. Charakter: leuchtende Rot-/Hauttöne, Vorstufe zum Infrarot-Effekt.",
+  "quelle": "Spektralklasse mit erweiterter Rotempfindlichkeit → Kanalmischung rotbetont.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400"
+  ],
+  "familie": "extended_red",
+  "korn": "mittel",
+  "halation": false
+ },
+ "ilford_ortho_plus_35": {
+  "lut": "luts_film/ilford_ortho_plus_35.png",
+  "beschreibung": "Orthochromatisch (rotblind): Rot- und Hauttöne werden dunkel, Himmel/Blau hell, hoher Kontrast, silbrig. Charakter: früher Film-Look, Lippen/Haut dunkel, dramatische Himmel.",
+  "quelle": "Spektralklasse orthochromatisch (keine Rotempfindlichkeit) → Kanalmischung blau/grün-lastig, kaum Rot.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "ortho",
+  "korn": "mittel",
+  "halation": false
+ },
+ "harman_kentmere_kentmere_pan_100_400_35": {
+  "lut": "luts_film/harman_kentmere_kentmere_pan_100_400_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_isopan_f_iss_record_35": {
+  "lut": "luts_film/agfa_isopan_f_iss_record_35.png",
+  "beschreibung": "Sehr feinkörniger, langsamer S/W-Film mit hoher Schärfe und Kontrast: glasklare Details, tiefe Mitten. Panchromatisch. Charakter: hochauflösend, kontrastreich, edel.",
+  "quelle": "Datenblatt-Klasse Pan F 50 / Panatomic-X 32 / Adox (feinstes Korn, höhere Schärfe/Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Pan-F-Plus-50",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Panatomic-X-32",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Adox-Silvermax-21"
+  ],
+  "familie": "ultrafine",
+  "korn": "fein",
+  "halation": false
+ },
+ "agfa_gevaert_agfapan_25_100_400_apx_35": {
+  "lut": "luts_film/agfa_gevaert_agfapan_25_100_400_apx_35.png",
+  "beschreibung": "Sehr feinkörniger, langsamer S/W-Film mit hoher Schärfe und Kontrast: glasklare Details, tiefe Mitten. Panchromatisch. Charakter: hochauflösend, kontrastreich, edel.",
+  "quelle": "Datenblatt-Klasse Pan F 50 / Panatomic-X 32 / Adox (feinstes Korn, höhere Schärfe/Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Pan-F-Plus-50",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Panatomic-X-32",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Adox-Silvermax-21"
+  ],
+  "familie": "ultrafine",
+  "korn": "fein",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_scala_200x_35": {
+  "lut": "luts_film/agfa_gevaert_agfa_scala_200x_35.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfaphoto_lizenz_agfaphoto_apx_100_400_35": {
+  "lut": "luts_film/agfaphoto_lizenz_agfaphoto_apx_100_400_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwo_np_15_np_20_np_22_np_27_35": {
+  "lut": "luts_film/orwo_orwo_np_15_np_20_np_22_np_27_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "adox_dr_c_schleussner_adox_kb_14_kb_17_kb_21_35": {
+  "lut": "luts_film/adox_dr_c_schleussner_adox_kb_14_kb_17_kb_21_35.png",
+  "beschreibung": "Sehr feinkörniger, langsamer S/W-Film mit hoher Schärfe und Kontrast: glasklare Details, tiefe Mitten. Panchromatisch. Charakter: hochauflösend, kontrastreich, edel.",
+  "quelle": "Datenblatt-Klasse Pan F 50 / Panatomic-X 32 / Adox (feinstes Korn, höhere Schärfe/Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Pan-F-Plus-50",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Panatomic-X-32",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Adox-Silvermax-21"
+  ],
+  "familie": "ultrafine",
+  "korn": "fein",
+  "halation": false
+ },
+ "adox_chs_100_ii_35": {
+  "lut": "luts_film/adox_chs_100_ii_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "adox_scala_50_35": {
+  "lut": "luts_film/adox_scala_50_35.png",
+  "beschreibung": "Schwarzweiß-Umkehr (Dia-Positiv): hoher Kontrast, brillante Weißtöne und tiefe Schwärzen, klare Trennung. Charakter: knackig-positiv, hohe Brillanz (Scala, Umkehr-Entwicklung).",
+  "quelle": "Datenblatt Agfa Scala 200 (S/W-Umkehr, hoher Kontrast, positive Brillanz).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Scala-200"
+  ],
+  "familie": "reversal_bw",
+  "korn": "mittel",
+  "halation": false
+ },
+ "foma_fomapan_100_classic_200_creative_400_action_35": {
+  "lut": "luts_film/foma_fomapan_100_classic_200_creative_400_action_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "foma_retropan_320_soft_35": {
+  "lut": "luts_film/foma_retropan_320_soft_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "konica_infrared_750_35": {
+  "lut": "luts_film/konica_infrared_750_35.png",
+  "beschreibung": "Infrarot-S/W: Grün (Laub) und Haut leuchtend hell, Himmel/Wasser tiefschwarz, hoher Kontrast, traumhaft-surreal. Charakter: Wood-Effekt, glühendes Laub, dramatische dunkle Himmel.",
+  "quelle": "Spektralklasse Infrarot (starke Rot-/IR-Empfindlichkeit) → extrem rotbetonte Kanalmischung, hoher Kontrast.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400"
+  ],
+  "familie": "infrared",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "film_ferrania_p30_alpha_p30_35": {
+  "lut": "luts_film/film_ferrania_p30_alpha_p30_35.png",
+  "beschreibung": "Feinkörniger S/W-Standardfilm mittlerer Empfindlichkeit: glatte Tonwerte, mittlerer Kontrast, saubere Mitten. Panchromatisch, ausgewogene Graustufen. Charakter: klassisch, fein, universell.",
+  "quelle": "Datenblatt-Klasse FP4/Fomapan 100/APX 100/Plus-X (fein, mittlerer Kontrast, pan). Gamma-Print-Look normal.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-FP4-Plus-125",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Foma-Fomapan-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-APX-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Plus-X-125"
+  ],
+  "familie": "fine_pan",
+  "korn": "mittel",
+  "halation": false
+ },
+ "polaroid_polachrome_polapan_instant_35_mm_35": {
+  "lut": "luts_film/polaroid_polachrome_polapan_instant_35_mm_35.png",
+  "beschreibung": "Sehr feinkörniger, langsamer S/W-Film mit hoher Schärfe und Kontrast: glasklare Details, tiefe Mitten. Panchromatisch. Charakter: hochauflösend, kontrastreich, edel.",
+  "quelle": "Datenblatt-Klasse Pan F 50 / Panatomic-X 32 / Adox (feinstes Korn, höhere Schärfe/Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Pan-F-Plus-50",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Panatomic-X-32",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Adox-Silvermax-21"
+  ],
+  "familie": "ultrafine",
+  "korn": "fein",
+  "halation": false
+ },
+ "rollei_macodirect_rpx_25_100_400_35": {
+  "lut": "luts_film/rollei_macodirect_rpx_25_100_400_35.png",
+  "beschreibung": "Sehr feinkörniger, langsamer S/W-Film mit hoher Schärfe und Kontrast: glasklare Details, tiefe Mitten. Panchromatisch. Charakter: hochauflösend, kontrastreich, edel.",
+  "quelle": "Datenblatt-Klasse Pan F 50 / Panatomic-X 32 / Adox (feinstes Korn, höhere Schärfe/Kontrast).",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-Pan-F-Plus-50",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Panatomic-X-32",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Adox-Silvermax-21"
+  ],
+  "familie": "ultrafine",
+  "korn": "fein",
+  "halation": false
+ },
+ "rollei_macodirect_retro_80s_retro_400s_superpan_200_infrared_400_35": {
+  "lut": "luts_film/rollei_macodirect_retro_80s_retro_400s_superpan_200_infrared_400_35.png",
+  "beschreibung": "Infrarot-S/W: Grün (Laub) und Haut leuchtend hell, Himmel/Wasser tiefschwarz, hoher Kontrast, traumhaft-surreal. Charakter: Wood-Effekt, glühendes Laub, dramatische dunkle Himmel.",
+  "quelle": "Spektralklasse Infrarot (starke Rot-/IR-Empfindlichkeit) → extrem rotbetonte Kanalmischung, hoher Kontrast.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400"
+  ],
+  "familie": "infrared",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "lomography_berlin_kino_400_potsdam_kino_100_35": {
+  "lut": "luts_film/lomography_berlin_kino_400_potsdam_kino_100_35.png",
+  "beschreibung": "Klassischer schneller S/W-Reportagefilm: kräftiger Kontrast, tiefe Schwärzen, deutliches Korn, panchromatisch mit erweiterter Rotempfindlichkeit (Haut etwas heller). Charakter: dokumentarisch, körnig-griffig.",
+  "quelle": "Datenblatt Tri-X 400: RMS 17, Gamma 0,70, pan + Rot bis 680 nm, Peak 550 nm, tiefe Schwärzen; HP5 vgl. RMS ~10.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kodak-Tri-X-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ilford-HP5-Plus",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Kentmere-Pan-400"
+  ],
+  "familie": "classic_pan",
+  "korn": "kräftig",
+  "halation": false
+ },
+ "agfa_agfacolor_umkehrfilm_agfacolor_neu_16": {
+  "lut": "luts_film/agfa_agfacolor_umkehrfilm_agfacolor_neu_16.png",
+  "beschreibung": "Früher Agfacolor (1930er): begrenzte Farbtreue, warm-erdig, gedämpfte Sättigung, weiche, milchige Tiefen. Farbverschiebung: warm-gelblich, Rot/Braun betont, Grün/Blau schwach (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (früher Agfacolor Neu, Umkehr/Negativ); keine Datenblätter.",
+  "quellen": [],
+  "familie": "agfa_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_agfacolor_umkehrfilm_agfacolor_neu_8": {
+  "lut": "luts_film/agfa_agfacolor_umkehrfilm_agfacolor_neu_8.png",
+  "beschreibung": "Früher Agfacolor (1930er): begrenzte Farbtreue, warm-erdig, gedämpfte Sättigung, weiche, milchige Tiefen. Farbverschiebung: warm-gelblich, Rot/Braun betont, Grün/Blau schwach (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (früher Agfacolor Neu, Umkehr/Negativ); keine Datenblätter.",
+  "quellen": [],
+  "familie": "agfa_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_agfacolor_negativ_kinofilm_35": {
+  "lut": "luts_film/agfa_agfacolor_negativ_kinofilm_35.png",
+  "beschreibung": "Früher Agfacolor (1930er): begrenzte Farbtreue, warm-erdig, gedämpfte Sättigung, weiche, milchige Tiefen. Farbverschiebung: warm-gelblich, Rot/Braun betont, Grün/Blau schwach (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (früher Agfacolor Neu, Umkehr/Negativ); keine Datenblätter.",
+  "quellen": [],
+  "familie": "agfa_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xt_100_35": {
+  "lut": "luts_film/agfa_gevaert_agfa_xt_100_35.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xt_100_16": {
+  "lut": "luts_film/agfa_gevaert_agfa_xt_100_16.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xt_125_35": {
+  "lut": "luts_film/agfa_gevaert_agfa_xt_125_35.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xt_125_16": {
+  "lut": "luts_film/agfa_gevaert_agfa_xt_125_16.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xtr_250_35": {
+  "lut": "luts_film/agfa_gevaert_agfa_xtr_250_35.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xtr_250_16": {
+  "lut": "luts_film/agfa_gevaert_agfa_xtr_250_16.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xt_320_35": {
+  "lut": "luts_film/agfa_gevaert_agfa_xt_320_35.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xt_320_16": {
+  "lut": "luts_film/agfa_gevaert_agfa_xt_320_16.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xts_400_35": {
+  "lut": "luts_film/agfa_gevaert_agfa_xts_400_35.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_xts_400_16": {
+  "lut": "luts_film/agfa_gevaert_agfa_xts_400_16.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_moviechrome_40_8": {
+  "lut": "luts_film/agfa_gevaert_moviechrome_40_8.png",
+  "beschreibung": "Agfa-Umkehrfilm (Agfachrome/CT): warm-erdige Dia-Palette, satte aber nicht grelle Farben, charakteristische Rot-/Brauntöne. Farbverschiebung: warm, Rot/Erdtöne betont, Grün ruhig, Schatten dicht.",
+  "quelle": "Agfa-Slide-Signatur (warm-erdig); AgfaChrome-RS/CT-Datenblatt-Ordner 404 → aus Wissen/Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/AgfaChrome-RS-100"
+  ],
+  "familie": "agfachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_moviechrome_40_sound_8": {
+  "lut": "luts_film/agfa_gevaert_moviechrome_40_sound_8.png",
+  "beschreibung": "Agfa-Umkehrfilm (Agfachrome/CT): warm-erdige Dia-Palette, satte aber nicht grelle Farben, charakteristische Rot-/Brauntöne. Farbverschiebung: warm, Rot/Erdtöne betont, Grün ruhig, Schatten dicht.",
+  "quelle": "Agfa-Slide-Signatur (warm-erdig); AgfaChrome-RS/CT-Datenblatt-Ordner 404 → aus Wissen/Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/AgfaChrome-RS-100"
+  ],
+  "familie": "agfachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "gevaert_gevachrome_16": {
+  "lut": "luts_film/gevaert_gevachrome_16.png",
+  "beschreibung": "Agfa-Umkehrfilm (Agfachrome/CT): warm-erdige Dia-Palette, satte aber nicht grelle Farben, charakteristische Rot-/Brauntöne. Farbverschiebung: warm, Rot/Erdtöne betont, Grün ruhig, Schatten dicht.",
+  "quelle": "Agfa-Slide-Signatur (warm-erdig); AgfaChrome-RS/CT-Datenblatt-Ordner 404 → aus Wissen/Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/AgfaChrome-RS-100"
+  ],
+  "familie": "agfachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwochrom_ut_18_16": {
+  "lut": "luts_film/orwo_orwochrom_ut_18_16.png",
+  "beschreibung": "ORWOchrom (DDR-Umkehr): kühlere, leicht grünstichige, gedämpfte Farben, mittlerer Kontrast — osteuropäischer Charakter. Farbverschiebung: kühl, leichter Grünstich, gedämpfte Rottöne, ruhige Palette.",
+  "quelle": "ORWOchrom-Signatur (DDR-Umkehr, kühl/grünlich, gedämpft); hergeleitet aus Klasse.",
+  "quellen": [],
+  "familie": "orwochrom",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwochrom_ut_18_8": {
+  "lut": "luts_film/orwo_orwochrom_ut_18_8.png",
+  "beschreibung": "ORWOchrom (DDR-Umkehr): kühlere, leicht grünstichige, gedämpfte Farben, mittlerer Kontrast — osteuropäischer Charakter. Farbverschiebung: kühl, leichter Grünstich, gedämpfte Rottöne, ruhige Palette.",
+  "quelle": "ORWOchrom-Signatur (DDR-Umkehr, kühl/grünlich, gedämpft); hergeleitet aus Klasse.",
+  "quellen": [],
+  "familie": "orwochrom",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwochrom_ut_18_35": {
+  "lut": "luts_film/orwo_orwochrom_ut_18_35.png",
+  "beschreibung": "ORWOchrom (DDR-Umkehr): kühlere, leicht grünstichige, gedämpfte Farben, mittlerer Kontrast — osteuropäischer Charakter. Farbverschiebung: kühl, leichter Grünstich, gedämpfte Rottöne, ruhige Palette.",
+  "quelle": "ORWOchrom-Signatur (DDR-Umkehr, kühl/grünlich, gedämpft); hergeleitet aus Klasse.",
+  "quellen": [],
+  "familie": "orwochrom",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwochrom_ut_21_16": {
+  "lut": "luts_film/orwo_orwochrom_ut_21_16.png",
+  "beschreibung": "ORWOchrom (DDR-Umkehr): kühlere, leicht grünstichige, gedämpfte Farben, mittlerer Kontrast — osteuropäischer Charakter. Farbverschiebung: kühl, leichter Grünstich, gedämpfte Rottöne, ruhige Palette.",
+  "quelle": "ORWOchrom-Signatur (DDR-Umkehr, kühl/grünlich, gedämpft); hergeleitet aus Klasse.",
+  "quellen": [],
+  "familie": "orwochrom",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwochrom_ut_21_8": {
+  "lut": "luts_film/orwo_orwochrom_ut_21_8.png",
+  "beschreibung": "ORWOchrom (DDR-Umkehr): kühlere, leicht grünstichige, gedämpfte Farben, mittlerer Kontrast — osteuropäischer Charakter. Farbverschiebung: kühl, leichter Grünstich, gedämpfte Rottöne, ruhige Palette.",
+  "quelle": "ORWOchrom-Signatur (DDR-Umkehr, kühl/grünlich, gedämpft); hergeleitet aus Klasse.",
+  "quellen": [],
+  "familie": "orwochrom",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwochrom_ut_21_35": {
+  "lut": "luts_film/orwo_orwochrom_ut_21_35.png",
+  "beschreibung": "ORWOchrom (DDR-Umkehr): kühlere, leicht grünstichige, gedämpfte Farben, mittlerer Kontrast — osteuropäischer Charakter. Farbverschiebung: kühl, leichter Grünstich, gedämpfte Rottöne, ruhige Palette.",
+  "quelle": "ORWOchrom-Signatur (DDR-Umkehr, kühl/grünlich, gedämpft); hergeleitet aus Klasse.",
+  "quellen": [],
+  "familie": "orwochrom",
+  "korn": "mittel",
+  "halation": false
+ },
+ "original_wolfen_orwo_wolfen_nc500_35": {
+  "lut": "luts_film/original_wolfen_orwo_wolfen_nc500_35.png",
+  "beschreibung": "Modernes Wolfen NC (Original Wolfen): kino-abgeleiteter Farbnegativ, gedämpft-natürlich, leicht teal, feines Korn. Farbverschiebung: gedämpft-filmisch, Schatten leicht teal, zurückhaltende Sättigung.",
+  "quelle": "ORWO NC-500-Klasse (kino-abgeleitet); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/ORWO-NC-500"
+  ],
+  "familie": "wolfen_nc",
+  "korn": "mittel",
+  "halation": false
+ },
+ "original_wolfen_orwo_wolfen_nc500_16": {
+  "lut": "luts_film/original_wolfen_orwo_wolfen_nc500_16.png",
+  "beschreibung": "Modernes Wolfen NC (Original Wolfen): kino-abgeleiteter Farbnegativ, gedämpft-natürlich, leicht teal, feines Korn. Farbverschiebung: gedämpft-filmisch, Schatten leicht teal, zurückhaltende Sättigung.",
+  "quelle": "ORWO NC-500-Klasse (kino-abgeleitet); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/ORWO-NC-500"
+  ],
+  "familie": "wolfen_nc",
+  "korn": "mittel",
+  "halation": false
+ },
+ "original_wolfen_orwo_wolfen_nc400_35": {
+  "lut": "luts_film/original_wolfen_orwo_wolfen_nc400_35.png",
+  "beschreibung": "Modernes Wolfen NC (Original Wolfen): kino-abgeleiteter Farbnegativ, gedämpft-natürlich, leicht teal, feines Korn. Farbverschiebung: gedämpft-filmisch, Schatten leicht teal, zurückhaltende Sättigung.",
+  "quelle": "ORWO NC-500-Klasse (kino-abgeleitet); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/ORWO-NC-500"
+  ],
+  "familie": "wolfen_nc",
+  "korn": "mittel",
+  "halation": false
+ },
+ "original_wolfen_orwo_wolfen_nc200_8": {
+  "lut": "luts_film/original_wolfen_orwo_wolfen_nc200_8.png",
+  "beschreibung": "Modernes Wolfen NC (Original Wolfen): kino-abgeleiteter Farbnegativ, gedämpft-natürlich, leicht teal, feines Korn. Farbverschiebung: gedämpft-filmisch, Schatten leicht teal, zurückhaltende Sättigung.",
+  "quelle": "ORWO NC-500-Klasse (kino-abgeleitet); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/ORWO-NC-500"
+  ],
+  "familie": "wolfen_nc",
+  "korn": "mittel",
+  "halation": false
+ },
+ "original_wolfen_orwo_wolfen_nc200_35": {
+  "lut": "luts_film/original_wolfen_orwo_wolfen_nc200_35.png",
+  "beschreibung": "Modernes Wolfen NC (Original Wolfen): kino-abgeleiteter Farbnegativ, gedämpft-natürlich, leicht teal, feines Korn. Farbverschiebung: gedämpft-filmisch, Schatten leicht teal, zurückhaltende Sättigung.",
+  "quelle": "ORWO NC-500-Klasse (kino-abgeleitet); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/ORWO-NC-500"
+  ],
+  "familie": "wolfen_nc",
+  "korn": "mittel",
+  "halation": false
+ },
+ "ferrania_ferraniacolor_35": {
+  "lut": "luts_film/ferrania_ferraniacolor_35.png",
+  "beschreibung": "Früher Ferraniacolor (1950er): warm-gedämpfte, begrenzte Palette der Zeit, weiche Tiefen. Farbverschiebung: warm, gedämpft, milchige Schatten.",
+  "quelle": "Hergeleitet aus Ära/Typ (früher Ferraniacolor-Negativ).",
+  "quellen": [],
+  "familie": "ferrania_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "wittner_cinetec_wittner_chrome_200d_8": {
+  "lut": "luts_film/wittner_cinetec_wittner_chrome_200d_8.png",
+  "beschreibung": "Agfa-Umkehrfilm (Agfachrome/CT): warm-erdige Dia-Palette, satte aber nicht grelle Farben, charakteristische Rot-/Brauntöne. Farbverschiebung: warm, Rot/Erdtöne betont, Grün ruhig, Schatten dicht.",
+  "quelle": "Agfa-Slide-Signatur (warm-erdig); AgfaChrome-RS/CT-Datenblatt-Ordner 404 → aus Wissen/Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/AgfaChrome-RS-100"
+  ],
+  "familie": "agfachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "wittner_cinetec_wittner_chrome_200d_16": {
+  "lut": "luts_film/wittner_cinetec_wittner_chrome_200d_16.png",
+  "beschreibung": "Agfa-Umkehrfilm (Agfachrome/CT): warm-erdige Dia-Palette, satte aber nicht grelle Farben, charakteristische Rot-/Brauntöne. Farbverschiebung: warm, Rot/Erdtöne betont, Grün ruhig, Schatten dicht.",
+  "quelle": "Agfa-Slide-Signatur (warm-erdig); AgfaChrome-RS/CT-Datenblatt-Ordner 404 → aus Wissen/Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/AgfaChrome-RS-100"
+  ],
+  "familie": "agfachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "harman_harman_phoenix_200_35": {
+  "lut": "luts_film/harman_harman_phoenix_200_35.png",
+  "beschreibung": "Harman Phoenix 200: junger Farbnegativ, hohe Sättigung und hoher Kontrast, kräftige (überzogene) Rottöne, Halation, deutliches Korn. Farbverschiebung: knallige Rottöne, hoher Kontrast, Grün etwas eigenwillig, Rot-Halation.",
+  "quelle": "Harman Phoenix 200 (erste Harman-Farbe): hohe Sättigung/Kontrast, starke Rottöne, Halation, grob (Herstellerangaben/Reviews).",
+  "quellen": [
+   "https://www.harmanphoto.co.uk/"
+  ],
+  "familie": "harman_phoenix",
+  "korn": "mittel",
+  "halation": true
+ },
+ "agfa_agfacolor_neu_umkehr_35": {
+  "lut": "luts_film/agfa_agfacolor_neu_umkehr_35.png",
+  "beschreibung": "Früher Agfacolor (1930er): begrenzte Farbtreue, warm-erdig, gedämpfte Sättigung, weiche, milchige Tiefen. Farbverschiebung: warm-gelblich, Rot/Braun betont, Grün/Blau schwach (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (früher Agfacolor Neu, Umkehr/Negativ); keine Datenblätter.",
+  "quellen": [],
+  "familie": "agfa_early",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfacolor_ct_18_ct_21_35": {
+  "lut": "luts_film/agfa_gevaert_agfacolor_ct_18_ct_21_35.png",
+  "beschreibung": "Agfa-Umkehrfilm (Agfachrome/CT): warm-erdige Dia-Palette, satte aber nicht grelle Farben, charakteristische Rot-/Brauntöne. Farbverschiebung: warm, Rot/Erdtöne betont, Grün ruhig, Schatten dicht.",
+  "quelle": "Agfa-Slide-Signatur (warm-erdig); AgfaChrome-RS/CT-Datenblatt-Ordner 404 → aus Wissen/Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/AgfaChrome-RS-100"
+  ],
+  "familie": "agfachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfacolor_cn_17_cns_35": {
+  "lut": "luts_film/agfa_gevaert_agfacolor_cn_17_cns_35.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfachrome_50s_64_100_200_1000rs_35": {
+  "lut": "luts_film/agfa_gevaert_agfachrome_50s_64_100_200_1000rs_35.png",
+  "beschreibung": "Agfa-Umkehrfilm (Agfachrome/CT): warm-erdige Dia-Palette, satte aber nicht grelle Farben, charakteristische Rot-/Brauntöne. Farbverschiebung: warm, Rot/Erdtöne betont, Grün ruhig, Schatten dicht.",
+  "quelle": "Agfa-Slide-Signatur (warm-erdig); AgfaChrome-RS/CT-Datenblatt-Ordner 404 → aus Wissen/Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/AgfaChrome-RS-100"
+  ],
+  "familie": "agfachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfacolor_xrs_optima_ultra_portrait_35": {
+  "lut": "luts_film/agfa_gevaert_agfacolor_xrs_optima_ultra_portrait_35.png",
+  "beschreibung": "Agfa Ultra: hyper-gesättigter Farbnegativ, extreme Farbkraft, hoher Kontrast (Agfas Landschafts-Film). Farbverschiebung: sehr hohe Sättigung, Rot/Grün/Blau alle kräftig, knallige Grundfarben.",
+  "quelle": "Agfa-Ultra-100-Signatur (hyper-gesättigt); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Ultra-100"
+  ],
+  "familie": "agfa_ultra",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfa_gevaert_agfa_vista_100_200_400_35": {
+  "lut": "luts_film/agfa_gevaert_agfa_vista_100_200_400_35.png",
+  "beschreibung": "Agfa-Konsum-Farbnegativ (Vista/XT/Optima): kräftige, warme Farben mit betonten Rot- und Grüntönen (Print-/Scan-Look). Farbverschiebung: warm, satte Rottöne, lebendige Grüns, angenehme Haut.",
+  "quelle": "Agfa-Vista/Optima-Signatur (kräftig, warme Rot-/Grüntöne); Datenblatt-Ordner 404 → aus Wissen.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Vista-100",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Agfa-Optima-100"
+  ],
+  "familie": "agfa_vista",
+  "korn": "mittel",
+  "halation": false
+ },
+ "agfaphoto_lizenz_agfaphoto_ct_precisa_100_35": {
+  "lut": "luts_film/agfaphoto_lizenz_agfaphoto_ct_precisa_100_35.png",
+  "beschreibung": "Agfa-Umkehrfilm (Agfachrome/CT): warm-erdige Dia-Palette, satte aber nicht grelle Farben, charakteristische Rot-/Brauntöne. Farbverschiebung: warm, Rot/Erdtöne betont, Grün ruhig, Schatten dicht.",
+  "quelle": "Agfa-Slide-Signatur (warm-erdig); AgfaChrome-RS/CT-Datenblatt-Ordner 404 → aus Wissen/Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/AgfaChrome-RS-100"
+  ],
+  "familie": "agfachrome",
+  "korn": "mittel",
+  "halation": false
+ },
+ "orwo_orwocolor_nc_19_nc_21_35": {
+  "lut": "luts_film/orwo_orwocolor_nc_19_nc_21_35.png",
+  "beschreibung": "ORWOcolor (DDR-Negativ, älter): gedämpft, warm-neutral, geringere Farbtreue, weiche Tiefen. Farbverschiebung: warm-neutral, gedämpfte Farben, milchige Schatten (Zeitcharakter).",
+  "quelle": "Hergeleitet aus Ära/Typ (ORWOcolor NC, DDR-Negativ).",
+  "quellen": [],
+  "familie": "orwocolor",
+  "korn": "mittel",
+  "halation": false
+ },
+ "adox_color_mission_200_35": {
+  "lut": "luts_film/adox_color_mission_200_35.png",
+  "beschreibung": "Konsum-Farbnegativ (Konica/Ferrania Solaris/Adox/Lomography Color): lebendige, leicht warme Allround-Farben (Print-/Scan-Look). Farbverschiebung: leicht warm, kräftige Grundfarben, gute Haut, moderater Kontrast.",
+  "quelle": "Konsum-Negativ-Klasse (Konica Centuria/Ferrania Solaris/Lomography Color); tw. Datenblatt (Solaris), sonst Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ferrania-Solaris-FG-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Lomography-Color-100"
+  ],
+  "familie": "consumer_neg",
+  "korn": "mittel",
+  "halation": false
+ },
+ "konica_centuria_100_200_400_800_35": {
+  "lut": "luts_film/konica_centuria_100_200_400_800_35.png",
+  "beschreibung": "Konsum-Farbnegativ (Konica/Ferrania Solaris/Adox/Lomography Color): lebendige, leicht warme Allround-Farben (Print-/Scan-Look). Farbverschiebung: leicht warm, kräftige Grundfarben, gute Haut, moderater Kontrast.",
+  "quelle": "Konsum-Negativ-Klasse (Konica Centuria/Ferrania Solaris/Lomography Color); tw. Datenblatt (Solaris), sonst Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ferrania-Solaris-FG-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Lomography-Color-100"
+  ],
+  "familie": "consumer_neg",
+  "korn": "mittel",
+  "halation": false
+ },
+ "konica_impresa_50_35": {
+  "lut": "luts_film/konica_impresa_50_35.png",
+  "beschreibung": "Konsum-Farbnegativ (Konica/Ferrania Solaris/Adox/Lomography Color): lebendige, leicht warme Allround-Farben (Print-/Scan-Look). Farbverschiebung: leicht warm, kräftige Grundfarben, gute Haut, moderater Kontrast.",
+  "quelle": "Konsum-Negativ-Klasse (Konica Centuria/Ferrania Solaris/Lomography Color); tw. Datenblatt (Solaris), sonst Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ferrania-Solaris-FG-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Lomography-Color-100"
+  ],
+  "familie": "consumer_neg",
+  "korn": "mittel",
+  "halation": false
+ },
+ "3m_scotch_chrome_1000_35": {
+  "lut": "luts_film/3m_scotch_chrome_1000_35.png",
+  "beschreibung": "Hochempfindlicher Umkehrfilm (3M Scotch Chrome 1000): grobes Korn, gedämpfte Farben, flauerer Kontrast. Farbverschiebung: gedämpft, leicht kühl, körnig-atmosphärisch.",
+  "quelle": "Hergeleitet aus Klasse (hochempfindliche Umkehr, grob/gedämpft).",
+  "quellen": [],
+  "familie": "highspeed_reversal",
+  "korn": "mittel",
+  "halation": false
+ },
+ "ferrania_solaris_100_200_400_800_35": {
+  "lut": "luts_film/ferrania_solaris_100_200_400_800_35.png",
+  "beschreibung": "Konsum-Farbnegativ (Konica/Ferrania Solaris/Adox/Lomography Color): lebendige, leicht warme Allround-Farben (Print-/Scan-Look). Farbverschiebung: leicht warm, kräftige Grundfarben, gute Haut, moderater Kontrast.",
+  "quelle": "Konsum-Negativ-Klasse (Konica Centuria/Ferrania Solaris/Lomography Color); tw. Datenblatt (Solaris), sonst Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ferrania-Solaris-FG-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Lomography-Color-100"
+  ],
+  "familie": "consumer_neg",
+  "korn": "mittel",
+  "halation": false
+ },
+ "lomography_color_negative_100_400_800_35": {
+  "lut": "luts_film/lomography_color_negative_100_400_800_35.png",
+  "beschreibung": "Konsum-Farbnegativ (Konica/Ferrania Solaris/Adox/Lomography Color): lebendige, leicht warme Allround-Farben (Print-/Scan-Look). Farbverschiebung: leicht warm, kräftige Grundfarben, gute Haut, moderater Kontrast.",
+  "quelle": "Konsum-Negativ-Klasse (Konica Centuria/Ferrania Solaris/Lomography Color); tw. Datenblatt (Solaris), sonst Klasse.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Ferrania-Solaris-FG-400",
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Lomography-Color-100"
+  ],
+  "familie": "consumer_neg",
+  "korn": "mittel",
+  "halation": false
+ },
+ "lomography_lomochrome_purple_metropolis_turquoise_35": {
+  "lut": "luts_film/lomography_lomochrome_purple_metropolis_turquoise_35.png",
+  "beschreibung": "LomoChrome Purple: Falschfarben-Negativ. Grün→Purpur/Violett, Blau→Teal, Gelb→Pink, Rot bleibt (Haut natürlich). Surreal, kräftig, kontrastreich.",
+  "quelle": "Datenblatt LomoChrome Purple: modifizierte Farbkuppler (kein IR); Farbtausch Grün→Purpur usw.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Lomochrome-Purple"
+  ],
+  "familie": "lomo_purple",
+  "korn": "mittel",
+  "halation": false
+ },
+ "cinestill_cinestill_800t_50d_400d_35": {
+  "lut": "luts_film/cinestill_cinestill_800t_50d_400d_35.png",
+  "beschreibung": "CineStill 800T (Tungsten-Kinofilm ohne Remjet): teal-cyan Schatten, betonte Blau-/Cyantöne, warme Haut, angehobene Tiefen, geringer Kontrast, glühende Rot-Halation um helle Lichter. Farbverschiebung: Schatten teal, Blau/Cyan intensiv, Haut warm.",
+  "quelle": "Datenblatt CineStill 800T: Tungsten 3200K, Remjet entfernt → Rot-Halation + Grundschleier/geringerer Kontrast; Cross-Prozess betont Blau/Cyan, wärmt Haut.",
+  "quellen": [
+   "https://github.com/peva3/Lightroom-Presets/tree/main/research/Cinestill-800T"
+  ],
+  "familie": "cinestill_t",
+  "korn": "mittel",
+  "halation": true
+ }
+}
