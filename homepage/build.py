@@ -168,7 +168,7 @@ nav.lang a, nav.lang b { margin-left:12px; text-decoration:none; }
 nav.lang b { color:var(--text); }
 header { text-align:center; padding:30px 0 36px; border-bottom:1px solid #2a2620; background: radial-gradient(ellipse at top, #2a2112 0%, var(--bg) 70%); }
 header img { width:112px; height:112px; border-radius:26px; box-shadow:0 10px 30px #000; }
-h1 { font-family:"Great Vibes", cursive; font-weight:400; font-size:76px; margin:10px 0 0; line-height:1.1;
+h1 { font-family:"Great Vibes", cursive; font-weight:400; font-size:76px; margin:0; padding:.25em .2em .05em; line-height:1.1;
   background:linear-gradient(#fff4c4,var(--gold) 45%,var(--gold2)); -webkit-background-clip:text; background-clip:text; color:transparent; }
 .claim { font-size:20px; color:var(--muted); margin:4px 0 26px; letter-spacing:.5px; }
 .btn { display:inline-block; padding:14px 30px; border-radius:40px; background:linear-gradient(var(--gold),var(--gold2)); color:#1a1408; font-weight:bold; text-decoration:none; font-family:system-ui,sans-serif; font-size:17px; box-shadow:0 6px 18px #0008; }
