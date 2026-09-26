@@ -4,7 +4,7 @@
 1890s via Kodachrome and Agfacolor to today's slide film – and shoot with its colours, its contrast and its grain.
 As with a real camera, every film has a fixed sensitivity; you control brightness with the shutter speed.
 
-**Version 0.8 beta** · Android 8.0 or newer · free · English, Deutsch, Français, Русский
+**Version 0.8.1 beta** · Android 8.0 or newer · free · English, Deutsch, Français, Русский
 
 ➡️ **Download only here:** [volkskamera.goip.de](https://volkskamera.goip.de/en/) or under
 [Releases](https://github.com/veritasX1/VolksKamera/releases). Volkskamera is free – a "premium" or "mod" APK from
@@ -39,6 +39,10 @@ Volkskamera has **no internet permission**. It technically cannot send anything:
 no cloud. Your recordings stay on your device. The source code is open so anyone can verify this.
 
 ## Version history
+**0.8.1 beta**
+- Fixed: switching on the LED no longer turns automatic exposure back on
+- Fixed: changing white balance or exposure lock no longer discards the manual exposure
+
 **0.8 beta**
 - Available in English, French and Russian (switchable in the settings); one download per start language
 - Fully manual exposure: sensor ISO follows the film ISO, shutter 1/5–1/5000, no re-exposure on focus or camera switch
@@ -50,9 +54,9 @@ no cloud. Your recordings stay on your device. The source code is open so anyone
 
 **0.7 beta** – first public beta
 
-## Updating from 0.7
+## Updating
 Every release is signed with the same key (certificate SHA-256
-`7806bf101cca62f7bd57a9e08d8e2d0514bd58888d4d94a78100064c46fbebfc`), so 0.8 installs over 0.7 and keeps your settings.
+`7806bf101cca62f7bd57a9e08d8e2d0514bd58888d4d94a78100064c46fbebfc`), so every new version installs over the previous one and keeps your settings.
 
 ## Licence
 Free to use, not for sale – see [LICENSE.md](LICENSE.md). Third-party material: [QUELLEN.md](QUELLEN.md).
