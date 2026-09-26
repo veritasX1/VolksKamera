@@ -2,20 +2,25 @@
 """
 Erzeugt die Homepage in vier Sprachen (de = Standard im Wurzelverzeichnis, en/fr/ru in Unterordnern),
 je mit Hauptseite und Anleitung. Die Anleitung nutzt dieselben Hilfetexte wie die App
-(HelpScreen.kt + assets/i18n/*.json). Aufruf: python3 build.py <version> <sha256-je-sprache als de=…,en=…>
+(HelpScreen.kt + assets/i18n/*.json). Aufruf: python3 build.py [version]  – die SHA-256-Werte werden aus den APKs in diesem Ordner berechnet.
 """
-import html, json, os, re, sys
+import hashlib, html, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 APP = os.path.join(HERE, "..", "app", "src", "main")
 VERSION = sys.argv[1] if len(sys.argv) > 1 else "0.8 beta"
-SHAS = dict(kv.split("=", 1) for kv in (sys.argv[2].split(",") if len(sys.argv) > 2 else []))
 CERT = "7806bf101cca62f7bd57a9e08d8e2d0514bd58888d4d94a78100064c46fbebfc"
 LANGS = ["de", "en", "fr", "ru"]
 NAMES = {"de": "Deutsch", "en": "English", "fr": "Français", "ru": "Русский"}
 VFILE = VERSION.replace(" ", "-")
 
 def apk(l): return f"Volkskamera-{VFILE}-{l}.apk"
+
+def sha(l):
+    with open(os.path.join(HERE, apk(l)), "rb") as f:
+        return hashlib.file_digest(f, "sha256").hexdigest()
+
+SHAS = {l: sha(l) for l in LANGS}  # fehlt eine APK, bricht der Aufruf ab, statt leere Prüfsummen zu veröffentlichen
 
 # ---------- Hilfetexte aus der App ----------
 src = open(os.path.join(APP, "java/com/volkskamera/app/ui/HelpScreen.kt"), encoding="utf-8").read()
@@ -146,6 +151,8 @@ T = {
  "sources_full": {"de": "Vollständige Liste", "en": "Full list (German)", "fr": "Liste complète (en allemand)", "ru": "Полный список (на немецком)"},
  "credit": {"de": "© seit 2026 Olaf Winkler · Entwickelt in Schleswig-Holstein", "en": "© since 2026 Olaf Winkler · Developed in Schleswig-Holstein, Germany",
             "fr": "© depuis 2026 Olaf Winkler · Développé au Schleswig-Holstein (Allemagne)", "ru": "© с 2026 года, Olaf Winkler · Разработано в Шлезвиг-Гольштейне (Германия)"},
+ "c_dl": {"de": "Downloads", "en": "downloads", "fr": "téléchargements", "ru": "загрузок"},
+ "c_vis": {"de": "Besucher", "en": "visitors", "fr": "visiteurs", "ru": "посетителей"},
  "report": {"de": "Fehler melden", "en": "Report a bug", "fr": "Signaler un bug", "ru": "Сообщить об ошибке"},
  "code": {"de": "Quellcode", "en": "Source code", "fr": "Code source", "ru": "Исходный код"},
  "back": {"de": "‹ Zur Startseite", "en": "‹ Back to home", "fr": "‹ Retour à l’accueil", "ru": "‹ На главную"},
@@ -190,6 +197,10 @@ figcaption { padding:10px 16px 14px; font-size:15px; color:var(--muted); }
 .pair { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin:12px 0; }
 .pair img { width:100%; border-radius:8px; display:block; }
 .pre { white-space:pre-line; }
+.zaehler { margin:22px 0 0; font:14px system-ui,sans-serif; color:var(--muted); display:flex; justify-content:center; flex-wrap:wrap; gap:10px 26px; }
+.zaehler span { display:inline-flex; align-items:center; gap:9px; }
+.zw { font:600 17px/1 "Courier New",monospace; letter-spacing:3px; color:#f4f0e6; background:#050505; padding:6px 6px 6px 9px; border-radius:4px;
+  border:2px solid var(--gold2); box-shadow:inset 0 2px 6px #000, 0 1px 0 #3a3226; }
 footer { padding:28px 0 50px; text-align:center; color:var(--muted); font:13px system-ui,sans-serif; }
 """
 
@@ -233,6 +244,7 @@ def main_page(l):
   <p class="claim">{T['claim'][l]}</p>
   <a class="btn" href="{root}{apk(l)}" download>{T['download'][l].format(v=VERSION)}</a><br>
   <a class="btn2" href="{guide}">{T['guide_link'][l]}</a>
+  <p class="zaehler"><span><b class="zw">%%DL%%</b>{T['c_dl'][l]}</span><span><b class="zw">%%BES%%</b>{T['c_vis'][l]}</span></p>
   <p class="meta">{T['meta'][l].format(mb=mb)}<br>SHA-256: {SHAS.get(l, '')}<br>{T['cert'][l]} (SHA-256): {CERT}</p>
 </div></header>
 <main class="wrap">
